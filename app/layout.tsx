@@ -24,12 +24,12 @@ export const metadata: Metadata = {
     { media: "(prefers-color-scheme: dark)", color: "black" },
   ],
   icons: {
-    icon: "/favicon-32x32.ico",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
   },
   openGraph: {
-    url: 'https://ez-template1.vercel.app/',
+    url: 'https://eath-blond.vercel.app/',
     title: siteConfig.name,
     description: siteConfig.description,
     images: [
@@ -55,13 +55,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <html lang="en" suppressHydrationWarning>
         <Head>
           <title>${siteConfig.name}</title>
-          <meta property="og:url" content="https://ez-template1.vercel.app/" />
-          <meta property="og:image" content="/dashboard-dark.png" />
-          <meta
-            property="twitter:url"
-            content="https://ez-template1.vercel.app/"
-          />
-          <meta property="twitter:image" content="/dashboard-dark.png" />
+          <meta property="og:image" content="/logo.png" />
+          <meta property="twitter:image" content="/logo.png" />
         </Head>
         <body
           className={cn(
