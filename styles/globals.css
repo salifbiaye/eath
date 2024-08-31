@@ -17,7 +17,8 @@
     --input: 253 6% 89%;
     --primary: 92.34 51.2% 50.98%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 282.93 91.84% 48.04%;
+    --secondary:264, 32%, 55%;
+    /*--secondary: 282.93 91.84% 48.04%;*/
     --secondary-foreground: 0 0% 100%;
     --accent: 92.34 51.2% 50.98%;
     --accent-foreground: 0 0% 100%;
@@ -40,7 +41,8 @@
     --input: 253 6% 10%;
     --primary: 92.34 51.2% 50.98%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 282.93 91.84% 48.04%;
+    --secondary:264, 32%, 55%;
+    /*--secondary: 282.93 91.84% 48.04%;*/
     --secondary-foreground: 0 0% 100%;
     --accent: 92.34 51.2% 50.98%;
     --accent-foreground: 0 0% 100%;

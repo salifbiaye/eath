@@ -82,7 +82,12 @@ export default function IndexPage() {
   const authentification = "/Authentification.mp4"
   const eathdark = "/Eath-dark.mp4"
   const authentificationdark = "/Authentification-dark.mp4"
-
+const accueildarkimage= "/accueil-dark.png"
+  const  accueilimage = "/accueil.png"
+  const authentificationimage = "/authentification.png"
+  const eathimage = "/eath.png"
+  const authentificationdarkimage = "/authentificationdark.png"
+  const eathdarkimage = "/eathdark.png"
   return (
     // <div className="container relative overflow-hidden">
     <section id="hero">
@@ -118,7 +123,7 @@ export default function IndexPage() {
 
         <div className="relative  rounded-xl lg:block">
           <video
-            className="w-full h-auto hidden max-w-[1200px] border-8 border-muted rounded-[inherit]  object-contain shadow-lg dark:block"
+            className="w-full h-auto hidden  max-w-[1200px] border-8 border-muted rounded-[inherit]  object-contain shadow-lg dark:md:block"
             autoPlay
             muted
             disablePictureInPicture
@@ -130,8 +135,10 @@ export default function IndexPage() {
             <source src={accueildark} type="video/mp4"/>
             Your browser does not support the video tag.
           </video>
+          <img src={accueildarkimage}
+               className={"w-full h-auto dark:block hidden dark:md:hidden  max-w-[1200px] border-8 border-muted rounded-[inherit]  object-contain shadow-lg "}/>
           <video
-            className="w-full h-auto block max-w-[1200px] border-8 border-muted rounded-[inherit]  object-contain shadow-lg dark:hidden"
+            className="w-full h-auto  hidden md:block max-w-[1200px] border-8 border-muted rounded-[inherit]  object-contain shadow-lg dark:hidden"
             autoPlay
             muted
             disablePictureInPicture
@@ -143,7 +150,8 @@ export default function IndexPage() {
             <source src={accueil} type="video/mp4"/>
             Your browser does not support the video tag.
           </video>
-
+          <img src={accueilimage}
+               className={"w-full h-auto block md:hidden dark:hidden  max-w-[1200px] border-8 border-muted rounded-[inherit]  object-contain shadow-lg "}/>
           <BorderBeamm size={250} duration={12} delay={9}/>
           {/* <Features /> */}
         </div>
@@ -256,31 +264,37 @@ export default function IndexPage() {
       <div className={`px-7 mb-8 flex flex-col  items-center justify-center`}>
         <div className="relative  rounded-xl lg:block">
           <video
-            className="w-full h-auto block   max-w-[1200px] border-8 border-muted rounded-[inherit] dark:hidden object-contain shadow-lg"
+            className="w-full h-auto hidden  max-w-[1200px] border-8 border-muted rounded-[inherit]  object-contain shadow-lg dark:md:block"
             autoPlay
             muted
-            loop
             disablePictureInPicture
+            loop
             controls={false}
             style={{pointerEvents: 'none'}}
-          >
-            <source src={authentification} type="video/mp4"/>
-            Your browser does not support the video tag.
-          </video>
-          <video
-            className="w-full h-auto hidden  max-w-[1200px] border-8 border-muted rounded-[inherit]  object-contain dark:block shadow-lg"
-            autoPlay
-            muted
-            loop
-            disablePictureInPicture
-            controls={false}
-            style={{pointerEvents: 'none'}}
+
           >
             <source src={authentificationdark} type="video/mp4"/>
             Your browser does not support the video tag.
           </video>
-          <BorderBeamm size={250} duration={12} delay={9}/>
+          <img src={authentificationdarkimage}
+               className={"w-full h-auto dark:block hidden dark:md:hidden  max-w-[1200px] border-8 border-muted rounded-[inherit]  object-contain shadow-lg "}/>
+          <video
+            className="w-full h-auto  hidden md:block max-w-[1200px] border-8 border-muted rounded-[inherit]  object-contain shadow-lg dark:hidden"
+            autoPlay
+            muted
+            disablePictureInPicture
+            loop
+            controls={false}
+            style={{pointerEvents: 'none'}}
 
+          >
+            <source src={authentification} type="video/mp4"/>
+            Your browser does not support the video tag.
+          </video>
+          <img src={authentificationimage}
+               className={"w-full h-auto block md:hidden dark:hidden  max-w-[1200px] border-8 border-muted rounded-[inherit]  object-contain shadow-lg "}/>
+          <BorderBeamm size={250} duration={12} delay={9}/>
+          {/* <Features /> */}
         </div>
 
         <h2 className="font-heading text-3xl text-center mb-3  mt-8 leading-[1.1] sm:text-3xl md:text-3xl font-bold">
@@ -289,31 +303,37 @@ export default function IndexPage() {
         </h2>
         <div className="relative  rounded-xl lg:block">
           <video
-            className="w-full h-auto block   max-w-[1200px] border-8 border-muted rounded-[inherit] dark:hidden object-contain shadow-lg"
+            className="w-full h-auto hidden  max-w-[1200px] border-8 border-muted rounded-[inherit]  object-contain shadow-lg dark:md:block"
             autoPlay
             muted
-            loop
             disablePictureInPicture
+            loop
             controls={false}
             style={{pointerEvents: 'none'}}
-          >
-            <source src={eath} type="video/mp4"/>
-            Your browser does not support the video tag.
-          </video>
-          <video
-            className="w-full h-auto hidden  max-w-[1200px] border-8 border-muted rounded-[inherit]  object-contain dark:block shadow-lg"
-            autoPlay
-            muted
-            loop
-            disablePictureInPicture
-            controls={false}
-            style={{pointerEvents: 'none'}}
+
           >
             <source src={eathdark} type="video/mp4"/>
             Your browser does not support the video tag.
           </video>
-          <BorderBeamm size={250} duration={12} delay={9}/>
+          <img src={eathdarkimage}
+               className={"w-full h-auto dark:block hidden dark:md:hidden  max-w-[1200px] border-8 border-muted rounded-[inherit]  object-contain shadow-lg "}/>
+          <video
+            className="w-full h-auto  hidden md:block max-w-[1200px] border-8 border-muted rounded-[inherit]  object-contain shadow-lg dark:hidden"
+            autoPlay
+            muted
+            disablePictureInPicture
+            loop
+            controls={false}
+            style={{pointerEvents: 'none'}}
 
+          >
+            <source src={eath} type="video/mp4"/>
+            Your browser does not support the video tag.
+          </video>
+          <img src={eathimage}
+               className={"w-full h-auto block md:hidden dark:hidden  max-w-[1200px] border-8 border-muted rounded-[inherit]  object-contain shadow-lg "}/>
+          <BorderBeamm size={250} duration={12} delay={9}/>
+          {/* <Features /> */}
         </div>
       </div>
       <MarqueeDemo/>

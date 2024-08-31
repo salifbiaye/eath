@@ -80,7 +80,7 @@ function ShapeOne() {
         height="140"
         rx="73.8464"
         transform="rotate(-33.796 -315 502.403)"
-        fill="#C014F5"
+        fill="#916CAF "
 
       />
     </svg>
@@ -97,7 +97,7 @@ function ShapeTwo() {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <circle cx="489" cy="389" r="389" fill="#C014F5"  />
+      <circle cx="489" cy="389" r="389" fill="#916CAF "  />
     </svg>
   );
 }
