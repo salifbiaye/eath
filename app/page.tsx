@@ -74,7 +74,7 @@ export default function IndexPage() {
     "https://avatars.githubusercontent.com/u/106103625",
     "https://avatars.githubusercontent.com/u/59228569",
   ]
-  const accueil = "/accueil.mp4"
+  const accueil = "/Accueil.mp4"
   const accueildark = "/accueil-dark.mp4"
   const iPhone12 = "/iPhone-12-Mockup.png"
   const samsung = "/samsung.png"
