@@ -57,7 +57,7 @@ export default function ContactUs() {
     <div className="space-y-8 max-w-6xl  mx-auto mb-10 mt-10">
       <motion.div
         initial={{opacity: 0, y: 200}}
-        whileInView={{opacity: 1, y: 0}}
+        animate={{opacity: 1, y: 0}}
         transition={{type: "spring", stiffness: 50, damping: 10}}
         className="container px-4"
       >
