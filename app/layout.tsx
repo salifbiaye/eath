@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     images: [
-      { url: '/og.png', width: 800, height: 600, alt: siteConfig.name },
+      { url: '/eathpreview.png', width: 800, height: 600, alt: siteConfig.name },
     ],
     siteName: siteConfig.name,
   },
