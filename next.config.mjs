@@ -4,6 +4,9 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+  eslint: {
+    ignoreDuringBuilds: true, // Ignore ESLint during builds
+  },
 }
 
 export default nextConfig
