@@ -86,7 +86,7 @@ export default function IndexPage() {
   return (
     // <div className="container relative overflow-hidden">
     <section id="hero">
-      <div className="flex flex-col gap-6  px-7 text-center items-center">
+      <div className="flex flex-col gap-6 overflow-x-hidden px-7 text-center items-center">
 
         <div className="relative h-screen w-screen flex flex-col gap-4 items-center justify-center lg:flex-row">
 
