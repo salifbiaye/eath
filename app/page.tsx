@@ -83,7 +83,7 @@ export default function IndexPage() {
   const eathdark = "/Eath-dark.mp4"
   const authentificationdark = "/Authentification-dark.mp4"
 const accueildarkimage= "/accueil-dark.png"
-  const  accueilimage = "/accueil.png"
+  const  accueilimage = "/Accueil.png"
   const authentificationimage = "/authentification.png"
   const eathimage = "/eath.png"
   const authentificationdarkimage = "/authentificationdark.png"
