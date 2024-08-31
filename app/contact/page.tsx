@@ -82,7 +82,7 @@ export default function ContactUs() {
             <CardContent>
               <div className="space-y-2">
                 <div className="flex items-center space-x-2">
-                  <Avatar className="w-4 h-4"/>
+                  <Avatar className="size-4"/>
                   <span>1234 Street, City, State, 56789</span>
                 </div>
                 <div className="flex items-center space-x-2">
