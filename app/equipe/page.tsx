@@ -103,7 +103,7 @@ const teamSections: Section[] = [
     ],
   },
   {
-    title: "Pole Base de donnee",
+    title: "Pole Base de donnée",
     description: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
     members: [
       {
