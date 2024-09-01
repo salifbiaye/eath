@@ -54,7 +54,7 @@ const About = () => {
     },
     {
       title: "Inclusion Sociale",
-      text: "nous utilisons les technologies avancées pour faciliter la réalisation de cette application mobile avec l’intégration d'un assistant vocal qui favorise aussi  l’utilisation de cet outil digital par les personnes malvoyantes."
+      text: "nous utilisons les technologies avancées pour faciliter la réalisation de cette application mobile avec l’intégration de l' assistant vocal qui favorise aussi  l’utilisation de cet outil digital par les personnes malvoyantes."
     },
     {
       title: "Nos cibles",
