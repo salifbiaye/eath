@@ -66,7 +66,7 @@ export const ServiceSolution= () => {
       <div className="container relative">
         <div className="flex justify-center  mb-12">
         </div>
-        <div className="grid grid-cols-3 gap-6 text-center">
+        <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
           {serviceList.map((service, i) => (
             <div className="col-span-3 md:col-span-1" key={i}>
               <ServiceItem service={service} />

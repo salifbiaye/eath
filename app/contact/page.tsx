@@ -11,9 +11,13 @@ import { motion } from "framer-motion"
 import emailjs from 'emailjs-com';
 import {NextResponse} from "next/server";
 import {toast} from "sonner";
+import {useState} from "react";
 export default function ContactUs() {
+  const [isLoading, setIsLoading] = useState(false);
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setIsLoading(true);
+
     const data = new FormData(e.currentTarget);
     const email = data.get('email') as string;
     const message = data.get('message') as string;
@@ -49,7 +53,9 @@ export default function ContactUs() {
             onClick: () => console.log("Undo"),
           },
         })
-      });
+      }).finally(() => {
+      setIsLoading(false); // Arrêter le loader
+    });
 
     console.log("submitted");
   };
@@ -110,7 +116,7 @@ export default function ContactUs() {
                   <Label htmlFor="message">Message</Label>
                   <Textarea id="message" name="message" placeholder="Écrivez votre message" className="min-h-[100px]"
                             required/>
-                  <Button className={"mt-5"} type="submit">Envoyer un message</Button>
+                  <Button disabled={isLoading} className={"mt-5"} type="submit">Envoyer un message</Button>
                 </form>
               </div>
             </CardContent>

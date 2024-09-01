@@ -75,7 +75,6 @@ export const ServiceAi = () => {
                 autoPlay
                 muted
                 playsInline
-                hidden
                 loop
 
               >

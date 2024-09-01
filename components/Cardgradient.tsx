@@ -72,7 +72,7 @@ export function CardGradient({ title, text }: { title: string; text: string }) {
       <CardFooter>
 
       </CardFooter>
-<div className={`absolute left-0  top-0 bottom-0 w-5 bg-secondary rounded-l-lg`}>
+<div className={`absolute left-0  top-0 bottom-0 w-3 bg-secondary rounded-l-lg`}>
 
 </div>
 
