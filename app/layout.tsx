@@ -24,9 +24,9 @@ export const metadata: Metadata = {
     { media: "(prefers-color-scheme: dark)", color: "black" },
   ],
   icons: {
-    icon: "/logo.png",
-    shortcut: "/logo.png",
-    apple: "/logo.png",
+    icon: "/logofavicon.png",
+    shortcut: "/logofavicon.png",
+    apple: "/logofavicon.png",
   },
   openGraph: {
     url: 'https://eath-blond.vercel.app/',

@@ -47,10 +47,8 @@ export function SiteFooter() {
   const pathname = usePathname()
   return (
     <footer className="flex  border-t  flex-col py-6 w-4xl  md:flex-row items-center md:justify-between space-y-4 md:space-y-0 ">
-      <Link href="/" className="mr-6 flex items-center space-x-2 ml-10">
-        <Container className={"w-10 h-10 circle-6"}>
-          <img src={logo} alt="logo" className="w-8 h-8 rounded-full"/>
-        </Container>
+      <Link href="/" className="ml-6 flex items-center gap-1 justify-center">
+        <img src={logo} alt="logo" className=" w-8 h-10 rounded-full"/>
         <span className={cn(" font-bold sm:inline-block",
           pathname?.endsWith("/")
             ? "text-primary"

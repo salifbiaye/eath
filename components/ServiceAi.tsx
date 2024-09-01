@@ -74,6 +74,8 @@ export const ServiceAi = () => {
                 className="w-full h-auto dark:hidden"
                 autoPlay
                 muted
+                playsInline
+                hidden
                 loop
 
               >

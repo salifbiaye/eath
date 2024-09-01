@@ -43,7 +43,7 @@ import {ThreeDAiSection} from "@/components/ThreeDAiSection";
 import * as React from "react";
 import Ripple from "@/components/magicui/ripple";
 import BoxReveal from "@/components/magicui/box-reveal";
-const logo ='/logo.png'
+const logo ='/logotitle.png'
 const Container = ({
                      className,
                      children,
@@ -99,8 +99,8 @@ const accueildarkimage= "/accueil-dark.png"
 
             <h1
               className="relative flex flex-row max-w-[43.5rem] gap-1 text-balance bg-gradient-to-br from-primary from-50% to-neutral-200/60 bg-clip-text pt-5 text-center font-semibold tracking-tighter text-transparent text-7xl md:text-9xl mx-auto md:px-4 md:py-2  dark:text-white">
-              <img src={logo} alt="logo" className="md:w-40 md:h-40 w-20 h-20 rounded-full"/>
-              eath
+              <img src={logo} alt="logo" className="  rounded-full"/>
+
             </h1>
         </div>
 
@@ -126,6 +126,8 @@ const accueildarkimage= "/accueil-dark.png"
             className="w-full h-auto hidden  max-w-[1200px] border-8 border-muted rounded-[inherit]  object-contain shadow-lg dark:md:block"
             autoPlay
             muted
+            playsInline
+                 hidden
             disablePictureInPicture
             loop
             controls={false}
@@ -141,6 +143,8 @@ const accueildarkimage= "/accueil-dark.png"
             className="w-full h-auto  hidden md:block max-w-[1200px] border-8 border-muted rounded-[inherit]  object-contain shadow-lg dark:hidden"
             autoPlay
             muted
+            playsInline
+            hidden
             disablePictureInPicture
             loop
             controls={false}
@@ -267,6 +271,8 @@ const accueildarkimage= "/accueil-dark.png"
             className="w-full h-auto hidden  max-w-[1200px] border-8 border-muted rounded-[inherit]  object-contain shadow-lg dark:md:block"
             autoPlay
             muted
+            playsInline
+            hidden
             disablePictureInPicture
             loop
             controls={false}
@@ -282,6 +288,8 @@ const accueildarkimage= "/accueil-dark.png"
             className="w-full h-auto  hidden md:block max-w-[1200px] border-8 border-muted rounded-[inherit]  object-contain shadow-lg dark:hidden"
             autoPlay
             muted
+            playsInline
+            hidden
             disablePictureInPicture
             loop
             controls={false}
@@ -306,6 +314,8 @@ const accueildarkimage= "/accueil-dark.png"
             className="w-full h-auto hidden  max-w-[1200px] border-8 border-muted rounded-[inherit]  object-contain shadow-lg dark:md:block"
             autoPlay
             muted
+            playsInline
+            hidden
             disablePictureInPicture
             loop
             controls={false}
@@ -321,6 +331,8 @@ const accueildarkimage= "/accueil-dark.png"
             className="w-full h-auto  hidden md:block max-w-[1200px] border-8 border-muted rounded-[inherit]  object-contain shadow-lg dark:hidden"
             autoPlay
             muted
+            playsInline
+            hidden
             disablePictureInPicture
             loop
             controls={false}

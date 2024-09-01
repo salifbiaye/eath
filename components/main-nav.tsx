@@ -36,15 +36,15 @@ export function MainNav() {
 
   return (
     <div className="mr-4 md:flex">
-      <Link href="/" className="mr-6 flex items-center space-x-2">
-         <Container className={"w-10 h-10 circle-6"}>
-               <img src={logo} alt="logo" className="w-8 h-8 rounded-full"/>
-          </Container>
+      <Link href="/" className="mr-6 flex items-center gap-1 justify-center">
+
+          <img src={logo} alt="logo" className=" w-8 h-10 rounded-full"/>
+
         <span className={cn(" font-bold sm:inline-block",
           pathname?.endsWith("/")
-          ? "text-primary"
-          : "text-foreground"
-          )}>
+            ? "text-primary"
+            : "text-foreground"
+        )}>
           {siteConfig.name}
         </span>
       </Link>

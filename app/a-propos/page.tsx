@@ -23,7 +23,7 @@ const About = () => {
 
     {
       title:"Origine",
-      text:"L'idée de cette application est née de la préoccupation croissante pour la sécurité alimentaire et des lacunes observées dans les outils de détection actuels. Initiée par une équipe de passionnés de technologie et de sécurité alimentaire, l'application a été conçue pour répondre à une demande croissante de solutions accessibles et efficaces pour vérifier la présence de substances nocives dans les aliments."
+      text:"L'idée de cette application est née de la préoccupation croissante pour la sécurité alimentaire et des lacunes observées dans les outils de détection actuels. Initiée par une équipe de passionnés de technologie et de sécurité alimentaire, l'application a été conçue pour répondre à une demande croissante de solutions accessibles et efficaces pour vérifier la conformité et sécurité des aliments aux normes standardes"
     },
 
 
@@ -47,7 +47,7 @@ const About = () => {
       text: "Notre application identifie les allergènes potentiels pour prévenir les réactions allergiques. Les consommateurs peuvent commander leur nourriture en toute confiance, sachant que leur sécurité sera prise en compte."},
     {
       title: "Substances Nocives et Nutrition",
-      text: "Un système fiable intégré des drogues, poisons et venins préviendra tout risque, d'intoxication,  contamination accidentelle ou d'empoisonnement dans les repas. Les capteurs interceptent l'information  nutritionnelle à analyser puis cherchent la moindre trace de substances nocives dans le repas.  Au moindre soupçon détecté de traces de ces substances nocives, l'information est envoyée sur l'interface du téléphone pour avertir la personne. À cet effet ces technologies aident les consommateurs à s'assurer de manger sûrement et sainement  leurs repas. \n"},
+      text: "Un système fiable intégré des drogues, poisons et venins préviendra tout risque, d'intoxication,  contamination accidentelle ou d'empoisonnement dans les repas. le système intercepte l'information nutritionnelle, l'analyse puis cherche des traces d'éléments douteux dans les aliments. Au cas échéant si le résultat est positif l'information sera envoyée sur l'interface du smartphone pour avertir l'utilisateur. À cet effet ces technologies aident les consommateurs à s'assurer de manger sûrement et sainement leurs aliments. l'information est envoyée sur l'interface du téléphone pour avertir la personne. À cet effet ces technologies aident les consommateurs à s'assurer de manger sûrement et sainement  leurs repas. \n"},
     {
       title: "Apport Nutritionnel",
       text: "Par ailleurs, une fonctionnalité de calcul en apport nutritionnel des repas sera incluse dans notre application afin de permettre à tout le monde de comprendre l'apport nutritionnel bénéfique que les repas consommés génèrent sur notre santé et bien-être. C'est aussi un outil pour les sujets diabétiques, diététiques, les personnes obèses, les végétariens d'équilibrer voire calibrer leurs régimes alimentaires quotidiens en faisant un choix qui répondrait aux besoins réels de leur organisme."

@@ -33,7 +33,7 @@ const serviceList: Service[] = [
   },
   {
     icon: faAppleAlt,
-    title: "Apport nutritionne",
+    title: "Apport nutritionnel",
     description:
       " Par ailleurs, une fonctionnalité de calcul en apport nutritionnel des repas est prévue dans notre application afin de permettre à tout le monde de comprendre l'apport nutritionnel bénéfique que les repas consommés génèrent sur notre santé et bien-être. C'est aussi un outil pour les sujets diabétiques, diététiques, les personnes obèses, les végétariens d'équilibrer voire calibrer leurs régimes alimentaires quotidiens en faisant un choix qui répondrait aux besoins réels de leur organisme.",
   },

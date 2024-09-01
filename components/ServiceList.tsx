@@ -57,7 +57,7 @@ export default function  ServiceList() {
                 Nos autres services
               </h2>
               <p className="text-lg opacity-80">
-                Cette application révolutionnaire utilise la technologie pour garantir que les aliments que nous consommons sont sûrs et exempts de substances nocives, ou d'allergenes
+                Cette application révolutionnaire utilise la technologie pour garantir que les aliments que nous consommons sont sûrs et exempts de risques
               </p>
             </div>
 
