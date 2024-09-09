@@ -39,7 +39,7 @@ const teamSections: Section[] = [
       {
         img: "/images/CheikhounaThioune.jpeg",
         name: "Cheikhouna THIOUNE",
-        designation: "PDG et cofondateur de eath",
+        designation: "PDG et cofondateur de eath ,ancien directeur du campus HULT PRIZE à l'université Cheikh Anta Diop",
         socialLinks: [
           { icon: faTwitter, href: "#!" },
           { icon: faFacebook, href: "#!" },
@@ -224,7 +224,7 @@ const TeamMemberItem: React.FC<TeamMemberItemProps> = ({ member }) => (
       <h3 className="text-xl font-semibold leading-normal opacity-80 mb-1">
         {member.name}
       </h3>
-      <p className="text-[17px] leading-normal opacity-80 mb-2">
+      <p className="text-[14px] leading-normal opacity-80 mb-2">
         {member.designation}
       </p>
 
