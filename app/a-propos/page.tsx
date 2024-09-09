@@ -69,7 +69,7 @@ const About = () => {
         A propos de<br/>
         <span
           className="text-5xl md:text-[6rem] font-gotham font-bold text-center mt-1 text-primary leading-none">
-                    Eath
+                    eath
                 </span>
       </h1>
       < div className={`text-foreground text-md md:text-xl font-gotham font-bold  text-center w-full  mt-4`}>Eath est une startup qui a mis au point une application mobile sophistiquée qui

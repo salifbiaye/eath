@@ -229,7 +229,7 @@ const accueildarkimage= "/accueil-dark.png"
           className="lg:flex-grow md:w-1/2 md:ml-24 pt-6 flex flex-col md:items-start md:text-left mb-40 items-center text-center">
           <h1
             className="mb-5 sm:text-6xl  text-purpleSmart text-5xl font-bold font-gotham items-center Avenir xl:w-2/2 ">
-            Avec Eath,
+            Avec eath,
           </h1>
           <p className="mb-4 xl:w-3/4 text-greenSmart font-bold font-gotham  text-lg">
             profitez d'une expérience multiplateforme exceptionnelle sur Android, iPhone et bien plus
