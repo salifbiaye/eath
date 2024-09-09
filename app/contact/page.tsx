@@ -111,9 +111,9 @@ export default function ContactUs() {
             <CardContent>
               <div className="space-y-2">
                 <form onSubmit={onSubmit}>
-                  <Label htmlFor="email">Email</Label>
-                  <Input id="email" name="email" placeholder="Entrez votre email" type="email" required/>
-                  <Label htmlFor="message">Message</Label>
+                  <Label  htmlFor="email">Email</Label>
+                  <Input className={"mb-4"} id="email" name="email" placeholder="Entrez votre email" type="email" required/>
+                  <Label  htmlFor="message">Message</Label>
                   <Textarea id="message" name="message" placeholder="Écrivez votre message" className="min-h-[100px]"
                             required/>
                   <Button disabled={isLoading} className={"mt-5"} type="submit">Envoyer un message</Button>

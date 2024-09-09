@@ -33,8 +33,8 @@ type Section = {
 const teamSections: Section[] = [
 
   {
-    title: "Pole Management",
-    description: "ancien directeur du campus HULT PRIZE à l'université Cheikh Anta Diop",
+    title: "Le comité",
+    description: "equipe de direction de l'application mobile",
     members: [
       {
         img: "/images/CheikhounaThioune.jpeg",
@@ -267,11 +267,7 @@ const TeamSection: React.FC<TeamSectionProps> = ({section}) => (
 
       <div className="grid grid-cols-3 gap-6">
         {section.members.map((member, i) => (
-          member.designation === "PDG et cofondateur de eath" ?  <React.Fragment key={i}> <div  className={"hidden lg:block col-span-1"}></div>
-            <div className={"col-span-3 lg:col-span-1 my-12 lg:my-0 xl:p-12g"}>
-              <TeamMemberItem member={member}/>
-            </div>
-            </React.Fragment> :
+
           <div className="col-span-3 lg:col-span-1 my-12  xl:p-12g" key={i}>
       <TeamMemberItem member={member}/>
               </div>
