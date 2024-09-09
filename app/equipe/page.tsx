@@ -33,7 +33,7 @@ type Section = {
 const teamSections: Section[] = [
 
   {
-    title: "Le comité",
+    title: "Le comité de management de eath",
     description: "equipe de direction de l'application mobile",
     members: [
       {
