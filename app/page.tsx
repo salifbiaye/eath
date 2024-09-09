@@ -107,16 +107,8 @@ const accueildarkimage= "/accueil-dark.png"
           <Ripple/>
         </div>
         <p
-          className="max-w-xl text-balance  text-base tracking-tight text-black text-center md:text-lg dark:font-medium dark:text-white">
-          révolutionnons la sécurité{" "}
-          <span className="font-bold text-black dark:text-white">
-                  alimentaire
-                </span>
-          ,{" "}
-          <span className="font-bold text-black dark:text-white">
-                  dans le monde
-                </span>
-          .
+          className="max-w-xl text-balance  text-base tracking-tight font-bold text-black text-center md:text-lg dark:font-medium dark:text-white">
+          révolutionnons la sécurité alimentaire ans le monde .
           <br/>
         </p>
 

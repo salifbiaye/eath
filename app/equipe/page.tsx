@@ -9,6 +9,7 @@ import {
 import { motion } from "framer-motion";
 import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/components/ui/card";
 import {DropdownMenuSeparator} from "@/components/ui/dropdown-menu";
+import React from "react";
 
 
 type SocialLink = {
@@ -30,13 +31,30 @@ type Section = {
 };
 
 const teamSections: Section[] = [
+
   {
-    title: "Pole Design",
-    description: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+    title: "Pole Management",
+    description: "ancien directeur du campus HULT PRIZE à l'université Cheikh Anta Diop",
     members: [
       {
-        img: "https://cdn.easyfrontend.com/pictures/team/team_13_1.jpg",
-        name: "KHAN SAHEB",
+        img: "/images/CheikhounaThioune.jpeg",
+        name: "Cheikhouna THIOUNE",
+        designation: "PDG et cofondateur de eath",
+        socialLinks: [
+          { icon: faTwitter, href: "#!" },
+          { icon: faFacebook, href: "#!" },
+          { icon: faVimeo, href: "#!" },
+        ],
+      },
+     ]
+  },
+  {
+    title: "Pole Design",
+    description: "equipe de design de l'application mobile",
+    members: [
+      {
+        img: "/images/LouisDieme.jpeg",
+        name: "Louis DIEME",
         designation: "UI Design",
         socialLinks: [
           { icon: faTwitter, href: "#!" },
@@ -67,13 +85,13 @@ const teamSections: Section[] = [
     ],
   },
   {
-    title: "Pole Dev Web",
-    description: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+    title: "Pole Développement ",
+    description: "equipe de developpement de l'application mobile et de la plateforme web",
     members: [
       {
-        img: "https://cdn.easyfrontend.com/pictures/team/team_13_2.jpg",
-        name: "Aliou Akbar",
-        designation: "Dev Web",
+        img: "/images/MarietaSow.jpeg",
+        name: "MarietaSow",
+        designation: "Developpement Backend",
         socialLinks: [
           { icon: faTwitter, href: "#!" },
           { icon: faFacebook, href: "#!" },
@@ -81,9 +99,9 @@ const teamSections: Section[] = [
         ],
       },
       {
-        img: "https://cdn.easyfrontend.com/pictures/team/team_square_3.jpeg",
-        name: "Arjun Kapur",
-        designation: "Dev Web",
+        img: "/images/SalifBiaye.jpg",
+        name: "Salif BIAYE",
+        designation: "Developpement Web",
         socialLinks: [
           { icon: faTwitter, href: "#!" },
           { icon: faFacebook, href: "#!" },
@@ -91,9 +109,19 @@ const teamSections: Section[] = [
         ],
       },
       {
-        img: "https://cdn.easyfrontend.com/pictures/team/team_square_4.jpeg",
-        name: "Alia Bhatt",
-        designation: "Dev Web",
+        img: "images/Rosalex.jpeg",
+        name: "AHAN Rosalex",
+        designation: "Developpement Backend",
+        socialLinks: [
+          { icon: faTwitter, href: "#!" },
+          { icon: faFacebook, href: "#!" },
+          { icon: faVimeo, href: "#!" },
+        ],
+      },
+      {
+        img: "/images/YoussouphNiang.jpeg",
+        name: "Youssouph Niang",
+        designation: "Developpement mobile",
         socialLinks: [
           { icon: faTwitter, href: "#!" },
           { icon: faFacebook, href: "#!" },
@@ -104,12 +132,12 @@ const teamSections: Section[] = [
   },
   {
     title: "Pole Base de donnée",
-    description: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+    description: "equipe de base de donnée de l'application mobile",
     members: [
       {
-        img: "https://cdn.easyfrontend.com/pictures/team/team_13_3.jpg",
-        name: "Sadab Bean",
-        designation: "Base de donnee",
+        img: "/images/ElhadjAbdouBoye.jpeg",
+        name: "El hadj Abdou BOYE",
+        designation: "Base de donnée",
         socialLinks: [
           { icon: faTwitter, href: "#!" },
           { icon: faFacebook, href: "#!" },
@@ -119,7 +147,7 @@ const teamSections: Section[] = [
       {
         img: "https://cdn.easyfrontend.com/pictures/users/user16.jpg",
         name: "Zara Smith",
-        designation: "Base de donnee",
+        designation: "Base de donnée",
         socialLinks: [
           { icon: faTwitter, href: "#!" },
           { icon: faFacebook, href: "#!" },
@@ -129,7 +157,43 @@ const teamSections: Section[] = [
       {
         img: "https://cdn.easyfrontend.com/pictures/users/user20.jpg",
         name: "Ali Kapy",
-        designation: "Base de donnee",
+        designation: "Base de donnée",
+        socialLinks: [
+          { icon: faTwitter, href: "#!" },
+          { icon: faFacebook, href: "#!" },
+          { icon: faVimeo, href: "#!" },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Pole Intelligence Artificielle",
+    description: "equipe de l'intelligence artificielle de l'application mobile",
+    members: [
+      {
+        img: "/images/WillianeJaures.jpeg",
+        name: "Williane Jaurès SABOUBANGA.",
+        designation: "Intelligence Artificielle",
+        socialLinks: [
+          { icon: faTwitter, href: "#!" },
+          { icon: faFacebook, href: "#!" },
+          { icon: faVimeo, href: "#!" },
+        ],
+      },
+      {
+        img: "images/LaurianeMbagdje.jpeg",
+        name: "Lauriane Mbagdje DORENAN",
+        designation: "Intelligence Artificielle",
+        socialLinks: [
+          { icon: faTwitter, href: "#!" },
+          { icon: faFacebook, href: "#!" },
+          { icon: faVimeo, href: "#!" },
+        ],
+      },
+      {
+        img: "https://cdn.easyfrontend.com/pictures/users/user20.jpg",
+        name: "Ali Kapy",
+        designation: "Intelligence Artificielle",
         socialLinks: [
           { icon: faTwitter, href: "#!" },
           { icon: faFacebook, href: "#!" },
@@ -146,13 +210,17 @@ type TeamMemberItemProps = {
 
 const TeamMemberItem: React.FC<TeamMemberItemProps> = ({ member }) => (
   <motion.div
-    initial={{ opacity: 0, y: 200 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ type: "spring", stiffness: 100, damping: 25 }}
+    initial={{opacity: 0, y: 200}}
+    whileInView={{opacity: 1, y: 0}}
+    transition={{type: "spring", stiffness: 100, damping: 25}}
     className="group relative "
   >
-    <img src={member.img} alt={member.name} className="h-auto w-full mx-auto" />
-    <div className="absolute -bottom-12  rounded-lg left-[10%] p-5 w-[80%] bg-white shadow-xl dark:bg-slate-800 text-center overflow-hidden z-[1] group-hovetext-secondary group-hover:pt-7 group-hover:px-5 group-hover:pb-20 duration-300 group-hover:bg-muted">
+    <div
+      className="h-96 w-96 bg-cover bg-center rounded-lg mx-auto"
+      style={{backgroundImage: `url(${member.img})`}}
+    ></div>
+    <div
+      className="absolute -bottom-12  rounded-lg left-[10%] p-5 w-[80%] bg-white shadow-xl dark:bg-slate-800 text-center overflow-hidden z-[1] group-hovetext-secondary group-hover:pt-7 group-hover:px-5 group-hover:pb-20 duration-300 group-hover:bg-muted">
       <h3 className="text-xl font-semibold leading-normal opacity-80 mb-1">
         {member.name}
       </h3>
@@ -160,7 +228,8 @@ const TeamMemberItem: React.FC<TeamMemberItemProps> = ({ member }) => (
         {member.designation}
       </p>
 
-      <div className="absolute w-full left-0 top-auto opacity-0  translate-y-7 group-hover:opacity-100 group-hover:translate-y-0 mt-1 ">
+      <div
+        className="absolute w-full left-0 top-auto opacity-0  translate-y-7 group-hover:opacity-100 group-hover:translate-y-0 mt-1 ">
         <ul className="flex justify-center items-center">
           {member.socialLinks.map((item, i) => (
             <li key={i}>
@@ -168,7 +237,7 @@ const TeamMemberItem: React.FC<TeamMemberItemProps> = ({ member }) => (
                 href={item.href}
                 className="w-10 h-10 text-[26px] text-center hover:text-secondary dark:hover:text-white mt-2 mr-2 opacity-90 p-0 relative z-[1] inline-flex justify-center items-center before:absolute before:w-full before:h-full before:opacity-0 before:translate-y-full before:bg-slate-800 before:-z-[1] transition duration-300"
               >
-                <FontAwesomeIcon icon={item.icon} />
+                <FontAwesomeIcon icon={item.icon}/>
               </a>
             </li>
           ))}
@@ -182,7 +251,7 @@ type TeamSectionProps = {
   section: Section;
 };
 
-const TeamSection: React.FC<TeamSectionProps> = ({ section }) => (
+const TeamSection: React.FC<TeamSectionProps> = ({section}) => (
   <section className="ezy__team12 light py-14 md:py-24 bg-background text-foreground dark:text-secondary overflow-hidden">
     <div className="container px-4 mx-auto">
       <div className="flex justify-center text-center">
@@ -198,16 +267,21 @@ const TeamSection: React.FC<TeamSectionProps> = ({ section }) => (
 
       <div className="grid grid-cols-3 gap-6">
         {section.members.map((member, i) => (
-          <div className="col-span-3 lg:col-span-1 my-12 lg:my-0 xl:p-12g" key={i}>
-            <TeamMemberItem member={member} />
-          </div>
+          member.designation === "PDG et cofondateur de eath" ?  <React.Fragment key={i}> <div  className={"hidden lg:block col-span-1"}></div>
+            <div className={"col-span-3 lg:col-span-1 my-12 lg:my-0 xl:p-12g"}>
+              <TeamMemberItem member={member}/>
+            </div>
+            </React.Fragment> :
+          <div className="col-span-3 lg:col-span-1 my-12  xl:p-12g" key={i}>
+      <TeamMemberItem member={member}/>
+              </div>
         ))}
       </div>
     </div>
   </section>
 );
 
-export default function  TeamMember()  {
+export default function TeamMember() {
   return (
     <motion.div
       initial={{opacity: 0, y: 200}}

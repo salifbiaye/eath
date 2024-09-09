@@ -13,7 +13,7 @@ import { SiteFooter } from "@/components/site-footer"
 import { MantineProvider } from '@mantine/core';
 import {Toaster} from "@/components/ui/sonner";
 export const metadata: Metadata = {
-  metadataBase: new URL('https://eath-blond.vercel.app/'), // Change this line
+  metadataBase: new URL('https://eathstartup.com/'), // Change this line
   title: {
     default: siteConfig.name,
     template: `%s - ${siteConfig.name}`,

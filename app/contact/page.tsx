@@ -81,29 +81,29 @@ export default function ContactUs() {
           </p>
         </div>
         <div className="space-y-4">
-          <Card className={"dark:bg-muted"}>
-            <CardHeader>
-              <h3 className="text-2xl font-bold">Contact Details</h3>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-2">
-                <div className="flex items-center space-x-2">
-                  <Avatar className="size-4"/>
-                  <span>1234 Street, City, State, 56789</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Avatar className="w-4 h-4"/>
-                  <span>(123) 456-7890</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Avatar className="w-4 h-4"/>
-                  <Link href="#" prefetch={false}>
-                    salifbiaye411@gmail.com
-                  </Link>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+          {/*<Card className={"dark:bg-muted"}>*/}
+          {/*  <CardHeader>*/}
+          {/*    <h3 className="text-2xl font-bold">Contact Details</h3>*/}
+          {/*  </CardHeader>*/}
+          {/*  <CardContent>*/}
+          {/*    <div className="space-y-2">*/}
+          {/*      <div className="flex items-center space-x-2">*/}
+          {/*        <Avatar className="size-4"/>*/}
+          {/*        <span>1234 Street, City, State, 56789</span>*/}
+          {/*      </div>*/}
+          {/*      <div className="flex items-center space-x-2">*/}
+          {/*        <Avatar className="w-4 h-4"/>*/}
+          {/*        <span>(123) 456-7890</span>*/}
+          {/*      </div>*/}
+          {/*      <div className="flex items-center space-x-2">*/}
+          {/*        <Avatar className="w-4 h-4"/>*/}
+          {/*        <Link href="#" prefetch={false}>*/}
+          {/*          salifbiaye411@gmail.com*/}
+          {/*        </Link>*/}
+          {/*      </div>*/}
+          {/*    </div>*/}
+          {/*  </CardContent>*/}
+          {/*</Card>*/}
           <Card className={"dark:bg-muted"}>
             <CardHeader>
               <h3 className="text-2xl font-bold">Laissez un message</h3>
