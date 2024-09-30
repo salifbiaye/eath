@@ -72,8 +72,8 @@ const About = () => {
                     eath
                 </span>
       </h1>
-      < div className={`text-foreground text-md md:text-xl font-gotham font-bold  text-center w-full  mt-4`}>Eath est une startup qui a mis au point une application mobile sophistiquée qui
-        <br/> garantit la sécurité alimentaire des consommateurs à l'échelle mondiale<br/> grâce aux fonctionnalités suivantes.
+      < div className={`text-foreground text-md md:text-xl font-gotham font-bold  text-center w-full  mt-4`}>eath est une startup qui a mis au point une application mobile sophistiquée qui
+        garantit la sécurité alimentaire des consommateurs à l'échelle mondiale.<br/> En effet notre  innovation est une solution technique qui règle des problèmes techniques de sécurité alimentaire et de santé publique grâce aux fonctionnalités suivantes.
       </div>
 
 

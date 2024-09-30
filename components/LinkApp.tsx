@@ -1,4 +1,5 @@
 import { lazy, Suspense } from "react";
+import {LinkPreview} from "@/components/ui/link-preview";
 const Spline = lazy(() => import("@splinetool/react-spline"));
 const call ="/eath-call.png"
 export const LinkApp = () => {
@@ -19,7 +20,11 @@ export const LinkApp = () => {
               Disponible sur toutes les plateformes
             </h2>
             <p className="text-[22px] leading-normal  lg:px-24 xl:px-64">
-              Notre application mobile de sécurité alimentaire est maintenant accessible sur l'App Store et le Google Play Store. Que vous soyez utilisateur d’iOS ou d’Android, vous pouvez profiter de notre technologie avancée pour scanner et vérifier la sécurité des aliments, où que vous soyez. Téléchargez-la dès aujourd’hui pour une alimentation plus sûre et plus consciente !"
+              Notre application mobile de sécurité alimentaire est maintenant accessible sur  <LinkPreview url="https://www.apple.com/fr/app-store/" className="font-bold text-primary">
+              l'App Store
+            </LinkPreview>{" "} et  <LinkPreview url="https://play.google.com/store/apps?hl=fr" className="font-bold text-primary">
+              le Google Play Store
+            </LinkPreview>{" "}. Que vous soyez utilisateur d’iOS ou d’Android, vous pouvez profiter de notre technologie avancée pour scanner et vérifier la sécurité des aliments, où que vous soyez. Téléchargez-la dès aujourd’hui pour une alimentation plus sûre et plus consciente !"
             </p>
 
             <div className="flex items-center justify-center mt-12">

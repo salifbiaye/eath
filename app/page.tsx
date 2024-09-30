@@ -108,7 +108,7 @@ const accueildarkimage= "/accueil-dark.png"
         </div>
         <p
           className="max-w-xl text-balance  text-base tracking-tight font-bold text-black text-center md:text-lg dark:font-medium dark:text-white">
-          révolutionnons la sécurité alimentaire ans le monde .
+          révolutionnons la sécurité alimentaire dans le monde .
           <br/>
         </p>
 
@@ -218,7 +218,7 @@ const accueildarkimage= "/accueil-dark.png"
         <p className="text-muted-foreground max-w-[85%] pb-10 leading-normal sm:text-lg sm:leading-7">
           L'objectif principal de notre application de sécurité alimentaire est de garantir la sécurité et la qualité
           des aliments que vous consommez, en offrant des outils puissants pour détecter les risques potentiels et
-          fournir des informations cruciales dans le monde entier.
+          fournir des informations cruciales en temps réel.
         </p>
         <BentoObjectif/>
       </div>

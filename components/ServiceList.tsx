@@ -25,7 +25,7 @@ const serviceList:Service[] = [
     icon: faHandsHelping,
     title: "Inclusion sociale",
     description:
-      "nous utilisons les technologies avancées pour faciliter la réalisation de cette application mobile avec l’intégration du TalkBack qui assure une accessibilité accrue  en garantissant la sécurité alimentaire des personnes malvoyantes et en promouvant l'équité sociale.",
+      "nous utilisons les technologies avancées pour faciliter la réalisation de cette application mobile avec l’intégration d'un assistant vocal qui assure une accessibilité accrue  en garantissant la sécurité alimentaire des personnes malvoyantes et en promouvant l'équité sociale.",
   },
 ];
 

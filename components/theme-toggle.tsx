@@ -11,6 +11,8 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import {SYSTEM_ENTRYPOINTS} from "next/constants";
+import {IconCloudComputing, IconDeviceComputerCamera, IconDeviceDesktop} from "@tabler/icons-react";
 
 export function ThemeToggle() {
   const { setTheme } = useTheme()
@@ -25,14 +27,17 @@ export function ThemeToggle() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => setTheme("light")}>
-          Light
+        <DropdownMenuItem className={"gap-2"} onClick={() => setTheme("light")}>
+          <Sun className={"h-4 w-4 "}/>
+          Clair
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("dark")}>
-          Dark
+        <DropdownMenuItem className={"gap-2"} onClick={() => setTheme("dark")}>
+          <Moon className={"h-4 w-4 "}/>
+          Sombre
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("system")}>
-          System
+        <DropdownMenuItem className={"gap-2"} onClick={() => setTheme("system")}>
+          <IconDeviceDesktop  className={"h-4 w-4 "} />
+          Système
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

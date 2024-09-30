@@ -36,6 +36,17 @@ const teamSections: Section[] = [
     title: "Le comité de management de eath",
     description: "equipe de direction de l'application mobile",
     members: [
+
+      {
+        img: "/images/KhalidYahouza.jpeg",
+        name: "Khalid Yahouza ALMOU",
+        designation: "cofondateur de eath",
+        socialLinks: [
+          { icon: faTwitter, href: "#!" },
+          { icon: faFacebook, href: "#!" },
+          { icon: faVimeo, href: "#!" },
+        ],
+      },
       {
         img: "/images/CheikhounaThioune.jpeg",
         name: "Cheikhouna THIOUNE",
@@ -63,8 +74,8 @@ const teamSections: Section[] = [
         ],
       },
       {
-        img: "https://cdn.easyfrontend.com/pictures/team/team_square_1.jpeg",
-        name: "Akshay Kumar",
+        img: "/images/CheikhBoye.jpeg",
+        name: "Cheikh Boye",
         designation: "UI Design",
         socialLinks: [
           { icon: faTwitter, href: "#!" },
@@ -72,16 +83,7 @@ const teamSections: Section[] = [
           { icon: faVimeo, href: "#!" },
         ],
       },
-      {
-        img: "https://cdn.easyfrontend.com/pictures/team/team_square_2.jpeg",
-        name: "Raima Ray",
-        designation: "UI Design",
-        socialLinks: [
-          { icon: faTwitter, href: "#!" },
-          { icon: faFacebook, href: "#!" },
-          { icon: faVimeo, href: "#!" },
-        ],
-      },
+
     ],
   },
   {
@@ -131,39 +133,20 @@ const teamSections: Section[] = [
     ],
   },
   {
-    title: "Pole Base de donnée",
-    description: "equipe de base de donnée de l'application mobile",
+    title: "Pole Base de données",
+    description: "equipe de base de données de l'application mobile",
     members: [
       {
         img: "/images/ElhadjAbdouBoye.jpeg",
         name: "El hadj Abdou BOYE",
-        designation: "Base de donnée",
+        designation: "Base de données",
         socialLinks: [
           { icon: faTwitter, href: "#!" },
           { icon: faFacebook, href: "#!" },
           { icon: faVimeo, href: "#!" },
         ],
       },
-      {
-        img: "https://cdn.easyfrontend.com/pictures/users/user16.jpg",
-        name: "Zara Smith",
-        designation: "Base de donnée",
-        socialLinks: [
-          { icon: faTwitter, href: "#!" },
-          { icon: faFacebook, href: "#!" },
-          { icon: faVimeo, href: "#!" },
-        ],
-      },
-      {
-        img: "https://cdn.easyfrontend.com/pictures/users/user20.jpg",
-        name: "Ali Kapy",
-        designation: "Base de donnée",
-        socialLinks: [
-          { icon: faTwitter, href: "#!" },
-          { icon: faFacebook, href: "#!" },
-          { icon: faVimeo, href: "#!" },
-        ],
-      },
+
     ],
   },
   {
@@ -190,16 +173,7 @@ const teamSections: Section[] = [
           { icon: faVimeo, href: "#!" },
         ],
       },
-      {
-        img: "https://cdn.easyfrontend.com/pictures/users/user20.jpg",
-        name: "Ali Kapy",
-        designation: "Intelligence Artificielle",
-        socialLinks: [
-          { icon: faTwitter, href: "#!" },
-          { icon: faFacebook, href: "#!" },
-          { icon: faVimeo, href: "#!" },
-        ],
-      },
+
     ],
   },
 ];
