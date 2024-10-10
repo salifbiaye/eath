@@ -19,13 +19,13 @@ export const LinkApp = () => {
             <h2 className="text-3xl leading-none md:text-[70px] font-bold mb-6">
               Disponible sur toutes les plateformes
             </h2>
-            <p className="text-[22px] leading-normal  lg:px-24 xl:px-64">
+            <div className="text-[22px] leading-normal  lg:px-24 xl:px-64">
               Notre application mobile de sécurité alimentaire est maintenant accessible sur  <LinkPreview url="https://www.apple.com/fr/app-store/" className="font-bold text-primary">
               l'App Store
             </LinkPreview>{" "} et  <LinkPreview url="https://play.google.com/store/apps?hl=fr" className="font-bold text-primary">
               le Google Play Store
             </LinkPreview>{" "}. Que vous soyez utilisateur d’iOS ou d’Android, vous pouvez profiter de notre technologie avancée pour scanner et vérifier la sécurité des aliments, où que vous soyez. Téléchargez-la dès aujourd’hui pour une alimentation plus sûre et plus consciente !"
-            </p>
+            </div>
 
             <div className="flex items-center justify-center mt-12">
               <a href="#!" className="shadow m-1">
