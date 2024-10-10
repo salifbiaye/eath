@@ -50,7 +50,7 @@ const teamSections: Section[] = [
       {
         img: "/images/CheikhounaThioune.jpeg",
         name: "Cheikhouna THIOUNE",
-        designation: "PDG et cofondateur de eath ,ancien Campus director du campus HULT PRIZE à l'université Cheikh Anta Diop",
+        designation: "PDG et cofondateur de eath ,ancien Campus Director  HULT PRIZE à l'université Cheikh Anta Diop",
         socialLinks: [
           { icon: faTwitter, href: "#!" },
           { icon: faFacebook, href: "#!" },
