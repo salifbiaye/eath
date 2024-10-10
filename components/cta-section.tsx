@@ -3,6 +3,8 @@ import { cn } from "@/lib/utils";
 import { ChevronRight, HeartHandshake } from "lucide-react";
 import MarqueeIcon from "@/components/MarqueeIcon";
 import {Globe} from "@/components/Globe";
+import Ripple from "@/components/magicui/ripple";
+import * as React from "react";
 
 export default function CTASection() {
   return (
@@ -15,11 +17,13 @@ export default function CTASection() {
           </div>
           <div className="inset-x-0  h-full ">
             <MarqueeIcon/>
-            <div className="z-10 mt-32 flex flex-col items-center text-center text-black dark:text-white">
+            <div className="z-10  flex flex-col items-center text-center text-black dark:text-white">
+
+              <Globe/>
               <h1 className="text-3xl font-bold lg:text-4xl">
                 La sécurité alimentaire ?<br/> c'est ensemble que nous la garantissons.
               </h1>
-              <Globe className=" -right-10 md:-right-10 hidden lg:block "/>
+              <Ripple/>
             </div>
           </div>
 

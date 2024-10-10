@@ -15,7 +15,7 @@ export default function  Fonctionnement() {
         Le fonctionnement de <br/>
         <span
           className="text-5xl md:text-[6rem] font-gotham font-bold  text-center  mt-1 text-primary leading-none">
-                                  Eath
+                                  eath
                                </span>
       </h1>
 

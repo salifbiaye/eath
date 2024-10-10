@@ -45,7 +45,7 @@ const Pourquoinous = () => {
           <div className="flex justify-center">
             <div className="max-w-xl text-white text-center">
               <h1 className="text-3xl md:text-[45px] lg:text-[55px] font-bold leading-snug mb-4">
-                Pourquoi choisir Eath?
+                Pourquoi choisir eath?
               </h1>
               <p className="text-[17px] leading-normal opacity-80">
                 On estime que 600 millions de personnes tombent malades après avoir mangé des aliments contaminés chaque année dans le monde selon l'OMS, entraînant 420 000 décès, les enfants de moins de 5 ans supportent 40 % de la charge de morbidité imputable aux maladies d’origine alimentaire et 125 000 en meurent chaque année avec une perte de 33 millions d’années de vie en bonne santé.  C'est à cet effet que notre application mobile Eath permet de sauver des vies et garantit que ce que nous mangeons ne présente aucun danger.</p>
