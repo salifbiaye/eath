@@ -93,6 +93,16 @@ const teamSections: Section[] = [
           { icon: faVimeo, href: "#!" },
         ],
       },
+      {
+        img: "/images/JeanMarie.jpeg",
+        name: "Jean Marie",
+        designation: "UI Design",
+        socialLinks: [
+          { icon: faTwitter, href: "#!" },
+          { icon: faFacebook, href: "#!" },
+          { icon: faVimeo, href: "#!" },
+        ],
+      },
 
     ],
   },
@@ -156,6 +166,26 @@ const teamSections: Section[] = [
           { icon: faVimeo, href: "#!" },
         ],
       },
+      {
+        img: "/images/MariamaDiallo.jpeg",
+        name: "Mariama Diallo",
+        designation: "Base de données",
+        socialLinks: [
+          { icon: faTwitter, href: "#!" },
+          { icon: faFacebook, href: "#!" },
+          { icon: faVimeo, href: "#!" },
+        ],
+      },
+      {
+        img: "/images/DialikaThiaw.jpeg",
+        name: "Dialika Thiaw",
+        designation: "Base de données",
+        socialLinks: [
+          { icon: faTwitter, href: "#!" },
+          { icon: faFacebook, href: "#!" },
+          { icon: faVimeo, href: "#!" },
+        ],
+      },
 
     ],
   },
@@ -176,6 +206,26 @@ const teamSections: Section[] = [
       {
         img: "images/LaurianeMbagdje.jpeg",
         name: "Lauriane Mbagdje DORENAN",
+        designation: "Intelligence Artificielle",
+        socialLinks: [
+          { icon: faTwitter, href: "#!" },
+          { icon: faFacebook, href: "#!" },
+          { icon: faVimeo, href: "#!" },
+        ],
+      },
+      {
+        img: "images/AbdouNdiaye.JPG",
+        name: "Abdou Ndiaye",
+        designation: "Intelligence Artificielle",
+        socialLinks: [
+          { icon: faTwitter, href: "#!" },
+          { icon: faFacebook, href: "#!" },
+          { icon: faVimeo, href: "#!" },
+        ],
+      },
+      {
+        img: "images/MamadouDiallo.jpeg",
+        name: "Mamadou Saidou Diallo",
         designation: "Intelligence Artificielle",
         socialLinks: [
           { icon: faTwitter, href: "#!" },
