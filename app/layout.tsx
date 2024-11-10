@@ -12,6 +12,17 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { SiteFooter } from "@/components/site-footer"
 import { MantineProvider } from '@mantine/core';
 import {Toaster} from "@/components/ui/sonner";
+import {SidebarInset, SidebarProvider, SidebarTrigger} from "@/components/ui/sidebar";
+import {AppSidebar} from "@/components/ui/app-sidebar";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator
+} from "@/components/ui/breadcrumb"
+import {Separator} from "@/components/ui/separator";
 export const metadata: Metadata = {
   metadataBase: new URL('https://eathstartup.com/'), // Change this line
   title: {
@@ -69,15 +80,18 @@ export default function RootLayout({ children }: RootLayoutProps) {
             {/* <div className="absolute flex min-h-screen flex-col"> */}
               {/* <SiteHeader /> */}
               {/* <div className="container flex-1"> */}
-            <SiteHeader />
 
-                {children}
+
+
+              <SiteHeader />
+            {children}
 
               {/* </div> */}
 
-            {/* </div> */}
-            {/*<TailwindIndicator />*/}
-            <SiteFooter/>
+              {/* </div> */}
+              {/*<TailwindIndicator />*/}
+              <SiteFooter/>
+
           </ThemeProvider>
         </MantineProvider>
         </body>

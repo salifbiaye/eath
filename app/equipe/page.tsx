@@ -29,7 +29,10 @@ type Section = {
   description: string;
   members: Member[];
 };
-
+type Teamambition={
+  title:string;
+  description:string;
+}
 const teamSections: Section[] = [
 
   {
@@ -40,7 +43,7 @@ const teamSections: Section[] = [
       {
         img: "/images/KhalidYahouza.jpeg",
         name: "Khalid Yahouza ALMOU",
-        designation: "cofondateur de eath",
+        designation: "co-fondateur de eath",
         socialLinks: [
           { icon: faTwitter, href: "#!" },
           { icon: faFacebook, href: "#!" },
@@ -60,7 +63,17 @@ const teamSections: Section[] = [
       {
         img: "/images/EspoirMbongo.jpg",
         name: "Espoir MBONGO",
-        designation: "cofondateur de eath",
+        designation: "co-fondateur de eath",
+        socialLinks: [
+          { icon: faTwitter, href: "#!" },
+          { icon: faFacebook, href: "#!" },
+          { icon: faVimeo, href: "#!" },
+        ],
+      },
+      {
+        img: "/images/AntonPROKHOROV.jpg",
+        name: "Ahtoh Anton PROKHOROV",
+        designation: "co-fondateur de eath",
         socialLinks: [
           { icon: faTwitter, href: "#!" },
           { icon: faFacebook, href: "#!" },
@@ -76,7 +89,7 @@ const teamSections: Section[] = [
       {
         img: "/images/LouisDieme.jpeg",
         name: "Louis DIEME",
-        designation: "UI Design",
+        designation: "UI design",
         socialLinks: [
           { icon: faTwitter, href: "#!" },
           { icon: faFacebook, href: "#!" },
@@ -86,7 +99,7 @@ const teamSections: Section[] = [
       {
         img: "/images/CheikhBoye.jpeg",
         name: "Cheikh Boye",
-        designation: "UI Design",
+        designation: "UI design",
         socialLinks: [
           { icon: faTwitter, href: "#!" },
           { icon: faFacebook, href: "#!" },
@@ -96,7 +109,7 @@ const teamSections: Section[] = [
       {
         img: "/images/JeanMarie.jpeg",
         name: "Jean Marie",
-        designation: "UI Design",
+        designation: "UI design",
         socialLinks: [
           { icon: faTwitter, href: "#!" },
           { icon: faFacebook, href: "#!" },
@@ -113,7 +126,7 @@ const teamSections: Section[] = [
       {
         img: "/images/MarietaSow.jpeg",
         name: "MarietaSow",
-        designation: "Developpement Backend",
+        designation: "Developpement backend",
         socialLinks: [
           { icon: faTwitter, href: "#!" },
           { icon: faFacebook, href: "#!" },
@@ -123,7 +136,7 @@ const teamSections: Section[] = [
       {
         img: "/images/SalifBiaye.jpg",
         name: "Salif BIAYE",
-        designation: "Developpement Web",
+        designation: "Developpement web",
         socialLinks: [
           { icon: faTwitter, href: "#!" },
           { icon: faFacebook, href: "#!" },
@@ -133,7 +146,7 @@ const teamSections: Section[] = [
       {
         img: "images/Rosalex.jpeg",
         name: "AHAN Rosalex",
-        designation: "Developpement Backend",
+        designation: "Developpement backend",
         socialLinks: [
           { icon: faTwitter, href: "#!" },
           { icon: faFacebook, href: "#!" },
@@ -168,7 +181,7 @@ const teamSections: Section[] = [
       },
       {
         img: "/images/MariamaDiallo.jpeg",
-        name: "Mariama Diallo",
+        name: "Mariame Diallo",
         designation: "Base de données",
         socialLinks: [
           { icon: faTwitter, href: "#!" },
@@ -190,13 +203,13 @@ const teamSections: Section[] = [
     ],
   },
   {
-    title: "Pole Intelligence Artificielle",
+    title: "Pole Intelligence artificielle",
     description: "equipe de l'intelligence artificielle de l'application mobile",
     members: [
       {
         img: "/images/WillianeJaures.jpeg",
-        name: "Williane Jaurès SABOUBANGA.",
-        designation: "Intelligence Artificielle",
+        name: "Willane Jaurès SABOUBANGA.",
+        designation: "Intelligence artificielle",
         socialLinks: [
           { icon: faTwitter, href: "#!" },
           { icon: faFacebook, href: "#!" },
@@ -206,7 +219,7 @@ const teamSections: Section[] = [
       {
         img: "images/LaurianeMbagdje.jpeg",
         name: "Lauriane Mbagdje DORENAN",
-        designation: "Intelligence Artificielle",
+        designation: "Intelligence artificielle",
         socialLinks: [
           { icon: faTwitter, href: "#!" },
           { icon: faFacebook, href: "#!" },
@@ -216,7 +229,7 @@ const teamSections: Section[] = [
       {
         img: "images/AbdouNdiaye.JPG",
         name: "Abdou Ndiaye",
-        designation: "Intelligence Artificielle",
+        designation: "Intelligence artificielle",
         socialLinks: [
           { icon: faTwitter, href: "#!" },
           { icon: faFacebook, href: "#!" },
@@ -226,7 +239,7 @@ const teamSections: Section[] = [
       {
         img: "images/MamadouDiallo.jpeg",
         name: "Mamadou Saidou Diallo",
-        designation: "Intelligence Artificielle",
+        designation: "Intelligence artificielle",
         socialLinks: [
           { icon: faTwitter, href: "#!" },
           { icon: faFacebook, href: "#!" },
@@ -237,7 +250,32 @@ const teamSections: Section[] = [
     ],
   },
 ];
-
+const teamambitions:Teamambition[]=[
+  {
+    title:"Nos Origines",
+    description:"Les membres de l'équipe de notre startup sont issus du milieu universitaire, passionnés dans le travail, nous relevons les défis en transformant ce qui est excellent en quelque chose de parfait, et ce qui est déjà parfait en une valeur plus que parfaite."
+  },
+  {
+    title:"Notre Motivation",
+    description:"Ayant été inspirés par les épisodes de crises récentes : COVID 19, guerres, pauvreté, famine, dégradation de l'environnement, chômage des jeunes, nous nous sommes levés pour embrasser la responsabilité sociale de nos communautés."
+  },
+  {
+    title:"Notre Ambition",
+    description:"C'est ce qui fait que nous sommes une startup à haut potentiel. Notre application mobile pourrait perturber beaucoup de secteurs, car toute innovation implique des changements. Aussi, nos contributions aux défis et problèmes urgents sont claires, accessibles et de bonne qualité."
+  },
+  {
+    title:"Notre Expertise",
+    description:"En abordant le problème de la sécurité alimentaire dans le monde, cela signifie que nous avons une connaissance approfondie du problème et de la cible. Nous interagissons régulièrement avec nos utilisateurs sur la base de retour d'information, après plusieurs tests de fiabilité de notre application."
+  },
+  {
+    title:"Notre Modèle d'Entreprise",
+    description:"Notre modèle d'entreprise sociale entend satisfaire des exigences sociales en matière de sécurité alimentaire et de santé publique, deux piliers majeurs des ODD. Mais notre startup compte surtout générer des revenus par le rapport adéquation : problème/solution, produit/marché, demande/offre."
+  },
+  {
+    title:"Notre Impact",
+    description:"En définitive, notre startup Eath aura un impact positif significatif sur l'environnement et les populations pour les années à venir."
+  }
+];
 type TeamMemberItemProps = {
   member: Member;
 };
@@ -250,11 +288,11 @@ const TeamMemberItem: React.FC<TeamMemberItemProps> = ({ member }) => (
     className="group relative "
   >
     <div
-      className="h-96 w-96 bg-cover bg-center rounded-lg mx-auto"
+      className="h-96 w-96 bg-cover bg-center rounded-[10px]  mx-auto"
       style={{backgroundImage: `url(${member.img})`}}
     ></div>
     <div
-      className="absolute -bottom-12  rounded-lg left-[10%] p-5 w-[80%] bg-white shadow-xl dark:bg-slate-800 text-center overflow-hidden z-[1] group-hovetext-secondary group-hover:pt-7 group-hover:px-5 group-hover:pb-20 duration-300 group-hover:bg-muted">
+      className="absolute -bottom-12  rounded-[10px] left-[10%] p-5 w-[80%] bg-white shadow-xl dark:bg-slate-800 text-center overflow-hidden z-[1] group-hovetext-secondary group-hover:pt-7 group-hover:px-5 group-hover:pb-20 duration-300 group-hover:bg-muted">
       <h3 className="text-xl font-semibold leading-normal opacity-80 mb-1">
         {member.name}
       </h3>
@@ -264,18 +302,18 @@ const TeamMemberItem: React.FC<TeamMemberItemProps> = ({ member }) => (
 
       <div
         className="absolute w-full left-0 top-auto opacity-0  translate-y-7 group-hover:opacity-100 group-hover:translate-y-0 mt-1 ">
-        <ul className="flex justify-center items-center">
-          {member.socialLinks.map((item, i) => (
-            <li key={i}>
-              <a
-                href={item.href}
-                className="w-10 h-10 text-[26px] text-center hover:text-secondary dark:hover:text-white mt-2 mr-2 opacity-90 p-0 relative z-[1] inline-flex justify-center items-center before:absolute before:w-full before:h-full before:opacity-0 before:translate-y-full before:bg-slate-800 before:-z-[1] transition duration-300"
-              >
-                <FontAwesomeIcon icon={item.icon}/>
-              </a>
-            </li>
-          ))}
-        </ul>
+        {/*<ul className="flex justify-center items-center">*/}
+        {/*  {member.socialLinks.map((item, i) => (*/}
+        {/*    <li key={i}>*/}
+        {/*      <a*/}
+        {/*        href={item.href}*/}
+        {/*        className="w-10 h-10 text-[26px] text-center hover:text-secondary dark:hover:text-white mt-2 mr-2 opacity-90 p-0 relative z-[1] inline-flex justify-center items-center before:absolute before:w-full before:h-full before:opacity-0 before:translate-y-full before:bg-slate-800 before:-z-[1] transition duration-300"*/}
+        {/*      >*/}
+        {/*        <FontAwesomeIcon icon={item.icon}/>*/}
+        {/*      </a>*/}
+        {/*    </li>*/}
+        {/*  ))}*/}
+        {/*</ul>*/}
       </div>
     </div>
   </motion.div>
@@ -331,89 +369,19 @@ export default function TeamMember() {
                 </span>
               </h1>
               <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Card className="shadow-lg rounded-lg bg-white dark:bg-muted">
-                  <CardHeader>
-                    <CardTitle className="text-xl font-semibold">Nos Origines</CardTitle>
-                  </CardHeader>
-                  <DropdownMenuSeparator className={"bg-muted dark:bg-muted-foreground  w-96 mx-auto"}/>
-                  <CardContent>
-                    <CardDescription className="text-lg leading-relaxed">
-                      Les membres de l'équipe de notre startup sont issus du milieu universitaire, passionnés dans le
-                      travail, nous relevons les défis en transformant ce qui est excellent en quelque chose de parfait,
-                      et ce qui est déjà parfait en une valeur plus que parfaite.
-                    </CardDescription>
-                  </CardContent>
-                </Card>
-
-                <Card className="shadow-lg rounded-lg bg-white dark:bg-muted">
-                  <CardHeader>
-                    <CardTitle className="text-xl font-semibold">Notre Motivation</CardTitle>
-                  </CardHeader>
-                  <DropdownMenuSeparator className={"bg-muted dark:bg-muted-foreground  w-96 mx-auto"}/>
-                  <CardContent>
-                    <CardDescription className="text-lg leading-relaxed">
-                      Ayant été inspirés par les épisodes de crises récentes : COVID 19, guerres, pauvreté, famine,
-                      dégradation de l'environnement, chômage des jeunes, nous nous sommes levés pour embrasser la
-                      responsabilité sociale de nos communautés.
-                    </CardDescription>
-                  </CardContent>
-                </Card>
-
-                <Card className="shadow-lg rounded-lg bg-white dark:bg-muted">
-                  <CardHeader>
-                    <CardTitle className="text-xl font-semibold">Notre Ambition</CardTitle>
-                  </CardHeader>
-                  <DropdownMenuSeparator className={"bg-muted dark:bg-muted-foreground  w-96 mx-auto"}/>
-                  <CardContent>
-                    <CardDescription className="text-lg leading-relaxed">
-                      C'est ce qui fait que nous sommes une startup à haut potentiel.
-                      Notre application mobile pourrait perturber beaucoup de secteurs, car toute innovation implique
-                      des changements. Aussi, nos contributions aux défis et problèmes urgents sont claires, accessibles
-                      et de bonne qualité.
-                    </CardDescription>
-                  </CardContent>
-                </Card>
-
-                <Card className="shadow-lg rounded-lg bg-white dark:bg-muted">
-                  <CardHeader>
-                    <CardTitle className="text-xl font-semibold">Notre Expertise</CardTitle>
-                  </CardHeader>
-                  <DropdownMenuSeparator className={"bg-muted dark:bg-muted-foreground  w-96 mx-auto"}/>
-                  <CardContent>
-                    <CardDescription className="text-lg leading-relaxed">
-                      En abordant le problème de la sécurité alimentaire dans le monde, cela signifie que nous avons une
-                      connaissance approfondie du problème et de la cible. Nous interagissons régulièrement avec nos
-                      utilisateurs sur la base de retour d'information, après plusieurs tests de fiabilité de notre
-                      application.
-                    </CardDescription>
-                  </CardContent>
-                </Card>
-                <Card className="shadow-lg rounded-lg bg-white dark:bg-muted">
-                  <CardHeader>
-                    <CardTitle className="text-xl font-semibold">Notre Modèle d'Entreprise</CardTitle>
-                  </CardHeader>
-                  <DropdownMenuSeparator className={"bg-muted dark:bg-muted-foreground  w-96 mx-auto"}/>
-                  <CardContent>
-                    <CardDescription className="text-lg leading-relaxed">
-                      Notre modèle d'entreprise sociale entend satisfaire des exigences sociales en matière de sécurité
-                      alimentaire et de santé publique, deux piliers majeurs des ODD. Mais notre startup compte surtout
-                      générer des revenus par le rapport adéquation : problème/solution, produit/marché, demande/offre.
-                    </CardDescription>
-                  </CardContent>
-                </Card>
-
-                <Card className="shadow-lg rounded-lg bg-white dark:bg-muted">
-                  <CardHeader>
-                    <CardTitle className="text-xl font-semibold">Notre Impact</CardTitle>
-                  </CardHeader>
-                  <DropdownMenuSeparator className={"bg-muted dark:bg-muted-foreground  w-96 mx-auto"}/>
-                  <CardContent>
-                    <CardDescription className="text-lg leading-relaxed">
-                      En définitive, notre startup Eath aura un impact positif significatif sur l'environnement et les
-                      populations pour les années à venir.
-                    </CardDescription>
-                  </CardContent>
-                </Card>
+                {teamambitions.map((teamambition,i)=>(
+                  <Card className="shadow-lg rounded-lg bg-white dark:bg-muted">
+                    <CardHeader>
+                      <CardTitle className="text-xl font-semibold">{teamambition.title}</CardTitle>
+                    </CardHeader>
+                    <DropdownMenuSeparator className={"bg-muted dark:bg-muted-foreground  w-96 mx-auto"}/>
+                    <CardContent>
+                      <CardDescription className="text-lg leading-relaxed">
+                        {teamambition.description}
+                      </CardDescription>
+                    </CardContent>
+                  </Card>
+                ))}
               </div>
             </div>
           </div>

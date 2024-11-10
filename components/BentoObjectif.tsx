@@ -1,3 +1,4 @@
+
 import React, {useEffect, useRef} from 'react';
 import { BentoGrid } from './magicui/bento-grid';
 import OrbitingCirclesDemo from "@/app/_integrations/page";

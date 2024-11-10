@@ -68,22 +68,8 @@ export const ServiceAi = () => {
 
       <div className="container px-4 mx-auto">
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
-          <div className="w-full lg:w-1/3 lg:order-2">
-            <motion.div initial={{scale:1.2}} className="hidden md:block rounded-b-[200px] text-center h-full mt-10 md:mt-80 ">
-              <video
-                className="w-full h-auto dark:hidden"
-                autoPlay
-                muted
-                playsInline
-                loop
 
-              >
-                <source src={human}/>
-                Your browser does not support the video tag.
-              </video>
-            </motion.div>
-          </div>
-          <div className="w-full lg:w-2/3">
+          <div className="w-full">
             <div className="xl:ml-6 w-full">
               <div className="grid grid-cols-2 w-full">
                 {features.map((feature, i) => (

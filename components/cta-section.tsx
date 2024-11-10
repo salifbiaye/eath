@@ -23,7 +23,6 @@ export default function CTASection() {
               <h1 className="text-3xl font-bold lg:text-4xl">
                 La sécurité alimentaire ?<br/> c'est ensemble que nous la garantissons.
               </h1>
-              <Ripple/>
             </div>
           </div>
 
