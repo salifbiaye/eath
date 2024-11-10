@@ -12,7 +12,6 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { SiteFooter } from "@/components/site-footer"
 import { MantineProvider } from '@mantine/core';
 import {Toaster} from "@/components/ui/sonner";
-import {AppSidebar} from "@/components/ui/app-sidebar";
 import {
   Breadcrumb,
   BreadcrumbItem,
