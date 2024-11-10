@@ -8,12 +8,14 @@ export function CardWithReadMore({ card, index }:any) {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: index * 0.1 }}
+      initial={{opacity: 0, y: 20}}
+      animate={{opacity: 1, y: 0}}
+      transition={{delay: index * 0.1}}
       className="group relative "
     >
-      <div className="relative overflow-hidden rounded-xl min-h-[300px] p-8 transition-transform duration-300 hover:-translate-y-1">
+
+      <div
+        className="relative overflow-hidden rounded-xl min-h-[300px] p-8 transition-transform duration-300 hover:-translate-y-1">
         <div
           className={`absolute inset-0  opacity-10   bg-gradient-to-br ${card.gradient} transition-opacity duration-300 group-hover:opacity-20`}
         />
@@ -21,7 +23,7 @@ export function CardWithReadMore({ card, index }:any) {
           <div
             className={`mb-4 inline-flex rounded-[5px] p-3 bg-gradient-to-br ${card.gradient}`}
           >
-            <card.icon className="h-6 w-6 text-white" />
+            <card.icon className="h-6 w-6 text-white"/>
           </div>
           <h3 className="mb-4 text-2xl font-bold text-gray-700 dark:text-white">{card.title}</h3>
           <p className={`text-gray-500 ${isExpanded ? '' : 'line-clamp-3'}`}>{card.text}</p>

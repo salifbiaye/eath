@@ -18,6 +18,50 @@ import { Share2Icon } from "lucide-react";
 import { AnimatedBeamMultipleOutputDemo } from "@/components/magicui/animated-beam-multiple-outputs";
 // import { AnimatedBeamMultipleOutputDemo } from "@/components/magicui/animated-beam-multiple-outputs";
 import { Skull, AlertTriangle } from "lucide-react";
+import {useEffect} from "react";
+
+const allergenes=[
+
+    "Gluten",
+    "Lait",
+    "Œufs",
+    "Arachides",
+    "Noix",
+    "Poisson",
+    "Crustacés",
+    "Soja",
+    "Moutarde",
+    "Sésame",
+    "Sulfites",
+    "Lupin",
+    "Céleri",
+  "Mollusques",
+  "Fruits à coque",
+  "Graines de sésame",
+  "Graines de moutarde",
+  "Graines de pavot",
+  "Orge",
+  "Avoine",
+  "Seigle",
+  "Épeautre",
+  "Kamut",
+  "Lait de vache",
+  "Lait de chèvre",
+  "Lait de brebis",
+  "Lait de jument",
+  "Lait de bufflonne",
+  "Tartrazine ",
+  "Benzoate de sodium",
+  "Nitrites et nitrates",
+  "Glutamate",
+  "Maïs ",
+  "lentilles",
+  "Pois chiches",
+  "Pois cassés",
+  "Haricots rouges",
+  "Haricots"
+
+]
 const files = [
   {
     name: "Salmonelle",
@@ -169,14 +213,12 @@ const features = [
         <CommandList>
           <CommandEmpty>Aucun résultat trouvé.</CommandEmpty>
           <CommandGroup heading="Suggestions d'allergènes">
-            <CommandItem>Arachides</CommandItem>
-            <CommandItem>Lait</CommandItem>
-            <CommandItem>Œufs</CommandItem>
-            <CommandItem>Fruits de mer</CommandItem>
-            <CommandItem>Soja</CommandItem>
-            <CommandItem>Blé</CommandItem>
-            <CommandItem>Noix de cajou</CommandItem>
-            <CommandItem>Gluten</CommandItem>
+            {
+          allergenes.map((allergene, idx) => (
+            <CommandItem key={idx}  >
+              {allergene}
+            </CommandItem>
+          ))}
           </CommandGroup>
         </CommandList>
       </Command>

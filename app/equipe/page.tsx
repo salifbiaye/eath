@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/components/ui/card";
 import {DropdownMenuSeparator} from "@/components/ui/dropdown-menu";
 import React from "react";
-import {Building2, Flag, Globe, Lightbulb, Target, Users} from "lucide-react";
+import {Building2, Flag, Github, Globe, Lightbulb, Linkedin, Target, Twitter, Users} from "lucide-react";
 
 
 type SocialLink = {
@@ -265,7 +265,7 @@ const teamambitions:Teamambition[] =  [
     title: 'Notre Motivation',
     icon: Flag,
     description:
-      'Ayant été inspirés par les épisodes de crises récentes : COVID 19, guerres, pauvreté, famine, dégradation de l\'environnement, chômage des jeunes, nous nous sommes levés pour embrasser la responsabilité sociale.',
+      'Ayant été inspirés par les épisodes de crises récentes : COVID 19, guerres, pauvreté, famine, dégradation de l\'environnement, chômage des jeunes, nous nous sommes levés pour embrasser la responsabilité sociale de nos communautés.',
     gradient: 'from-pink-500 to-rose-500'
   },
   {
@@ -303,38 +303,60 @@ type TeamMemberItemProps = {
 
 const TeamMemberItem: React.FC<TeamMemberItemProps> = ({ member }) => (
   <motion.div
-    initial={{opacity: 0, y: 200}}
+    key={member.name}
+    initial={{opacity: 0, y: 20}}
     whileInView={{opacity: 1, y: 0}}
-    transition={{type: "spring", stiffness: 100, damping: 25}}
-    className="group relative "
+    transition={{duration: 0.5, delay: 0.5 * 0.2}}
+    className="group relative"
   >
-    <div
-      className="h-96 w-96 bg-cover bg-center rounded-[10px]  mx-auto"
-      style={{backgroundImage: `url(${member.img})`}}
-    ></div>
-    <div
-      className="absolute -bottom-12  rounded-[10px] left-[10%] p-5 w-[80%] bg-white shadow-xl dark:bg-slate-800 text-center overflow-hidden z-[1] group-hovetext-secondary group-hover:pt-7 group-hover:px-5 group-hover:pb-20 duration-300 group-hover:bg-muted">
-      <h3 className="text-xl font-semibold leading-normal opacity-80 mb-1">
-        {member.name}
-      </h3>
-      <p className="text-[14px] leading-normal opacity-80 mb-2">
-        {member.designation}
-      </p>
+    <div className="relative aspect-[3/4] overflow-hidden rounded-2xl bg-gray-900">
 
       <div
-        className="absolute w-full left-0 top-auto opacity-0  translate-y-7 group-hover:opacity-100 group-hover:translate-y-0 mt-1 ">
-        {/*<ul className="flex justify-center items-center">*/}
-        {/*  {member.socialLinks.map((item, i) => (*/}
-        {/*    <li key={i}>*/}
-        {/*      <a*/}
-        {/*        href={item.href}*/}
-        {/*        className="w-10 h-10 text-[26px] text-center hover:text-secondary dark:hover:text-white mt-2 mr-2 opacity-90 p-0 relative z-[1] inline-flex justify-center items-center before:absolute before:w-full before:h-full before:opacity-0 before:translate-y-full before:bg-slate-800 before:-z-[1] transition duration-300"*/}
-        {/*      >*/}
-        {/*        <FontAwesomeIcon icon={item.icon}/>*/}
-        {/*      </a>*/}
-        {/*    </li>*/}
-        {/*  ))}*/}
-        {/*</ul>*/}
+        className="absolute inset-0 bg-gradient-to-t  from-primary  via-gray-900/40 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"/>
+
+
+      <motion.div
+        className="h-full w-full"
+        whileHover={{scale: 1.05}}
+        transition={{duration: 0.4}}
+      >
+        <img
+          src={member.img}
+          alt={member.name}
+          className="h-full w-full object-cover"
+        />
+      </motion.div>
+
+      {/* Overlay content */}
+      <div className="absolute inset-x-0 bottom-0 p-6">
+        <div
+          className="translate-y-8 transform space-y-2 text-center transition-transform duration-300 group-hover:translate-y-0">
+          <h3 className="text-2xl font-bold text-white">{member.name}</h3>
+          <p className="text-lg text-white">{member.designation}</p>
+
+          {/* Social links */}
+          <div className="flex justify-center space-x-4 pt-4">
+            <a
+              href={member.socialLinks[0].href}
+              className="rounded-full bg-white/10 p-2 text-white transition-colors hover:bg-white/20"
+            >
+              <Linkedin className="h-5 w-5"/>
+            </a>
+            <a
+              href={member.socialLinks[0].href}
+              className="rounded-full bg-white/10 p-2 text-white transition-colors hover:bg-white/20"
+            >
+              <Twitter className="h-5 w-5"/>
+            </a>
+            <a
+              href={member.socialLinks[0].href}
+              className="rounded-full bg-white/10 p-2 text-white transition-colors hover:bg-white/20"
+            >
+              <Github className="h-5 w-5"/>
+            </a>
+
+          </div>
+        </div>
       </div>
     </div>
   </motion.div>
@@ -345,7 +367,8 @@ type TeamSectionProps = {
 };
 
 const TeamSection: React.FC<TeamSectionProps> = ({section}) => (
-  <section className="ezy__team12 light py-14 md:py-24 bg-background text-foreground dark:text-secondary overflow-hidden">
+  <section
+    className="ezy__team12 light py-14 md:py-24 bg-background text-foreground dark:text-secondary overflow-hidden">
     <div className="container px-4 mx-auto">
       <div className="flex justify-center text-center">
         <div className="sm:max-w-md">
@@ -362,8 +385,8 @@ const TeamSection: React.FC<TeamSectionProps> = ({section}) => (
         {section.members.map((member, i) => (
 
           <div className="col-span-3 lg:col-span-1 my-12  xl:p-12g" key={i}>
-      <TeamMemberItem member={member}/>
-              </div>
+            <TeamMemberItem member={member}/>
+          </div>
         ))}
       </div>
     </div>
@@ -393,9 +416,9 @@ export default function TeamMember() {
                 {teamambitions.map((section, index) => (
                   <motion.div
                     key={section.title}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.3, delay: index * 0.1 }}
+                    initial={{opacity: 0, y: 20}}
+                    animate={{opacity: 1, y: 0}}
+                    transition={{duration: 0.3, delay: index * 0.1}}
                   >
                     <Card className="group relative rounded-[5px] border-muted dark:bg-muted h-full overflow-hidden">
                       <div
@@ -406,7 +429,7 @@ export default function TeamMember() {
                           <div
                             className={`rounded-[5px] p-2 bg-gradient-to-br ${section.gradient}`}
                           >
-                            <section.icon className="h-6 w-6 text-white" />
+                            <section.icon className="h-6 w-6 text-white"/>
                           </div>
                           <CardTitle className="text-xl font-bold">{section.title}</CardTitle>
                         </div>
