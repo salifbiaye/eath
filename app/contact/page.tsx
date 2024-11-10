@@ -12,6 +12,7 @@ import emailjs from 'emailjs-com';
 import {NextResponse} from "next/server";
 import {toast} from "sonner";
 import {useState} from "react";
+import {Loader2, Mail, MapPin, Phone, Send} from "lucide-react";
 export default function ContactUs() {
   const [isLoading, setIsLoading] = useState(false);
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -40,18 +41,10 @@ export default function ContactUs() {
       .then((result: EmailJSResult)  => {
         toast("Succès", {
           description: "l'email a été envoyé avec succès",
-          action: {
-            label: "Undo",
-            onClick: () => console.log("Undo"),
-          },
         });
       }, (error: EmailJSError)  => {
         toast("Erreur", {
           description: "Erreur lors de l'envoi de l'email",
-          action: {
-            label: "Undo",
-            onClick: () => console.log("Undo"),
-          },
         })
       }).finally(() => {
       setIsLoading(false); // Arrêter le loader
@@ -80,48 +73,89 @@ export default function ContactUs() {
             N'hésitez pas à laisser vos questions ci-dessous ou à nous appeler pour parler avec notre équipe de vente dévouée.
           </p>
         </div>
-        <div className="space-y-4">
-          {/*<Card className={"dark:bg-muted"}>*/}
-          {/*  <CardHeader>*/}
-          {/*    <h3 className="text-2xl font-bold">Contact Details</h3>*/}
-          {/*  </CardHeader>*/}
-          {/*  <CardContent>*/}
-          {/*    <div className="space-y-2">*/}
-          {/*      <div className="flex items-center space-x-2">*/}
-          {/*        <Avatar className="size-4"/>*/}
-          {/*        <span>1234 Street, City, State, 56789</span>*/}
-          {/*      </div>*/}
-          {/*      <div className="flex items-center space-x-2">*/}
-          {/*        <Avatar className="w-4 h-4"/>*/}
-          {/*        <span>(123) 456-7890</span>*/}
-          {/*      </div>*/}
-          {/*      <div className="flex items-center space-x-2">*/}
-          {/*        <Avatar className="w-4 h-4"/>*/}
-          {/*        <Link href="#" prefetch={false}>*/}
-          {/*          salifbiaye411@gmail.com*/}
-          {/*        </Link>*/}
-          {/*      </div>*/}
-          {/*    </div>*/}
-          {/*  </CardContent>*/}
-          {/*</Card>*/}
-          <Card className={"dark:bg-muted"}>
+      <div className="space-y-4">
+        <motion.div
+          initial={{opacity: 0, x: 20}}
+          animate={{opacity: 1, x: 0}}
+          transition={{delay: 0.6}}
+          className="space-y-6"
+        >
+          <Card className=" dark:bg-muted rounded-[5px] border-primary/20">
+            <CardContent className="p-6">
+              <h2 className="text-2xl font-bold mb-6">Informations de Contact</h2>
+              <div className="space-y-4">
+                <div className="flex items-center space-x-4">
+                  <div className="p-2 rounded-full bg-primary/10">
+                    <Mail className="h-6 w-6 text-primary"/>
+                  </div>
+                  <div>
+                    <p className="font-medium">Email</p>
+                    <p className="text-sm text-muted-foreground">eath@eathstartup.com</p>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-4">
+                  <div className="p-2 rounded-full bg-primary/10">
+                    <Phone className="h-6 w-6 text-primary"/>
+                  </div>
+                  <div>
+                    <p className="font-medium">Téléphone</p>
+                    <p className="text-sm text-muted-foreground">+221 77 298 89 89</p>
+                  </div>
+                </div>
+                {/*<div className="flex items-center space-x-4">*/}
+                {/*  <div className="p-2 rounded-full bg-primary/10">*/}
+                {/*    <MapPin className="h-6 w-6 text-primary"/>*/}
+                {/*  </div>*/}
+                {/*  <div>*/}
+                {/*    <p className="font-medium">Adresse</p>*/}
+                {/*    <p className="text-sm text-muted-foreground">123 Rue de Paris, 75000 Paris</p>*/}
+                {/*  </div>*/}
+                {/*</div>*/}
+              </div>
+            </CardContent>
+          </Card>
+          <Card className={"dark:bg-muted rounded-[5px] border-primary/20"}>
             <CardHeader>
               <h3 className="text-2xl font-bold">Laissez un message</h3>
             </CardHeader>
             <CardContent>
               <div className="space-y-2">
                 <form onSubmit={onSubmit}>
-                  <Label  htmlFor="email">Email</Label>
-                  <Input className={"mb-4"} id="email" name="email" placeholder="Entrez votre email" type="email" required/>
-                  <Label  htmlFor="message">Message</Label>
-                  <Textarea id="message" name="message" placeholder="Écrivez votre message" className="min-h-[100px]"
+
+                  <Label className={"flex flex-row gap-2 p-2 rounded-full w-fit bg-primary/10 mb-2 "} htmlFor="email">
+                    <Mail className="h-4 w-4 text-primary"/>
+                    email
+                    </Label>
+                  <Input className={"mb-4 rounded-[5px]"} id="email" name="email" placeholder="Entrez votre email" type="email"
+                         required/>
+                  <Label className={"flex flex-row gap-2 p-2 rounded-full w-fit bg-primary/10 mb-2 "} htmlFor="email">
+                    <Mail className="h-4 w-4 text-primary"/>
+                    message
+                  </Label>
+                  <Textarea id="message" name="message" placeholder="Écrivez votre message" className="min-h-[300px] rounded-[5px]"
                             required/>
-                  <Button disabled={isLoading} className={"mt-5"} type="submit">Envoyer un message</Button>
+                  <Button className="w-full mt-5 rounded-[5px] " size="lg" disabled={isLoading}>
+                    {isLoading ? (
+                      <>
+                        <Loader2 className="mr-2 h-4 w-4 animate-spin"/>
+                      </>
+                    ) : (
+                      <>
+                        <Send className="mr-2 h-4 w-4"/>
+
+                      </>
+
+                    )}
+                    Envoyer le message
+                  </Button>
                 </form>
               </div>
             </CardContent>
           </Card>
-        </div>
+        </motion.div>
+
+
+      </div>
     </div>
   )
 }

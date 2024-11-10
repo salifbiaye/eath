@@ -10,6 +10,7 @@ import { motion } from "framer-motion";
 import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/components/ui/card";
 import {DropdownMenuSeparator} from "@/components/ui/dropdown-menu";
 import React from "react";
+import {Building2, Flag, Globe, Lightbulb, Target, Users} from "lucide-react";
 
 
 type SocialLink = {
@@ -31,7 +32,9 @@ type Section = {
 };
 type Teamambition={
   title:string;
+  icon:any;
   description:string;
+  gradient:string;
 }
 const teamSections: Section[] = [
 
@@ -250,32 +253,50 @@ const teamSections: Section[] = [
     ],
   },
 ];
-const teamambitions:Teamambition[]=[
+const teamambitions:Teamambition[] =  [
   {
-    title:"Nos Origines",
-    description:"Les membres de l'équipe de notre startup sont issus du milieu universitaire, passionnés dans le travail, nous relevons les défis en transformant ce qui est excellent en quelque chose de parfait, et ce qui est déjà parfait en une valeur plus que parfaite."
+    title: 'Nos Origines',
+    icon: Users,
+    description:
+      'Les membres de l\'équipe de notre startup sont issus du milieu universitaire, passionnés dans le travail, nous relevons les défis en transformant ce qui est excellent en quelque chose de parfait.',
+    gradient: 'from-purple-500 to-blue-500'
   },
   {
-    title:"Notre Motivation",
-    description:"Ayant été inspirés par les épisodes de crises récentes : COVID 19, guerres, pauvreté, famine, dégradation de l'environnement, chômage des jeunes, nous nous sommes levés pour embrasser la responsabilité sociale de nos communautés."
+    title: 'Notre Motivation',
+    icon: Flag,
+    description:
+      'Ayant été inspirés par les épisodes de crises récentes : COVID 19, guerres, pauvreté, famine, dégradation de l\'environnement, chômage des jeunes, nous nous sommes levés pour embrasser la responsabilité sociale.',
+    gradient: 'from-pink-500 to-rose-500'
   },
   {
-    title:"Notre Ambition",
-    description:"C'est ce qui fait que nous sommes une startup à haut potentiel. Notre application mobile pourrait perturber beaucoup de secteurs, car toute innovation implique des changements. Aussi, nos contributions aux défis et problèmes urgents sont claires, accessibles et de bonne qualité."
+    title: 'Notre Ambition',
+    icon: Target,
+    description:
+      'C\'est ce qui fait que nous sommes une startup à haut potentiel. Notre application mobile pourrait perturber beaucoup de secteurs, car toute innovation implique des changements.',
+    gradient: 'from-orange-500 to-amber-500'
   },
   {
-    title:"Notre Expertise",
-    description:"En abordant le problème de la sécurité alimentaire dans le monde, cela signifie que nous avons une connaissance approfondie du problème et de la cible. Nous interagissons régulièrement avec nos utilisateurs sur la base de retour d'information, après plusieurs tests de fiabilité de notre application."
+    title: 'Notre Expertise',
+    icon: Lightbulb,
+    description:
+      'En abordant le problème de la sécurité alimentaire dans le monde, nous avons une connaissance approfondie du problème et de la cible.',
+    gradient: 'from-green-500 to-emerald-500'
   },
   {
-    title:"Notre Modèle d'Entreprise",
-    description:"Notre modèle d'entreprise sociale entend satisfaire des exigences sociales en matière de sécurité alimentaire et de santé publique, deux piliers majeurs des ODD. Mais notre startup compte surtout générer des revenus par le rapport adéquation : problème/solution, produit/marché, demande/offre."
+    title: 'Notre Modèle d\'Entreprise',
+    icon: Building2,
+    description:
+      'Notre modèle d\'entreprise sociale entend satisfaire des exigences sociales en matière de sécurité alimentaire et de santé publique.',
+    gradient: 'from-cyan-500 to-blue-500'
   },
   {
-    title:"Notre Impact",
-    description:"En définitive, notre startup Eath aura un impact positif significatif sur l'environnement et les populations pour les années à venir."
+    title: 'Notre Impact',
+    icon: Globe,
+    description:
+      'En définitive, notre startup Eath aura un impact positif significatif sur l\'environnement et les populations pour les années à venir.',
+    gradient: 'from-violet-500 to-purple-500'
   }
-];
+]
 type TeamMemberItemProps = {
   member: Member;
 };
@@ -369,18 +390,32 @@ export default function TeamMember() {
                 </span>
               </h1>
               <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-                {teamambitions.map((teamambition,i)=>(
-                  <Card className="shadow-lg rounded-lg bg-white dark:bg-muted">
-                    <CardHeader>
-                      <CardTitle className="text-xl font-semibold">{teamambition.title}</CardTitle>
-                    </CardHeader>
-                    <DropdownMenuSeparator className={"bg-muted dark:bg-muted-foreground  w-96 mx-auto"}/>
-                    <CardContent>
-                      <CardDescription className="text-lg leading-relaxed">
-                        {teamambition.description}
-                      </CardDescription>
-                    </CardContent>
-                  </Card>
+                {teamambitions.map((section, index) => (
+                  <motion.div
+                    key={section.title}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3, delay: index * 0.1 }}
+                  >
+                    <Card className="group relative rounded-[5px] border-muted dark:bg-muted h-full overflow-hidden">
+                      <div
+                        className={`absolute inset-0 opacity-0 bg-gradient-to-br ${section.gradient} transition-opacity duration-300 group-hover:opacity-10`}
+                      />
+                      <CardHeader>
+                        <div className="flex items-center gap-4">
+                          <div
+                            className={`rounded-[5px] p-2 bg-gradient-to-br ${section.gradient}`}
+                          >
+                            <section.icon className="h-6 w-6 text-white" />
+                          </div>
+                          <CardTitle className="text-xl font-bold">{section.title}</CardTitle>
+                        </div>
+                      </CardHeader>
+                      <CardContent>
+                        <p className="text-muted-foreground">{section.description}</p>
+                      </CardContent>
+                    </Card>
+                  </motion.div>
                 ))}
               </div>
             </div>

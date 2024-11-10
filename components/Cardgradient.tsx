@@ -1,81 +1,43 @@
-import {Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle,} from './ui/card';
+
+import {useState} from "react";
+import { motion } from 'framer-motion';
 
 
-import {
-  IconAccessible,
-  IconAlertTriangle,
-  IconCarrot,
-  IconColorSwatch,
-  IconDevices,
-  IconEye,
-  IconFlag,
-  IconFlask,
-  IconHistory,
-  IconPyramid,
-  IconHeart,
-  IconTrophy,
-  IconUsers,
-} from '@tabler/icons-react';
-import { Badge } from './ui/badge';
-import {rem} from "@mantine/core";
-import {DropdownMenuSeparator} from "@/components/ui/dropdown-menu";
-
-interface IconMapping {
-  "Mission": JSX.Element;
-  "Vision": JSX.Element;
-  "Valeurs": JSX.Element;
-  "Origine": JSX.Element;
-  "Technologie": JSX.Element;
-  "Analyse Précise des Ingrédients": JSX.Element;
-  "Conformité Halal": JSX.Element;
-  "Détection des Allergènes": JSX.Element;
-  "Substances Nocives et Nutrition": JSX.Element;
-  "Apport Nutritionnel": JSX.Element;
-  "Inclusion Sociale": JSX.Element;
-  "Nos cibles": JSX.Element;
-}
-
-const iconMapping: IconMapping = {
-  "Mission": <IconFlag style={{ width: rem(28), height: rem(28) }} stroke={1.5} />,
-  "Vision": <IconEye style={{ width: rem(28), height: rem(28) }} stroke={1.5} />,
-  "Valeurs": <IconHeart style={{ width: rem(28), height: rem(28) }} stroke={1.5} />,
-  "Origine": <IconHistory style={{ width: rem(28), height: rem(28) }} stroke={1.5} />,
-  "Technologie": <IconDevices style={{ width: rem(28), height: rem(28) }} stroke={1.5} />,
-  "Analyse Précise des Ingrédients": <IconFlask style={{ width: rem(28), height: rem(28) }} stroke={1.5} />,
-  "Conformité Halal": <IconTrophy style={{ width: rem(28), height: rem(28) }} stroke={1.5} />,
-  "Détection des Allergènes": <IconPyramid style={{ width: rem(28), height: rem(28) }} stroke={1.5} />,
-  "Substances Nocives et Nutrition": <IconAlertTriangle style={{ width: rem(28), height: rem(28) }} stroke={1.5} />,
-  "Apport Nutritionnel": <IconCarrot style={{ width: rem(28), height: rem(28) }} stroke={1.5} />,
-  "Inclusion Sociale": <IconAccessible style={{ width: rem(28), height: rem(28) }} stroke={1.5} />,
-  "Nos cibles": <IconUsers style={{ width: rem(28), height: rem(28) }} stroke={1.5} />
-};
-
-export function CardGradient({ title, text }: { title: string; text: string }) {
-  const icon = iconMapping[title as keyof IconMapping] || <IconColorSwatch style={{ width: rem(28), height: rem(28) }} stroke={1.5} />;
+export function CardWithReadMore({ card, index }:any) {
+  const [isExpanded, setIsExpanded] = useState(false)
 
   return (
-    <Card className="shadow-lg h-96 p-4 rounded-lg bg-background dark:bg-muted relative" >
-     <CardHeader>
-       <CardTitle className={`flex flex-row gap-4`}>
-         <Badge variant={"outline"} className="mb-4">
-           {icon}
-         </Badge>
-         {title}
-       </CardTitle>
-       <DropdownMenuSeparator className={`bg-muted dark:bg-muted-foreground`}/>
-     </CardHeader>
-      <CardContent>
-        <CardDescription>
-          {text}
-        </CardDescription>
-      </CardContent>
-      <CardFooter>
-
-      </CardFooter>
-<div className={`absolute left-0  top-0 bottom-0 w-3 bg-secondary rounded-l-lg`}>
-
-</div>
-
-    </Card>
-  );
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: index * 0.1 }}
+      className="group relative "
+    >
+      <div className="relative overflow-hidden rounded-xl min-h-[300px] p-8 transition-transform duration-300 hover:-translate-y-1">
+        <div
+          className={`absolute inset-0  opacity-10   bg-gradient-to-br ${card.gradient} transition-opacity duration-300 group-hover:opacity-20`}
+        />
+        <div className="relative  z-10">
+          <div
+            className={`mb-4 inline-flex rounded-[5px] p-3 bg-gradient-to-br ${card.gradient}`}
+          >
+            <card.icon className="h-6 w-6 text-white" />
+          </div>
+          <h3 className="mb-4 text-2xl font-bold text-gray-700 dark:text-white">{card.title}</h3>
+          <p className={`text-gray-500 ${isExpanded ? '' : 'line-clamp-3'}`}>{card.text}</p>
+          {card.text.length > 150 && (
+            <button
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="mt-2 text-sm font-medium text-blue-400 hover:text-blue-300"
+            >
+              {isExpanded ? 'Lire moins' : 'Lire plus'}
+            </button>
+          )}
+        </div>
+        <div
+          className={`absolute bottom-0 left-0 h-1 w-full bg-gradient-to-r ${card.gradient} transform origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100`}
+        />
+      </div>
+    </motion.div>
+  )
 }
