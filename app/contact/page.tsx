@@ -18,7 +18,7 @@ export default function ContactUs() {
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsLoading(true);
-
+    const form = e.currentTarget;
     const data = new FormData(e.currentTarget);
     const email = data.get('email') as string;
     const message = data.get('message') as string;
@@ -47,7 +47,8 @@ export default function ContactUs() {
           description: "Erreur lors de l'envoi de l'email",
         })
       }).finally(() => {
-      setIsLoading(false); // Arrêter le loader
+      setIsLoading(false);
+      form.reset();
     });
 
     console.log("submitted");
