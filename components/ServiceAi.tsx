@@ -143,14 +143,14 @@ export const ServiceAi = () => {
                     whileHover={{scale: 1.05}}
                     whileTap={{scale: 0.95}}
                     onClick={() => setExpandedIndex(expandedIndex === index ? null : index)}
-                    className="mt-4 flex items-center text-sm font-medium text-purple-600 hover:text-purple-700 dark:text-purple-400 dark:hover:text-purple-300"
+                    className="mt-4 flex items-center text-sm font-medium text-secondary hover:text-purple-700 dark:text-purple-400 dark:hover:text-purple-300"
                   >
                     {expandedIndex === index ? "Voir moins" : "En savoir plus"}
                     <ChevronRight className="ml-1 h-4 w-4"/>
                   </motion.button>
                 </div>
                 <div
-                  className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent"/>
+                  className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-secondary to-transparent"/>
               </div>
             </motion.div>
           ))}
