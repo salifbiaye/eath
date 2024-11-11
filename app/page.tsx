@@ -76,7 +76,7 @@ export default function IndexPage() {
   ]
   const accueil = "/Accueil.mp4"
   const accueildark = "/accueil-dark.mp4"
-  const iPhone12 = "/iPhone-12-Mockup.png"
+  const iPhone12 = "/iphone-12-Mockup.png"
   const samsung = "/samsung.png"
   const eath = "/Eath.mp4"
   const authentification = "/Authentification.mp4"
