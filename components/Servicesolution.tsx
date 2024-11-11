@@ -1,80 +1,124 @@
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBrain,
-  faDesktop,
-  faMobileAlt,
 
-} from "@fortawesome/free-solid-svg-icons";
-import {Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle} from "./ui/card";
-import {Separator} from "@/components/ui/separator";
+import {ChevronRight, CurlyBraces, Monitor, Smartphone} from "lucide-react";
+import { AnimatePresence, motion } from "framer-motion";
+import {useState} from "react";
 
 
 const serviceList = [
   {
-    icon: faMobileAlt,
-    title: "Application mobile ",
+    title: "Application mobile",
     description:
       "Découvrez notre application mobile innovante pour la gestion de la sécurité alimentaire. Suivez et gérez les stocks, surveillez la qualité des produits et recevez des alertes en temps réel sur les risques potentiels. Assurez-vous que les aliments respectent les normes de sécurité les plus strictes, tout en gardant une vue d'ensemble sur les opérations.",
+    icon: Smartphone,
+    gradient: "from-violet-500 to-purple-500",
+    pattern: "radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.1) 0%, transparent 50%)",
   },
   {
-
-    icon: faBrain,
     title: "Intelligence artificielle",
     description:
       "Notre solution d'IA avancée analyse les composants des aliments pour garantir leur sécurité. Grâce à des algorithmes de pointe, nous pouvons détecter les contaminants, évaluer les valeurs nutritionnelles et assurer la conformité aux normes de sécurité alimentaire. Protégez les consommateurs et maintenez la qualité des produits avec notre technologie innovante.",
+    icon: CurlyBraces,
+    gradient: "from-fuchsia-500 to-purple-600",
+    pattern: "radial-gradient(circle at 50% 50%, rgba(192, 132, 252, 0.1) 0%, transparent 50%)",
   },
   {
-    icon: faDesktop,
     title: "Interface web",
     description:
-      " Grace a notre plateforme web vous aurez toutes les informations par rapport a notre application",
+      "Grâce à notre plateforme web, vous aurez toutes les informations par rapport à notre application. Accédez à des tableaux de bord détaillés, générez des rapports personnalisés et collaborez avec votre équipe en temps réel. Notre interface intuitive vous permet de prendre des décisions éclairées rapidement et efficacement.",
+    icon: Monitor,
+    gradient: "from-purple-500 to-indigo-500",
+    pattern: "radial-gradient(circle at 50% 50%, rgba(167, 139, 250, 0.1) 0%, transparent 50%)",
   },
-];
-const ServiceItem = ({ service }: { service: Service }) => (
-  <Card className={`transition duration-300 h-full  dark:bg-muted ${service.isActive ? "bg-gray-700 text-white" : "bg-transparent"}`}>
-    <CardHeader className="flex flex-col items-center">
-      <div
-        className={`bg-muted bg-opacity-10 text-secondary w-32 h-32 rounded-full text-6xl inline-flex justify-center items-center mb-4 ${
-          service.isActive ? "bg-white bg-opacity-10 text-white" : ""
-        }`}
-      >
-        <FontAwesomeIcon icon={service.icon} />
-      </div>
-      <CardTitle className="text-3xl text-foreground font-medium">{service.title}</CardTitle>
+]
 
-    </CardHeader>
-    <Separator className="my-4" />
-
-    <CardContent>
-      <CardDescription className="font-bold text-foreground opacity-70">{service.description}</CardDescription>
-    </CardContent>
-
-  </Card>
-);
-
-interface Service {
-  icon: any;  // Vous pouvez affiner ce type si vous avez un type spécifique pour les icônes
-  title: string;
-  description: string;
-  isActive?: boolean; // Facultatif si ce champ n'est pas toujours présent
-}
 
 export const ServiceSolution= () => {
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null)
   return (
-    <div className="ezy__service10 light py-14 md:py-24  ] text-zinc-900 ">
-      <div className="container relative">
-        <div className="flex justify-center  mb-12">
-        </div>
-        <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
-          {serviceList.map((service, i) => (
-            <div className="col-span-3 md:col-span-1" key={i}>
-              <ServiceItem service={service} />
-            </div>
+    <section
+      className="w-full py-12 md:py-24 ">
+      <div className="container px-4 md:px-6">
+        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {serviceList.map((solution, index) => (
+            <motion.div
+              key={solution.title}
+              initial={{opacity: 0, y: 20}}
+              animate={{opacity: 1, y: 0}}
+              transition={{delay: index * 0.2}}
+              className="group relative"
+            >
+              <div
+                className="absolute inset-0 rounded-3xl bg-gradient-to-br opacity-0 blur-xl transition-opacity duration-500 group-hover:opacity-70"
+                style={{
+                  background: `linear-gradient(to bottom right, ${solution.gradient})`,
+                }}
+              />
+              <div
+                className="relative h-full overflow-hidden rounded-3xl border border-purple-100/20 bg-white/80 p-8 shadow-2xl backdrop-blur-sm transition-all duration-500 hover:shadow-purple-500/10 dark:border-purple-900/30 dark:bg-gray-800/50">
+                <div
+                  className="pointer-events-none absolute inset-0 opacity-50"
+                  style={{backgroundImage: solution.pattern}}
+                />
+                <div className="relative z-10">
+                  <div className="mb-6 flex items-center justify-between">
+                    <motion.div
+                      whileHover={{scale: 1.1}}
+                      whileTap={{scale: 0.9}}
+                      className={`rounded-2xl bg-secondary p-3`}
+                    >
+                      <solution.icon className="h-8 w-8 text-white"/>
+                    </motion.div>
+                    <motion.div
+                      animate={{scale: [1, 1.2, 1]}}
+                      transition={{duration: 2, repeat: Infinity, repeatType: "reverse"}}
+                      className="flex h-12 w-12 items-center justify-center rounded-full bg-purple-500/10"
+                    >
+                      <div className="h-6 w-6 rounded-full bg-gradient-to-br from-purple-500 to-violet-500"/>
+                    </motion.div>
+                  </div>
+                  <h3 className="mb-4 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    {solution.title}
+                  </h3>
+                  <AnimatePresence>
+                    {expandedIndex === index ? (
+                      <motion.p
+                        initial={{opacity: 0, height: 0}}
+                        animate={{opacity: 1, height: "auto"}}
+                        exit={{opacity: 0, height: 0}}
+                        className="text-sm leading-relaxed text-gray-600 dark:text-gray-300"
+                      >
+                        {solution.description}
+                      </motion.p>
+                    ) : (
+                      <motion.p
+                        initial={{opacity: 1, height: "auto"}}
+                        animate={{opacity: 1, height: "auto"}}
+                        exit={{opacity: 0, height: 0}}
+                        className="text-sm leading-relaxed text-gray-600 dark:text-gray-300 line-clamp-2"
+                      >
+                        {solution.description}
+                      </motion.p>
+                    )}
+                  </AnimatePresence>
+                  <motion.button
+                    whileHover={{scale: 1.05}}
+                    whileTap={{scale: 0.95}}
+                    onClick={() => setExpandedIndex(expandedIndex === index ? null : index)}
+                    className="mt-4 flex items-center text-sm font-medium text-purple-600 hover:text-purple-700 dark:text-purple-400 dark:hover:text-purple-300"
+                  >
+                    {expandedIndex === index ? "Voir moins" : "En savoir plus"}
+                    <ChevronRight className="ml-1 h-4 w-4"/>
+                  </motion.button>
+                </div>
+                <div
+                  className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent"/>
+              </div>
+            </motion.div>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -19,7 +19,7 @@ interface FeatureItemProps {
 
 const features: Feature[] =[
   {
-    title: 'Détection des Contaminants',
+    title: 'Détection des Contaminants et corps étrangers',
     description: "L'IA peut analyser les données provenant des scans des aliments pour identifier la présence de contaminants tels que des pesticides, des métaux lourds ou des agents pathogènes. Grâce à des algorithmes avancés, elle peut détecter des traces qui pourraient échapper aux méthodes d'analyse traditionnelles.",
     icon: AlertTriangle,
     color: 'from-red-500/20 to-orange-500/20'

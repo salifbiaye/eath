@@ -84,7 +84,7 @@ const About = () => {
   ]
 
   return (
-    <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.5}}  >
+    <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 0.5}} className={"text-center"}>
       <h1 className="text-4xl md:text-[3.5rem] font-gotham font-bold text-center text-secondary mb-10 mt-4">
         A propos de<br/>
         <span
@@ -92,9 +92,16 @@ const About = () => {
                     eath
                 </span>
       </h1>
-      < div className={`text-foreground text-md md:text-xl font-gotham font-bold  text-center w-full  mt-4`}>eath est une startup qui a mis au point une application mobile sophistiquée qui
-        garantit la sécurité alimentaire des consommateurs à l'échelle mondiale.<br/> En effet notre  innovation est une solution technique qui règle des problèmes techniques de sécurité alimentaire et de santé publique grâce aux fonctionnalités suivantes.
-      </div>
+      <p
+        className="mx-auto max-w-[800px] text-lg leading-relaxed text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+        eath est une startup qui a mis au point une application mobile sophistiquée qui garantit la sécurité alimentaire
+        des consommateurs à l&apos;échelle mondiale.
+      </p>
+      <p
+        className="mx-auto max-w-[800px] text-lg leading-relaxed text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+        En effet notre innovation est une solution technique qui règle des problèmes techniques de sécurité alimentaire
+        et de santé publique grâce aux fonctionnalités suivantes.
+      </p>
 
 
       <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 `}>
@@ -107,7 +114,7 @@ const About = () => {
             animate={{opacity: 1, y: 0}}
             transition={{duration: 0.5, delay: index * 0.2}}
           >
-            <CardWithReadMore key={card.title} card={card} index={index} />
+            <CardWithReadMore key={card.title} card={card} index={index}/>
           </motion.div>
         ))}
 
