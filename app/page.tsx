@@ -224,7 +224,7 @@ const accueildarkimage= "/accueil-dark.png"
       </div>
       <Solution/>
       <ThreeDAiSection/>
-      <div className="max-w-7xl mx-auto flex px-5 md:flex-row flex-col items-center">
+      <div className="max-w-7xl mx-auto flex px-5 md:flex-row flex-col justify-center items-center">
         <div
           className="lg:flex-grow md:w-1/2 md:ml-24 pt-6 flex flex-col md:items-start md:text-left mb-40 items-center text-center">
           <h1
@@ -237,19 +237,14 @@ const accueildarkimage= "/accueil-dark.png"
           </p>
 
         </div>
-        <div
-          className="xl:mr-44 sm:mr-0 flex flex-row max-h-[calc(100vh-15vh)]   sm:mb-28  mb-0 lg:mb-0 mr-48 md:pl-10">
+
           <img
-            className="w-40 lg:w-80 md:ml-1 "
+            className=" w-96 lg:w-[48vw]  md:ml-1 "
             alt="iPhone-12"
             src={iPhone12}
           ></img>
-          <img
-            className="w-40 lg:w-80   md:ml-1 "
-            alt="iPhone-12"
-            src={samsung}
-          ></img>
-        </div>
+
+
       </div>
 
       <h2 className="font-heading text-3xl text-center mb-3  mt-8 leading-[1.1] sm:text-3xl md:text-3xl font-bold">
