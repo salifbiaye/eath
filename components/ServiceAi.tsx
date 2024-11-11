@@ -2,9 +2,10 @@
 
 
 import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "./ui/card";
-import { motion } from "framer-motion";
+import {AnimatePresence, motion} from "framer-motion";
 import {Separator} from "@/components/ui/separator";
-import {AlertTriangle, BarChart2, Shield,CurlyBraces} from "lucide-react";
+import {AlertTriangle, BarChart2, Shield, CurlyBraces, ChevronRight} from "lucide-react";
+import {useState} from "react";
 interface Feature {
   icon: any; // Remplace `any` par le type spécifique si disponible
   title: string;
@@ -22,28 +23,28 @@ const features: Feature[] =[
     title: 'Détection des Contaminants et corps étrangers',
     description: "L'IA peut analyser les données provenant des scans des aliments pour identifier la présence de contaminants tels que des pesticides, des métaux lourds ou des agents pathogènes. Grâce à des algorithmes avancés, elle peut détecter des traces qui pourraient échapper aux méthodes d'analyse traditionnelles.",
     icon: AlertTriangle,
-    color: 'from-red-500/20 to-orange-500/20'
+    color: 'from-red-200 to-orange-300'
   },
   {
     title: 'Evaluation des Valeurs Nutritionnelles',
     description:
       "L'IA peut fournir des évaluations précises des valeurs nutritionnelles des aliments en analysant leur composition. Cela permet non seulement de vérifier la qualité nutritionnelle des produits, mais aussi de conseiller les consommateurs sur des choix alimentaires plus sains en fonction de leurs besoins spécifiques.",
     icon: BarChart2,
-    color: 'from-green-500/20 to-emerald-500/20'
+    color: 'from-green-200 to-emerald-300'
   },
   {
     title: 'Conformité aux Normes de Sécurité Alimentaire',
     description:
       "En utilisant des modèles d'apprentissage automatique, l'IA peut comparer les résultats des tests alimentaires aux normes de sécurité en vigueur. Cela aide à garantir que les produits respectent les régulations et les standards de qualité, réduisant ainsi le risque de non-conformité.",
     icon: Shield,
-    color: 'from-blue-500/20 to-indigo-500/20'
+    color: 'from-blue-400 to-indigo-300'
   },
   {
     title: 'Prédiction et Prévention',
     description:
       "L'IA peut analyser les tendances et les données historiques pour prédire d'éventuels problèmes de sécurité alimentaire avant qu'ils ne surviennent. Par exemple, elle peut identifier des schémas récurrents de contamination ou de déviation par rapport aux normes, permettant une intervention précoce et proactive pour éviter des crises potentielles.",
     icon: CurlyBraces,
-    color: 'from-purple-500/20 to-pink-500/20'
+    color: 'from-purple-400 to-pink-300'
   }
 ]
 
@@ -71,50 +72,91 @@ const features: Feature[] =[
 
 
 export const ServiceAi = () => {
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null)
   return (
-    <div className="bg-background  text-foreground ">
-
-      <div className="container px-4 mx-auto">
-        <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
-
-          <div className="w-full">
-            <div className="xl:ml-6 w-full">
-              <div className="grid grid-cols-1 lg:grid-cols-2 w-full">
-                {features.map((feature, index) => (
-                  <motion.div
-                    key={feature.title}
-                    initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 ,scale:0.9}}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: index * 0.2 }}
-                    className="group relative"
+    <section
+      className="w-full py-12 md:py-24 ">
+      <div className="container px-4 md:px-6">
+        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {features.map((feature, index) => (
+            <motion.div
+              key={feature.title}
+              initial={{opacity: 0, y: 20}}
+              animate={{opacity: 1, y: 0}}
+              transition={{delay: index * 0.2}}
+              className="group relative"
+            >
+              <div
+                className="absolute inset-0 rounded-3xl bg-gradient-to-br opacity-0 blur-xl transition-opacity duration-500 group-hover:opacity-70"
+                style={{
+                  background: `linear-gradient(to bottom right, ${feature.color})`,
+                }}
+              />
+              <div
+                className="relative h-full overflow-hidden rounded-3xl border border-purple-100/20 bg-white/80 p-8 shadow-2xl backdrop-blur-sm transition-all duration-500 hover:shadow-purple-500/10 dark:border-purple-900/30 dark:bg-gray-800/50">
+                <div
+                  className="pointer-events-none absolute inset-0 opacity-50"
+                  style={{backgroundImage: feature.color}}
+                />
+                <div className="relative z-10">
+                  <div className="mb-6 flex items-center justify-between">
+                    <motion.div
+                      whileHover={{scale: 1.1}}
+                      whileTap={{scale: 0.9}}
+                      className={`rounded-2xl bg-gradient-to-br ${feature.color} p-3`}
+                    >
+                      <feature.icon className="h-8 w-8 text-white"/>
+                    </motion.div>
+                    <motion.div
+                      animate={{scale: [1, 1.2, 1]}}
+                      transition={{duration: 2, repeat: Infinity, repeatType: "reverse"}}
+                      className="flex h-12 w-12 items-center justify-center rounded-full bg-purple-500/10"
+                    >
+                      <div className={`h-6 w-6 rounded-full bg-gradient-to-br ${feature.color}`}/>
+                    </motion.div>
+                  </div>
+                  <h3 className="mb-4 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    {feature.title}
+                  </h3>
+                  <AnimatePresence>
+                    {expandedIndex === index ? (
+                      <motion.p
+                        initial={{opacity: 0, height: 0}}
+                        animate={{opacity: 1, height: "auto"}}
+                        exit={{opacity: 0, height: 0}}
+                        className="text-sm leading-relaxed text-gray-600 dark:text-gray-300"
+                      >
+                        {feature.description}
+                      </motion.p>
+                    ) : (
+                      <motion.p
+                        initial={{opacity: 1, height: "auto"}}
+                        animate={{opacity: 1, height: "auto"}}
+                        exit={{opacity: 0, height: 0}}
+                        className="text-sm leading-relaxed text-gray-600 dark:text-gray-300 line-clamp-2"
+                      >
+                        {feature.description}
+                      </motion.p>
+                    )}
+                  </AnimatePresence>
+                  <motion.button
+                    whileHover={{scale: 1.05}}
+                    whileTap={{scale: 0.95}}
+                    onClick={() => setExpandedIndex(expandedIndex === index ? null : index)}
+                    className="mt-4 flex items-center text-sm font-medium text-purple-600 hover:text-purple-700 dark:text-purple-400 dark:hover:text-purple-300"
                   >
-                    <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-foreground/10 bg-gray-100  dark:bg-gray-900 transition-all duration-500 hover:scale-[1.02] hover:border-white/20">
-                      <div
-                        className={`absolute inset-0 bg-gradient-to-br ${feature.color} opacity-0 transition-opacity duration-500 group-hover:opacity-100`}
-                      />
-                      <div className="absolute inset-0 backdrop-blur-[2px]" />
-                      <div className="relative h-full p-8">
-                        <div className="flex items-center gap-4">
-                          <div className={`rounded-xl bg-gradient-to-br ${feature.color} p-3 backdrop-blur-sm`}>
-                            <feature.icon className={`h-6 w-6  text-foreground`} />
-                          </div>
-                          <h3 className="text-xl font-semibold text-foreground">{feature.title}</h3>
-                        </div>
-                        <p className="mt-4 text-sm leading-relaxed text-foreground">
-                          {feature.description}
-                        </p>
-                        <div className="absolute bottom-0 left-0 right-0 h-32" />
-                      </div>
-                    </div>
-                  </motion.div>
-                ))}
+                    {expandedIndex === index ? "Voir moins" : "En savoir plus"}
+                    <ChevronRight className="ml-1 h-4 w-4"/>
+                  </motion.button>
+                </div>
+                <div
+                  className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent"/>
               </div>
-            </div>
-          </div>
+            </motion.div>
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
