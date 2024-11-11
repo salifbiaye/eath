@@ -335,27 +335,27 @@ const TeamMemberItem: React.FC<TeamMemberItemProps> = ({ member }) => (
           <p className="text-lg text-white">{member.designation}</p>
 
           {/* Social links */}
-          <div className="flex justify-center space-x-4 pt-4">
-            <a
-              href={member.socialLinks[0].href}
-              className="rounded-full bg-white/10 p-2 text-white transition-colors hover:bg-white/20"
-            >
-              <Linkedin className="h-5 w-5"/>
-            </a>
-            <a
-              href={member.socialLinks[0].href}
-              className="rounded-full bg-white/10 p-2 text-white transition-colors hover:bg-white/20"
-            >
-              <Twitter className="h-5 w-5"/>
-            </a>
-            <a
-              href={member.socialLinks[0].href}
-              className="rounded-full bg-white/10 p-2 text-white transition-colors hover:bg-white/20"
-            >
-              <Github className="h-5 w-5"/>
-            </a>
+          {/*<div className="flex justify-center space-x-4 pt-4">*/}
+          {/*  <a*/}
+          {/*    href={member.socialLinks[0].href}*/}
+          {/*    className="rounded-full bg-white/10 p-2 text-white transition-colors hover:bg-white/20"*/}
+          {/*  >*/}
+          {/*    <Linkedin className="h-5 w-5"/>*/}
+          {/*  </a>*/}
+          {/*  <a*/}
+          {/*    href={member.socialLinks[0].href}*/}
+          {/*    className="rounded-full bg-white/10 p-2 text-white transition-colors hover:bg-white/20"*/}
+          {/*  >*/}
+          {/*    <Twitter className="h-5 w-5"/>*/}
+          {/*  </a>*/}
+          {/*  <a*/}
+          {/*    href={member.socialLinks[0].href}*/}
+          {/*    className="rounded-full bg-white/10 p-2 text-white transition-colors hover:bg-white/20"*/}
+          {/*  >*/}
+          {/*    <Github className="h-5 w-5"/>*/}
+          {/*  </a>*/}
 
-          </div>
+          {/*</div>*/}
         </div>
       </div>
     </div>
