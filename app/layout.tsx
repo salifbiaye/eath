@@ -14,7 +14,7 @@ import { MantineProvider } from '@mantine/core';
 
 import {Separator} from "@/components/ui/separator";
 export const metadata: Metadata = {
-  metadataBase: new URL('https://eathstartup.com/'), // Change this line
+  metadataBase: new URL('https://www.eathstartup.com/'), // Change this line
   title: {
     default: siteConfig.name,
     template: `%s - ${siteConfig.name}`,
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     apple: "/logofavicon.png",
   },
   openGraph: {
-    url: 'https://eathstartup.com/',
+    url: 'https://www.eathstartup.com/',
     title: siteConfig.name,
     description: siteConfig.description,
     images: [
@@ -58,8 +58,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <title>${siteConfig.name}</title>
         <meta property="og:title" content="eath"/>
         <meta property="og:description" content={siteConfig.description}/>
-        <meta property="og:image" content="https://eathstartup.com/eathpreview.png"/>
-        <meta property="og:url" content="https://eathstartup.com/eathpreview.png"/>
+        <meta property="og:image" content="https://www.eathstartup.com/eathpreview.png"/>
+        <meta property="og:url" content="https://www.eathstartup.com/eathpreview.png"/>
         <meta property="og:type" content="website"/>
         <meta name="twitter:card" content="eath"/>
         <meta name="twitter:title" content="eath"/>
