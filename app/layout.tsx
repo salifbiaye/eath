@@ -11,15 +11,7 @@ import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { ThemeProvider } from "@/components/theme-provider"
 import { SiteFooter } from "@/components/site-footer"
 import { MantineProvider } from '@mantine/core';
-import {Toaster} from "@/components/ui/sonner";
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator
-} from "@/components/ui/breadcrumb"
+
 import {Separator} from "@/components/ui/separator";
 export const metadata: Metadata = {
   metadataBase: new URL('https://eathstartup.com/'), // Change this line
@@ -62,37 +54,43 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <>
       <html lang="en" suppressHydrationWarning>
-        <Head>
-          <title>${siteConfig.name}</title>
-          <meta property="og:image" content="/logo.png" />
-          <meta property="twitter:image" content="/logo.png" />
-        </Head>
-        <body
-          className={cn(
-            "min-h-screen bg-background overflow-x-hidden font-sans antialiased",
-            fontSans.variable,
-          )}
-        >
-        <MantineProvider>
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            {/* <div className="absolute flex min-h-screen flex-col"> */}
-              {/* <SiteHeader /> */}
-              {/* <div className="container flex-1"> */}
+      <Head>
+        <title>${siteConfig.name}</title>
+        <meta property="og:title" content="eath"/>
+        <meta property="og:description" content={siteConfig.description}/>
+        <meta property="og:image" content="https://eathstartup.com/eathpreview.png"/>
+        <meta property="og:url" content="https://eathstartup.com/eathpreview.png"/>
+        <meta property="og:type" content="website"/>
+        <meta name="twitter:card" content="eath"/>
+        <meta name="twitter:title" content="eath"/>
+        <meta name="twitter:description" content={siteConfig.description}/>
+        <meta name="twitter:image" content="https://codification.cee-esp.com/campus.svg"/>
+      </Head>
+      <body
+        className={cn(
+          "min-h-screen bg-background overflow-x-hidden font-sans antialiased",
+          fontSans.variable,
+        )}
+      >
+      <MantineProvider>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          {/* <div className="absolute flex min-h-screen flex-col"> */}
+          {/* <SiteHeader /> */}
+          {/* <div className="container flex-1"> */}
 
 
+          <SiteHeader/>
+          {children}
 
-              <SiteHeader />
-            {children}
+          {/* </div> */}
 
-              {/* </div> */}
+          {/* </div> */}
+          {/*<TailwindIndicator />*/}
+          <SiteFooter/>
 
-              {/* </div> */}
-              {/*<TailwindIndicator />*/}
-              <SiteFooter/>
-
-          </ThemeProvider>
-        </MantineProvider>
-        </body>
+        </ThemeProvider>
+      </MantineProvider>
+      </body>
       </html>
     </>
   )

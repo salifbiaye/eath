@@ -36,21 +36,28 @@ export default function ContactUs() {
       status: number; // Code HTTP de la réponse en cas d'erreur
     }
 
+    toast("❌ Oups", {
+      style: {
+        color: "#ffd21f",
+      },
+      description: "Désolé pour le désagrément, mais cette fonctionnalité n'est pas encore disponible. Veuillez nous contacter directement via le numéro de téléphone",
+    })
 
-    emailjs.send('service_md544a3', 'template_35oanzh', templateParams, 'Sge_wmxkYxvGAcK_2')
-      .then((result: EmailJSResult)  => {
-        toast("Succès", {
-          description: "l'email a été envoyé avec succès",
-        });
-      }, (error: EmailJSError)  => {
-        toast("Erreur", {
-          description: "Erreur lors de l'envoi de l'email",
-        })
-      }).finally(() => {
-      setIsLoading(false);
-      form.reset();
-    });
-
+    // emailjs.send('service_md544a3', 'template_35oanzh', templateParams, 'Sge_wmxkYxvGAcK_2')
+    //   .then((result: EmailJSResult)  => {
+    //     toast("Succès", {
+    //       description: "l'email a été envoyé avec succès",
+    //     });
+    //   }, (error: EmailJSError)  => {
+    //     toast("Erreur", {
+    //       description: "Erreur lors de l'envoi de l'email",
+    //     })
+    //   }).finally(() => {
+    //   setIsLoading(false);
+    //   form.reset();
+    // });
+    form.reset();
+    setIsLoading(false);
     console.log("submitted");
   };
   return (
@@ -100,7 +107,7 @@ export default function ContactUs() {
                   </div>
                   <div>
                     <p className="font-medium">Téléphone</p>
-                    <p className="text-sm text-muted-foreground">+221 77 298 89 89</p>
+                    <p className="text-sm text-muted-foreground">+221 77 842 49 05</p>
                   </div>
                 </div>
                 {/*<div className="flex items-center space-x-4">*/}

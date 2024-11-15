@@ -99,7 +99,7 @@ const About = () => {
       </p>
       <p
         className="mx-auto max-w-[800px] text-lg leading-relaxed text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-        En effet notre innovation est une solution technique qui règle des problèmes techniques de sécurité alimentaire
+        En effet nous changeons le monde à travers cette innovation qui est une solution technique qui règle des problèmes techniques de sécurité alimentaire
         et de santé publique grâce aux fonctionnalités suivantes.
       </p>
 
