@@ -1,9 +1,0 @@
-{
-  "redirects": [
-    {
-      "source": "https://eathstartup.com/:path*",
-      "destination": "https://www.eathstartup.com/:path*",
-      "permanent": true
-    }
-  ]
-}
