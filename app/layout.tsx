@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     apple: "/logofavicon.png",
   },
   openGraph: {
-    url: 'https://eath-blond.vercel.app/',
+    url: 'https://eathstartup.com/',
     title: siteConfig.name,
     description: siteConfig.description,
     images: [
