@@ -133,7 +133,7 @@ export const ServiceAi = () => {
                         initial={{opacity: 1, height: "auto"}}
                         animate={{opacity: 1, height: "auto"}}
                         exit={{opacity: 0, height: 0}}
-                        className="text-sm leading-relaxed text-gray-600 dark:text-gray-300 line-clamp-2"
+                        className="text-sm leading-relaxed text-gray-900 dark:text-muted-foreground line-clamp-2"
                       >
                         {feature.description}
                       </motion.p>
