@@ -77,7 +77,7 @@ export default function ContactUs() {
       </motion.div>
         <div className="space-y-2">
           <h2 className="text-3xl font-bold">Discutons ensemble</h2>
-          <p className="text-gray-500 dark:text-gray-400">
+          <p className="text-gray-900 dark:text-muted-foreground">
             N'hésitez pas à laisser vos questions ci-dessous ou à nous appeler pour parler avec notre équipe de vente dévouée.
           </p>
         </div>
@@ -98,7 +98,7 @@ export default function ContactUs() {
                   </div>
                   <div>
                     <p className="font-medium">Email</p>
-                    <p className="text-sm text-muted-foreground">eath@eathstartup.com</p>
+                    <p className="text-sm text-gray-900 dark:text-muted-foreground">eath@eathstartup.com</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
@@ -107,7 +107,7 @@ export default function ContactUs() {
                   </div>
                   <div>
                     <p className="font-medium">Téléphone</p>
-                    <p className="text-sm text-muted-foreground">+221 77 842 49 05</p>
+                    <p className="text-sm text-gray-900 dark:text-muted-foreground">+221 77 842 49 05</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
@@ -116,7 +116,7 @@ export default function ContactUs() {
                   </div>
                   <div>
                     <p className="font-medium">Adresse</p>
-                    <p className="text-sm text-muted-foreground">VDN 3, Corniche Rue 53 Camb</p>
+                    <p className="text-sm text-gray-900 dark:text-muted-foreground">VDN 3, Corniche Rue 53 Camb</p>
                   </div>
                 </div>
                 {/*<div className="flex items-center space-x-4">*/}
@@ -125,7 +125,7 @@ export default function ContactUs() {
                 {/*  </div>*/}
                 {/*  <div>*/}
                 {/*    <p className="font-medium">Adresse</p>*/}
-                {/*    <p className="text-sm text-muted-foreground">123 Rue de Paris, 75000 Paris</p>*/}
+                {/*    <p className="text-sm text-gray-900 dark:text-muted-foreground">123 Rue de Paris, 75000 Paris</p>*/}
                 {/*  </div>*/}
                 {/*</div>*/}
               </div>
