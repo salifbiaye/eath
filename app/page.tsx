@@ -156,7 +156,7 @@ const accueildarkimage= "/accueil-dark.png"
           <h2 className="font-heading font-3xl leading-[1.1] sm:text-3xl md:text-3xl font-bold">
             Problèmes
           </h2>
-          <p className="text-muted-foreground max-w-[85%] leading-normal sm:text-lg sm:leading-7">
+          <p className="text-gray-900 dark:text-muted-foreground max-w-[85%] leading-normal sm:text-lg sm:leading-7">
             Dans le contexte actuel, assurer la sécurité alimentaire est devenu une priorité cruciale pour protéger la
             santé des consommateurs. Les applications de gestion de la sécurité alimentaire doivent aborder plusieurs
             défis majeurs pour garantir une alimentation saine et sécurisée. Voici les principaux problèmes que notre
@@ -215,7 +215,7 @@ const accueildarkimage= "/accueil-dark.png"
         <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-3xl font-bold">
           Objectifs
         </h2>
-        <p className="text-muted-foreground max-w-[85%] pb-10 leading-normal sm:text-lg sm:leading-7">
+        <p className="text-gray-900 dark:text-muted-foreground max-w-[85%] pb-10 leading-normal sm:text-lg sm:leading-7">
           L'objectif principal de notre application de sécurité alimentaire est de garantir la sécurité et la qualité
           des aliments que vous consommez, en offrant des outils puissants pour détecter les risques potentiels et
           fournir des informations cruciales en temps réel.

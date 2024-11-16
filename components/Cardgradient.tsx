@@ -25,8 +25,8 @@ export function CardWithReadMore({ card, index }:any) {
           >
             <card.icon className="h-6 w-6 text-white"/>
           </div>
-          <h3 className="mb-4 text-2xl font-bold text-gray-700 dark:text-white">{card.title}</h3>
-          <p className={`text-gray-500 ${isExpanded ? '' : 'line-clamp-3'}`}>{card.text}</p>
+          <h3 className="mb-4 text-2xl font-bold text-gray-900 dark:text-muted-foreground">{card.title}</h3>
+          <p className={`text-gray-900 ${isExpanded ? '' : 'line-clamp-3'}`}>{card.text}</p>
           {card.text.length > 150 && (
             <button
               onClick={() => setIsExpanded(!isExpanded)}

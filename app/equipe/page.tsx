@@ -368,7 +368,7 @@ type TeamSectionProps = {
 
 const TeamSection: React.FC<TeamSectionProps> = ({section}) => (
   <section
-    className="ezy__team12 light py-14 md:py-24 bg-background text-foreground dark:text-secondary overflow-hidden">
+    className="ezy__team12 light py-14 md:py-24 bg-background  dark:text-secondary overflow-hidden">
     <div className="container px-4 mx-auto">
       <div className="flex justify-center text-center">
         <div className="sm:max-w-md">
@@ -435,7 +435,7 @@ export default function TeamMember() {
                         </div>
                       </CardHeader>
                       <CardContent>
-                        <p className="text-muted-foreground">{section.description}</p>
+                        <p className="text-gray-900 dark:text-muted-foreground">{section.description}</p>
                       </CardContent>
                     </Card>
                   </motion.div>
