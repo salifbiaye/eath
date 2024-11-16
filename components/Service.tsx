@@ -66,7 +66,7 @@ const ServiceItem: React.FC<{ service: Service }> = ({ service }) => (
           </div>
           <h3 className="text-2xl font-semibold text-foreground">{service.title}</h3>
         </div>
-        <p className="mt-6 text-gray-900 dark:text-gray-400">{service.description}</p>
+        <p className="mt-6 text-gray-900 dark:text-muted-foreground">{service.description}</p>
 
         {/* Decorative elements */}
         <div
