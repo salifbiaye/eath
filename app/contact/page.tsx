@@ -12,7 +12,7 @@ import emailjs from 'emailjs-com';
 import {NextResponse} from "next/server";
 import {toast} from "sonner";
 import {useState} from "react";
-import {Loader2, Mail, MapPin, Phone, Send} from "lucide-react";
+import {Loader2, Locate, LocateFixedIcon, LocateIcon, Mail, MapPin, Phone, Send} from "lucide-react";
 export default function ContactUs() {
   const [isLoading, setIsLoading] = useState(false);
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -108,6 +108,15 @@ export default function ContactUs() {
                   <div>
                     <p className="font-medium">Téléphone</p>
                     <p className="text-sm text-muted-foreground">+221 77 842 49 05</p>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-4">
+                  <div className="p-2 rounded-full bg-primary/10">
+                    <MapPin className="h-6 w-6 text-primary"/>
+                  </div>
+                  <div>
+                    <p className="font-medium">Adresse</p>
+                    <p className="text-sm text-muted-foreground">VDN 3, Corniche Rue 53 Camb</p>
                   </div>
                 </div>
                 {/*<div className="flex items-center space-x-4">*/}
