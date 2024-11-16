@@ -77,7 +77,7 @@ export default function ServiceList() {
                 <CardTitle className="mt-4 text-xl font-bold text-white">{service.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-white/80">{service.description}</p>
+                <p className="text-white">{service.description}</p>
               </CardContent>
             </Card>
           ))}

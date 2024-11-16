@@ -113,7 +113,7 @@ export default function Pourquoinous() {
                     {feature.number}
                   </span>
                   <h3 className="mt-4 text-xl font-semibold text-white">{feature.title}</h3>
-                  <p className="mt-2 text-white/80">{feature.description}</p>
+                  <p className="mt-2 text-white">{feature.description}</p>
                   <feature.icon className="absolute right-0 top-0 h-6 w-6 text-white/40" />
                 </div>
               </div>
