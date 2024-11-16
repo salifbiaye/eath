@@ -86,7 +86,7 @@ export const ServiceSolution= () => {
                         initial={{opacity: 0, height: 0}}
                         animate={{opacity: 1, height: "auto"}}
                         exit={{opacity: 0, height: 0}}
-                        className="text-sm leading-relaxed text-gray-600 dark:text-gray-300"
+                        className="text-sm leading-relaxed text-gray-900 dark:text-muted-foreground"
                       >
                         {solution.description}
                       </motion.p>
@@ -95,7 +95,7 @@ export const ServiceSolution= () => {
                         initial={{opacity: 1, height: "auto"}}
                         animate={{opacity: 1, height: "auto"}}
                         exit={{opacity: 0, height: 0}}
-                        className="text-sm leading-relaxed text-gray-600 dark:text-gray-300 line-clamp-2"
+                        className="text-sm leading-relaxed text-gray-900 dark:text-muted-foreground line-clamp-2"
                       >
                         {solution.description}
                       </motion.p>
