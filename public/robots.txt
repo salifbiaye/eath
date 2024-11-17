@@ -1,6 +1,9 @@
-# Permissions globales pour tous les robots
+# *
 User-agent: *
 Allow: /
+
+# Host
+Host: https://eathstartup.com
 
 # Sitemaps
 Sitemap: https://eathstartup.com/sitemap.xml
