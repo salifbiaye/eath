@@ -1,8 +1,8 @@
-# *
+# Permissions globales pour tous les robots
 User-agent: *
 Allow: /
 
-# Host
+# Hôte principal
 Host: https://eathstartup.com
 
 # Sitemaps
