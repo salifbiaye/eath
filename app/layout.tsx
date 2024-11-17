@@ -58,6 +58,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <title>${siteConfig.name}</title>
         <meta property="og:title" content="eath"/>
         <meta property="og:description" content={siteConfig.description}/>
+        <meta name="google-site-verification" content="qlrtwZJkWHE178_wz8GM4IXJ1u4b0eq6qNSPIzWoYHQ"/>
         <meta property="og:image" content="https://www.eathstartup.com/eathpreview.png"/>
         <meta property="og:url" content="https://www.eathstartup.com/eathpreview.png"/>
         <meta property="og:type" content="website"/>

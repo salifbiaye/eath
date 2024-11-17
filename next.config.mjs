@@ -39,6 +39,7 @@ const nextConfig = {
     ignoreDuringBuilds: true, // Ignore ESLint during builds
   },
   headers:securityHeaders,
+
 }
 
 export default nextConfig
