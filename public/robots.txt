@@ -2,8 +2,5 @@
 User-agent: *
 Allow: /
 
-# Hôte principal
-Host: https://eathstartup.com
-
 # Sitemaps
 Sitemap: https://eathstartup.com/sitemap.xml
