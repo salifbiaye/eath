@@ -1,38 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <sitemap>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
     <loc>https://eathstartup.com/</loc>
     <lastmod>2024-11-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-  </sitemap>
+  </url>
 
-  <sitemap>
+  <url>
     <loc>https://eathstartup.com/a-propos</loc>
     <lastmod>2024-11-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
-  </sitemap>
+  </url>
 
-  <sitemap>
+  <url>
     <loc>https://eathstartup.com/contact</loc>
     <lastmod>2024-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-  </sitemap>
+  </url>
 
-  <sitemap>
+  <url>
     <loc>https://eathstartup.com/equipe</loc>
     <lastmod>2024-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-  </sitemap>
+  </url>
 
-  <sitemap>
+  <url>
     <loc>https://eathstartup.com/fonctionnement</loc>
     <lastmod>2024-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-  </sitemap>
-
-</sitemapindex>
+  </url>
+</urlset>
