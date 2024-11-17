@@ -230,7 +230,7 @@ const teamSections: Section[] = [
         ],
       },
       {
-        img: "images/AbdouNdiaye.JPG",
+        img: "images/AbdouNdiaye.jpg",
         name: "Abdou Ndiaye",
         designation: "Intelligence artificielle",
         socialLinks: [
