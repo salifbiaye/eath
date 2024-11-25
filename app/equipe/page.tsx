@@ -111,7 +111,7 @@ const teamSections: Section[] = [
       },
       {
         img: "/images/JeanMarie.jpeg",
-        name: "Jean Marie",
+        name: "Jean MARIE",
         designation: "UI design",
         socialLinks: [
           { icon: faTwitter, href: "#!" },
@@ -128,7 +128,7 @@ const teamSections: Section[] = [
     members: [
       {
         img: "/images/MarietaSow.jpeg",
-        name: "MarietaSow",
+        name: "Marieta SOW",
         designation: "Developpement backend",
         socialLinks: [
           { icon: faTwitter, href: "#!" },
@@ -148,7 +148,7 @@ const teamSections: Section[] = [
       },
       {
         img: "images/Rosalex.jpeg",
-        name: "AHAN Rosalex",
+        name: "Ahan ROSALEX",
         designation: "Developpement backend",
         socialLinks: [
           { icon: faTwitter, href: "#!" },
@@ -158,7 +158,7 @@ const teamSections: Section[] = [
       },
       {
         img: "/images/YoussouphNiang.jpeg",
-        name: "Youssouph Niang",
+        name: "Youssouph NIANG",
         designation: "Developpement mobile",
         socialLinks: [
           { icon: faTwitter, href: "#!" },
@@ -184,7 +184,7 @@ const teamSections: Section[] = [
       },
       {
         img: "/images/MariamaDiallo.jpeg",
-        name: "Mariame Diallo",
+        name: "Mariame DIALLO",
         designation: "Base de données",
         socialLinks: [
           { icon: faTwitter, href: "#!" },
@@ -194,7 +194,7 @@ const teamSections: Section[] = [
       },
       {
         img: "/images/DialikaThiaw.jpeg",
-        name: "Dialika Thiaw",
+        name: "Dialika THIAW",
         designation: "Base de données",
         socialLinks: [
           { icon: faTwitter, href: "#!" },
@@ -231,7 +231,7 @@ const teamSections: Section[] = [
       },
       {
         img: "images/AbdouNdiaye.jpg",
-        name: "Abdou Ndiaye",
+        name: "Abdou NDIAYE",
         designation: "Intelligence artificielle",
         socialLinks: [
           { icon: faTwitter, href: "#!" },
@@ -241,7 +241,7 @@ const teamSections: Section[] = [
       },
       {
         img: "images/MamadouDiallo.jpeg",
-        name: "Mamadou Saidou Diallo",
+        name: "Mamadou Saidou DIALLO",
         designation: "Intelligence artificielle",
         socialLinks: [
           { icon: faTwitter, href: "#!" },

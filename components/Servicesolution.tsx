@@ -25,7 +25,7 @@ const serviceList = [
   {
     title: "Interface web",
     description:
-      "Grâce à notre plateforme web, vous aurez toutes les informations par rapport à notre application. Accédez à des tableaux de bord détaillés, générez des rapports personnalisés et collaborez avec votre équipe en temps réel. Notre interface intuitive vous permet de prendre des décisions éclairées rapidement et efficacement.",
+      "Grâce à notre plateforme web, vous aurez toutes les informations par rapport à notre application.  Notre interface intuitive vous permet de prendre des décisions éclairées rapidement et efficacement.",
     icon: Monitor,
     gradient: "from-purple-500 to-indigo-500",
     pattern: "radial-gradient(circle at 50% 50%, rgba(167, 139, 250, 0.1) 0%, transparent 50%)",
