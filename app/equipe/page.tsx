@@ -101,7 +101,7 @@ const teamSections: Section[] = [
       },
       {
         img: "/images/CheikhBoye.jpeg",
-        name: "Cheikh Boye",
+        name: "Cheikh BOYE",
         designation: "UI design",
         socialLinks: [
           { icon: faTwitter, href: "#!" },
