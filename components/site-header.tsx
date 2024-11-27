@@ -69,7 +69,7 @@ export function SiteHeader() {
                 </SheetTrigger>
                 <SheetContent side={"left"} className="w-[300px] bg-white dark:bg-muted sm:w-[540px]">
                   <SheetHeader>
-                    <SheetTitle><Link href="/" className="mr-6 flex items-center gap-1 justify-center">
+                    <SheetTitle><Link href="/" onClick={toggleSheet} className="mr-6 flex items-center gap-1 justify-center">
                       <img src={logo} alt="logo" className=" w-8 h-10 rounded-full"/>
                       <span className={cn(" font-bold sm:inline-block",
                         pathname?.endsWith("/")
