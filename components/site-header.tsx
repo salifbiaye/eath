@@ -53,8 +53,6 @@ export function SiteHeader() {
 
 
   const toggleSheet = () => {
-
-    console.log('toggleSheet',isOpen)
     setIsOpen((prev) => !prev);
   };
 
