@@ -50,7 +50,11 @@ export function SiteHeader() {
     { link: '/contact', label: 'Contactez nous', color: 'text-redSmart', icon: Mail },
   ];
 
+  const [isOpen, setIsOpen] = useState(false);
 
+  const toggleSheet = () => {
+    setIsOpen((prev) => !prev);
+  };
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-white dark:bg-muted p-1">
@@ -60,7 +64,7 @@ export function SiteHeader() {
           <nav className="flex items-center space-x-6">
             <div className="flex flex-row gap-2">
               <Sheet>
-                <SheetTrigger className={"block lg:hidden"}>
+                <SheetTrigger className={"block lg:hidden"} onClick={toggleSheet}>
                   <Menu />
                 </SheetTrigger>
                 <SheetContent side={"left"} className="w-[300px] bg-white dark:bg-muted sm:w-[540px]">
@@ -84,6 +88,7 @@ export function SiteHeader() {
                       <Link
                         key={link.link}
                         href={link.link}
+                        onClick={toggleSheet}
                         className={`flex items-center space-x-4 text-lg font-medium hover:underline mb-10 ${link.color}`}
                       >
                         <link.icon className={cn(

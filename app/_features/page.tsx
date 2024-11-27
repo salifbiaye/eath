@@ -207,9 +207,26 @@ const features = [
     href: "/",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-2",
-    background: (<></>
-
-    ),
+    background: (
+      <></>
+    )
+    // background: (
+    //   <Command className="absolute right-10 top-10 w-[70%] origin-top translate-x-0 border transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:-translate-x-10">
+    //     <CommandInput placeholder="Tapez une commande ou recherchez..." />
+    //     <CommandList>
+    //       <CommandEmpty>Aucun résultat trouvé.</CommandEmpty>
+    //       <CommandGroup heading="Suggestions d'allergènes">
+    //         {
+    //       allergenes.map((allergene, idx) => (
+    //         <CommandItem key={idx}  >
+    //           {allergene}
+    //         </CommandItem>
+    //       ))}
+    //       </CommandGroup>
+    //     </CommandList>
+    //   </Command>
+    //
+    // ),
   },
   {
     Icon: Leaf,
