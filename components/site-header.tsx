@@ -13,7 +13,7 @@ import * as React from "react";
 export function SiteHeader() {
   const pathname = usePathname();
   const [mounted, setMounted] = useState(false);
-
+  const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
     setMounted(true);
   }, []);
@@ -50,9 +50,11 @@ export function SiteHeader() {
     { link: '/contact', label: 'Contactez nous', color: 'text-redSmart', icon: Mail },
   ];
 
-  const [isOpen, setIsOpen] = useState(false);
+
 
   const toggleSheet = () => {
+
+    console.log('toggleSheet',isOpen)
     setIsOpen((prev) => !prev);
   };
 
@@ -63,8 +65,8 @@ export function SiteHeader() {
         <div className="flex flex-1 items-center justify-end space-x-4">
           <nav className="flex items-center space-x-6">
             <div className="flex flex-row gap-2">
-              <Sheet>
-                <SheetTrigger className={"block lg:hidden"} onClick={toggleSheet}>
+              <Sheet open={isOpen} onOpenChange={setIsOpen}>
+                <SheetTrigger className={"block lg:hidden"}  >
                   <Menu />
                 </SheetTrigger>
                 <SheetContent side={"left"} className="w-[300px] bg-white dark:bg-muted sm:w-[540px]">
@@ -94,7 +96,7 @@ export function SiteHeader() {
                         <link.icon className={cn(
                           pathname?.startsWith(link.link) ? "text-primary" : "text-foreground"
                         )} />
-                        <span className={cn(
+                        <span  className={cn(
                           pathname?.startsWith(link.link) ? "text-primary" : "text-foreground"
                         )}>
                           {link.label}
