@@ -100,7 +100,7 @@ const teamSections: Section[] = [
         ],
       },
       {
-        img: "/images/CheikhBoye.jpeg",
+        img: "/images/CheikhBoye.jpg",
         name: "Cheikh BOYE",
         designation: "UI design",
         socialLinks: [
