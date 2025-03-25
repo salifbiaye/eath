@@ -61,6 +61,7 @@
     "gsap": "^3.12.5",
     "input-otp": "^1.2.4",
     "next": "^13.4.8",
+    "next-intl": "^4.0.2",
     "next-themes": "^0.2.1",
     "prop-types": "^15.8.1",
     "qss": "^3.0.0",

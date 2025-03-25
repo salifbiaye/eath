@@ -1,4 +1,6 @@
 "use client";
+
+import { useTranslations } from 'next-intl'
 import { Leaf, ThumbsUp ,PiggyBank} from "lucide-react";
 import { Calendar } from "@/components/ui/calendar";
 import {
@@ -242,6 +244,89 @@ const features = [
 ];
 
 export default function Features() {
+  const t = useTranslations('HomePage.features')
+
+  const files = [
+    {
+      name: t('poisoning.pathogens.salmonella.name'),
+      body: t('poisoning.pathogens.salmonella.body'),
+    },
+    {
+      name: t('poisoning.pathogens.ecoli.name'),
+      body: t('poisoning.pathogens.ecoli.body'),
+    },
+    {
+      name: t('poisoning.pathogens.listeria.name'),
+      body: t('poisoning.pathogens.listeria.body'),
+    },
+    {
+      name: t('poisoning.pathogens.botulism.name'),
+      body: t('poisoning.pathogens.botulism.body'),
+    },
+    {
+      name: t('poisoning.pathogens.aflatoxins.name'),
+      body: t('poisoning.pathogens.aflatoxins.body'),
+    },
+  ];
+
+  const features = [
+    {
+      Icon: Skull,
+      name: t('poisoning.title'),
+      description: t('poisoning.description'),
+      href: "/",
+      cta: t('cta'),
+      className: "col-span-3 lg:col-span-1",
+      background: (
+        <Marquee
+          pauseOnHover
+          className="absolute top-10 [--duration:20s] [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] "
+        >
+          {files.map((f, idx) => (
+            <figure
+              key={idx}
+              className={cn(
+                "relative w-32 cursor-pointer overflow-hidden rounded-xl border p-4",
+                "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
+                "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-destructive",
+                "transform-gpu blur-[1px] transition-all duration-300 ease-out hover:blur-none",
+              )}
+            >
+              <div className="flex flex-row items-center  gap-2">
+                <div className="flex flex-col">
+                  <figcaption className="text-sm font-medium  dark:text-white ">
+                    {f.name}
+                  </figcaption>
+                </div>
+              </div>
+              <blockquote className="mt-2 text-xs">{f.body}</blockquote>
+            </figure>
+          ))}
+        </Marquee>
+      ),
+    },
+    {
+      Icon: InputIcon,
+      name: t('allergens.title'),
+      description: t('allergens.description'),
+      href: "/",
+      cta: t('cta'),
+      className: "col-span-3 lg:col-span-2",
+      background: <></>,
+    },
+    {
+      Icon: Leaf,
+      name: t('halal.title'),
+      description: t('halal.description'),
+      href: "/",
+      cta: t('cta'),
+      className: "col-span-3 lg:col-span-2",
+      background: (
+        <AnimatedBeamMultipleOutputDemo className="absolute right-2 top-4 h-[300px] w-[600px] border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105" />
+      ),
+    },
+  ];
+
   return (
     <BentoGrid>
       {features.map((feature, idx) => (

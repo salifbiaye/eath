@@ -1,3 +1,5 @@
+import createNextIntlPlugin from 'next-intl/plugin';
+
 /** @type {import('next').NextConfig} */
 const securityHeaders = [
   {
@@ -25,6 +27,8 @@ const securityHeaders = [
     value: 'camera=(), microphone=(), geolocation=()',
   },
 ];
+
+const withNextIntl = createNextIntlPlugin();
 const nextConfig = {
   reactStrictMode: true,
   images: {
@@ -38,8 +42,7 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true, // Ignore ESLint during builds
   },
-  headers:securityHeaders,
+  headers: securityHeaders,
+};
 
-}
-
-export default nextConfig
+export default withNextIntl(nextConfig);

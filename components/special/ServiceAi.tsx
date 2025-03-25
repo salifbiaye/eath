@@ -1,7 +1,7 @@
+"use client";
 
-
-
-import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "./ui/card";
+import { useTranslations } from 'next-intl'
+import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "../ui/card";
 import {AnimatePresence, motion} from "framer-motion";
 import {Separator} from "@/components/ui/separator";
 import {AlertTriangle, BarChart2, Shield, CurlyBraces, ChevronRight} from "lucide-react";
@@ -71,11 +71,41 @@ const features: Feature[] =[
 
 
 
+
+
 export const ServiceAi = () => {
+  const t = useTranslations('HomePage.ai-section')
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null)
+
+  const features = [
+    {
+      title: t('features.contaminants.title'),
+      description: t('features.contaminants.description'),
+      icon: AlertTriangle,
+      color: 'from-red-200 to-orange-300'
+    },
+    {
+      title: t('features.nutrition.title'),
+      description: t('features.nutrition.description'),
+      icon: BarChart2,
+      color: 'from-green-200 to-emerald-300'
+    },
+    {
+      title: t('features.compliance.title'),
+      description: t('features.compliance.description'),
+      icon: Shield,
+      color: 'from-blue-400 to-indigo-300'
+    },
+    {
+      title: t('features.prediction.title'),
+      description: t('features.prediction.description'),
+      icon: CurlyBraces,
+      color: 'from-purple-400 to-pink-300'
+    }
+  ]
+
   return (
-    <section
-      className="w-full py-12 md:py-24 ">
+    <section className="w-full py-12 md:py-24">
       <div className="container px-4 md:px-6">
         <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, index) => (
@@ -140,13 +170,13 @@ export const ServiceAi = () => {
                     )}
                   </AnimatePresence>
                   <motion.button
-                    whileHover={{scale: 1.05}}
-                    whileTap={{scale: 0.95}}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
                     onClick={() => setExpandedIndex(expandedIndex === index ? null : index)}
                     className="mt-4 flex items-center text-sm font-medium text-secondary hover:text-purple-700 dark:text-purple-400 dark:hover:text-purple-300"
                   >
-                    {expandedIndex === index ? "Voir moins" : "En savoir plus"}
-                    <ChevronRight className="ml-1 h-4 w-4"/>
+                    {expandedIndex === index ? t('buttons.showLess') : t('buttons.showMore')}
+                    <ChevronRight className="ml-1 h-4 w-4" />
                   </motion.button>
                 </div>
                 <div
@@ -157,6 +187,6 @@ export const ServiceAi = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 

@@ -9,7 +9,7 @@ import {
   useMotionValue,
   useSpring,
 } from "framer-motion";
-import Link from "next/link";
+import {Link} from "@/src/i18n/navigation";
 import { cn } from "@/lib/utils";
 
 type LinkPreviewProps = {

@@ -1,43 +1,40 @@
 
 
-import {ChevronRight, CurlyBraces, Monitor, Smartphone} from "lucide-react";
+import { ChevronRight, CurlyBraces, Monitor, Smartphone } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
-import {useState} from "react";
+import { useState } from "react";
+import { useTranslations } from 'next-intl'
 
-
-const serviceList = [
-  {
-    title: "Application mobile",
-    description:
-      "Découvrez notre application mobile innovante pour la gestion de la sécurité alimentaire. Suivez et gérez les stocks, surveillez la qualité des produits et recevez des alertes en temps réel sur les risques potentiels. Assurez-vous que les aliments respectent les normes de sécurité les plus strictes, tout en gardant une vue d'ensemble sur les opérations.",
-    icon: Smartphone,
-    gradient: "from-violet-500 to-purple-500",
-    pattern: "radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.1) 0%, transparent 50%)",
-  },
-  {
-    title: "Intelligence artificielle",
-    description:
-      "Notre solution d'IA avancée analyse les composants des aliments pour garantir leur sécurité. Grâce à des algorithmes de pointe, nous pouvons détecter les contaminants, évaluer les valeurs nutritionnelles et assurer la conformité aux normes de sécurité alimentaire. Protégez les consommateurs et maintenez la qualité des produits avec notre technologie innovante.",
-    icon: CurlyBraces,
-    gradient: "from-fuchsia-500 to-purple-600",
-    pattern: "radial-gradient(circle at 50% 50%, rgba(192, 132, 252, 0.1) 0%, transparent 50%)",
-  },
-  {
-    title: "Interface web",
-    description:
-      "Grâce à notre plateforme web, vous aurez toutes les informations par rapport à notre application.  Notre interface intuitive vous permet de prendre des décisions éclairées rapidement et efficacement.",
-    icon: Monitor,
-    gradient: "from-purple-500 to-indigo-500",
-    pattern: "radial-gradient(circle at 50% 50%, rgba(167, 139, 250, 0.1) 0%, transparent 50%)",
-  },
-]
-
-
-export const ServiceSolution= () => {
+export const ServiceSolution = () => {
+  const t = useTranslations('HomePage.solutions.services')
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null)
+
+  const serviceList = [
+    {
+      title: t('mobileApp.title'),
+      description: t('mobileApp.description'),
+      icon: Smartphone,
+      gradient: "from-violet-500 to-purple-500",
+      pattern: "radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.1) 0%, transparent 50%)",
+    },
+    {
+      title: t('ai.title'),
+      description: t('ai.description'),
+      icon: CurlyBraces,
+      gradient: "from-fuchsia-500 to-purple-600",
+      pattern: "radial-gradient(circle at 50% 50%, rgba(192, 132, 252, 0.1) 0%, transparent 50%)",
+    },
+    {
+      title: t('web.title'),
+      description: t('web.description'),
+      icon: Monitor,
+      gradient: "from-purple-500 to-indigo-500",
+      pattern: "radial-gradient(circle at 50% 50%, rgba(167, 139, 250, 0.1) 0%, transparent 50%)",
+    },
+  ]
+
   return (
-    <section
-      className="w-full py-12 md:py-24 ">
+    <section className="w-full py-12 md:py-24">
       <div className="container px-4 md:px-6">
         <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {serviceList.map((solution, index) => (
@@ -102,13 +99,13 @@ export const ServiceSolution= () => {
                     )}
                   </AnimatePresence>
                   <motion.button
-                    whileHover={{scale: 1.05}}
-                    whileTap={{scale: 0.95}}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
                     onClick={() => setExpandedIndex(expandedIndex === index ? null : index)}
                     className="mt-4 flex items-center text-sm font-medium text-purple-600 hover:text-purple-700 dark:text-purple-400 dark:hover:text-purple-300"
                   >
-                    {expandedIndex === index ? "Voir moins" : "En savoir plus"}
-                    <ChevronRight className="ml-1 h-4 w-4"/>
+                    {expandedIndex === index ? t('buttons.showLess') : t('buttons.showMore')}
+                    <ChevronRight className="ml-1 h-4 w-4" />
                   </motion.button>
                 </div>
                 <div

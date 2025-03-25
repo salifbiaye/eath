@@ -1,0 +1,483 @@
+{
+  "HomePage": {
+    "title": "Hallo Welt!",
+    "about": "Gehe zur Über-uns-Seite",
+    "hero": {
+      "revolutionizing": "weltweit die Lebensmittelsicherheit revolutionieren.",
+      "videoAltDark": "Anwendungsoberfläche Dunkelmodus",
+      "videoAltLight": "Anwendungsoberfläche Hellmodus",
+      "videoUnsupported": "Ihr Browser unterstützt das Video-Tag nicht."
+    },
+    "problems": {
+      "title": "Probleme",
+      "description": "Im aktuellen Kontext ist die Gewährleistung der Lebensmittelsicherheit zu einer entscheidenden Priorität geworden, um die Gesundheit der Verbraucher zu schützen. Anwendungen zur Verwaltung der Lebensmittelsicherheit müssen mehrere große Herausforderungen bewältigen, um sichere und gesunde Lebensmittel zu gewährleisten. Hier sind die Hauptprobleme, die unsere Anwendung lösen soll",
+      "badge": "Probleme"
+    },
+    "objectives": {
+      "title": "Ziele",
+      "description": "Das Hauptziel unserer Lebensmittelsicherheitsanwendung ist es, die Sicherheit und Qualität der von Ihnen verzehrten Lebensmittel zu gewährleisten, indem wir leistungsstarke Tools zur Erkennung potenzieller Risiken und zur Bereitstellung wichtiger Informationen in Echtzeit bereitstellen.",
+      "globe": {
+        "darkMode": "Globus Dunkelmodus",
+        "lightMode": "Globus Hellmodus"
+      }
+    },
+    "features": {
+      "allergens": {
+        "title": "Allergenmanagement",
+        "description": "Identifizieren und verwalten Sie Allergene in Ihren Produkten effektiv, um die vollständige Einhaltung der Lebensmittelsicherheitsstandards zu gewährleisten.",
+        "searchPlaceholder": "Befehl eingeben oder suchen...",
+        "noResults": "Keine Ergebnisse gefunden.",
+        "suggestionsHeading": "Allergen-Vorschläge"
+      },
+      "poisoning": {
+        "title": "Vergiftungsrisiken",
+        "description": "Gift ist eine tödliche Substanz, die verwendet werden kann, um Menschen zu töten.",
+        "pathogens": {
+          "salmonella": {
+            "name": "Salmonellen",
+            "body": "Salmonellen sind eine Gruppe von Bakterien, die Lebensmittelvergiftungen verursachen können."
+          },
+          "ecoli": {
+            "name": "E. coli",
+            "body": "Escherichia coli (E. coli) ist ein Bakterium, das häufig im Darm von Menschen und Tieren vorkommt."
+          },
+          "listeria": {
+            "name": "Listerien",
+            "body": "Listeria monocytogenes ist ein Bakterium, das Listeriose verursachen kann, eine schwerwiegende Infektion, die normalerweise durch den Verzehr kontaminierter Lebensmittel verursacht wird."
+          },
+          "botulism": {
+            "name": "Botulismus",
+            "body": "Botulismus ist eine seltene, aber potenziell tödliche Krankheit, die durch ein Toxin verursacht wird, das von dem Bakterium Clostridium botulinum produziert wird."
+          },
+          "aflatoxins": {
+            "name": "Aflatoxine",
+            "body": "Aflatoxine sind giftige Verbindungen, die von bestimmten Schimmelpilzen, insbesondere Aspergillus flavus und Aspergillus parasiticus, produziert werden."
+          }
+        }
+      },
+      "halal": {
+        "title": "Halal-Lebensmittelzertifizierung",
+        "description": "Stellt sicher, dass Lebensmittel den Halal-Standards entsprechen, und gewährleistet vollständige Rückverfolgbarkeit und Compliance."
+      },
+      "cta": "Mehr erfahren"
+    },
+    "solutions": {
+      "title": "Hier sind die Lösungen",
+      "services": {
+        "mobileApp": {
+          "title": "Mobile Anwendung",
+          "description": "Entdecken Sie unsere innovative mobile Anwendung zur Verwaltung der Lebensmittelsicherheit. Verfolgen und verwalten Sie Bestände, überwachen Sie die Produktqualität und erhalten Sie Echtzeit-Warnungen zu potenziellen Risiken. Stellen Sie sicher, dass Lebensmittel die strengsten Sicherheitsstandards erfüllen, während Sie einen Überblick über die Vorgänge behalten."
+        },
+        "ai": {
+          "title": "Künstliche Intelligenz",
+          "description": "Unsere fortschrittliche KI-Lösung analysiert Lebensmittelbestandteile, um deren Sicherheit zu gewährleisten. Durch modernste Algorithmen können wir Verunreinigungen erkennen, Nährwerte bewerten und die Einhaltung der Lebensmittelsicherheitsstandards sicherstellen. Schützen Sie Verbraucher und erhalten Sie die Produktqualität mit unserer innovativen Technologie."
+        },
+        "web": {
+          "title": "Web-Oberfläche",
+          "description": "Über unsere Webplattform erhalten Sie alle Informationen zu unserer Anwendung. Unsere intuitive Oberfläche ermöglicht es Ihnen, schnell und effizient fundierte Entscheidungen zu treffen."
+        },
+        "buttons": {
+          "showMore": "Mehr erfahren",
+          "showLess": "Weniger anzeigen"
+        }
+      }
+    },
+    "ai-section": {
+      "title": "Künstliche Intelligenz",
+      "features": {
+        "contaminants": {
+          "title": "Erkennung von Verunreinigungen und Fremdkörpern",
+          "description": "KI kann Lebensmittel-Scandaten analysieren, um das Vorhandensein von Verunreinigungen wie Pestiziden, Schwermetallen oder Krankheitserregern zu identifizieren. Durch fortschrittliche Algorithmen kann es Spuren erkennen, die traditionellen Analysemethoden entgehen könnten."
+        },
+        "nutrition": {
+          "title": "Bewertung der Nährwerte",
+          "description": "KI kann genaue Bewertungen der Nährwerte von Lebensmitteln durch Analyse ihrer Zusammensetzung liefern. Dies ermöglicht nicht nur die Überprüfung der Nährstoffqualität von Produkten, sondern hilft auch Verbrauchern, gesündere Lebensmittelauswahl basierend auf ihren spezifischen Bedürfnissen zu treffen."
+        },
+        "compliance": {
+          "title": "Einhaltung der Lebensmittelsicherheitsstandards",
+          "description": "Durch den Einsatz von Machine-Learning-Modellen kann KI Lebensmitteltestergebnisse mit aktuellen Sicherheitsstandards vergleichen. Dies hilft sicherzustellen, dass Produkte Vorschriften und Qualitätsstandards entsprechen, und reduziert so das Risiko von Nichteinhaltung."
+        },
+        "prediction": {
+          "title": "Vorhersage und Prävention",
+          "description": "KI kann Trends und historische Daten analysieren, um potenzielle Lebensmittelsicherheitsprobleme vor ihrem Auftreten vorherzusagen. Beispielsweise kann es wiederkehrende Muster von Kontamination oder Abweichung von Standards identifizieren, was ein frühzeitiges und proaktives Eingreifen zur Verhinderung potenzieller Krisen ermöglicht."
+        }
+      },
+      "buttons": {
+        "showMore": "Mehr erfahren",
+        "showLess": "Weniger anzeigen"
+      }
+    },
+    "multiplatform": {
+      "title": "Mit eath,",
+      "description": "genießen Sie eine außergewöhnliche plattformübergreifende Erfahrung auf Android, iPhone und mehr.",
+      "imageAlt": "iPhone-12"
+    },
+    "auth": {
+      "title": "Zugriff auf Ihren persönlichen Bereich",
+      "subtitle": "mit verbesserter Sicherheit.",
+      "videoUnsupported": "Ihr Browser unterstützt das Video-Tag nicht.",
+      "altDark": "Authentifizierungsoberfläche Dunkelmodus",
+      "altLight": "Authentifizierungsoberfläche Hellmodus"
+    },
+    "content": {
+      "title": "Entdecken Sie unsere Inhalte",
+      "subtitle": "durch diese faszinierenden Seiten.",
+      "videoUnsupported": "Ihr Browser unterstützt das Video-Tag nicht.",
+      "altDark": "Inhaltsoberfläche Dunkelmodus",
+      "altLight": "Inhaltsoberfläche Hellmodus"
+    },
+    "testimonials": {
+      "title": "Lebensmitteltragödien",
+      "subtitle": "Tödliche Vorfälle aufgrund von Allergenen und Giften.",
+      "cases": [
+        {
+          "name": "Cyril M. Smith",
+          "username": "@cyrilsmith",
+          "body": "Cyril M. Smith starb nach dem Verzehr eines Gerichts, das nicht deklarierte Allergene enthielt. Seine schwere allergische Reaktion führte zu tödlichen Komplikationen."
+        },
+        {
+          "name": "Sophie Grégoire Trudeau",
+          "username": "@sophiegr",
+          "body": "Sophie Grégoire Trudeau erlitt eine schwere allergische Reaktion aufgrund von Lebensmittelkreuzkontamination. Obwohl sie überlebte, hatten die Komplikationen dauerhafte Auswirkungen auf ihre Gesundheit."
+        },
+        {
+          "name": "Vladimir Putin",
+          "username": "@vputin",
+          "body": "Vladimir Putin war das Opfer eines Vergiftungsversuchs mit Polonium-210. Obwohl nicht direkt lebensmittelbezogen, unterstreicht dieser Vorfall die Gefahren toxischer Substanzen."
+        },
+        {
+          "name": "Mahatma Gandhi",
+          "username": "@gandhi",
+          "body": "Mahatma Gandhi litt unter zahlreichen gesundheitlichen Problemen im Zusammenhang mit seiner Ernährung während seiner Fastenperioden. Obwohl die Haupttodesursache eine Kugel war, trugen seine Ernährungsgewohnheiten zu seinen Gesundheitsproblemen bei."
+        },
+        {
+          "name": "Jimi Hendrix",
+          "username": "@jimi",
+          "body": "Jimi Hendrix starb an einer Drogenüberdosis, verschlimmert durch seine Verdauungs- und Ernährungsgesundheitsprobleme. Seine Essgewohnheiten spielten eine Rolle bei seinen Gesundheitsproblemen."
+        },
+        {
+          "name": "Marlon Brando",
+          "username": "@brando",
+          "body": "Marlon Brando starb an gesundheitlichen Komplikationen im Zusammenhang mit unzureichender Ernährung und Übergewicht, was zu seinen schweren medizinischen Problemen beitrug."
+        },
+        {
+          "name": "Karen Carpenter",
+          "username": "@kcarpenter",
+          "body": "Karen Carpenter starb an schwerer Magersucht, einer Störung im Zusammenhang mit unzureichender Ernährung und Lebensmittelgesundheitsproblemen."
+        },
+        {
+          "name": "Anton Pavlovich Chekhov",
+          "username": "@chekhov",
+          "body": "Anton Pavlovich Chekhov starb an Tuberkulose, litt jedoch unter gesundheitlichen Problemen im Zusammenhang mit unzureichender Ernährung und Infektionskrankheiten."
+        },
+        {
+          "name": "Alexander Litvinenko",
+          "username": "@Litvinenko",
+          "body": "Der ehemalige russische Geheimdienstoffizier Alexander Litvinenko wurde 2006 mit Polonium-210 vergiftet. Die Vergiftung erfolgte größtenteils während eines Treffens in einem Londoner Restaurant. Sein Fall ist gut dokumentiert und hatte große mediale Auswirkungen."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Lebensmittelsicherheit?",
+      "subtitle": "gemeinsam garantieren wir sie."
+    },
+    "linkApp": {
+      "title": "Auf allen Plattformen verfügbar",
+      "description": "Unsere mobile Anwendung zur Lebensmittelsicherheit ist jetzt im App Store und Google Play Store erhältlich. Egal, ob Sie iOS- oder Android-Nutzer sind, Sie können unsere fortschrittliche Technologie nutzen, um die Lebensmittelsicherheit überall zu scannen und zu überprüfen. Laden Sie sie noch heute herunter, um sicherer und bewusster zu essen!",
+      "appStore": "App Store",
+      "playStore": "Google Play Store",
+      "imageAlt": {
+        "android": "Android-Download-Button",
+        "apple": "Apple-Download-Button"
+      }
+    }
+  },
+  "header": {
+    "links": {
+      "about": {
+        "label": "Über Eath"
+      },
+      "functioning": {
+        "label": "Funktionsweise"
+      },
+      "team": {
+        "label": "Team"
+      },
+      "contact": {
+        "label": "Kontaktieren Sie uns"
+      }
+    },
+    "sheet": {
+      "title": "Menü",
+      "description": "Entdecken Sie die verschiedenen Abschnitte unserer Website."
+    }
+  },
+  "footer": {
+    "links": {
+      "about": {
+        "label": "Über Eath"
+      },
+      "functioning": {
+        "label": "Funktionsweise"
+      },
+      "team": {
+        "label": "Team"
+      },
+      "contact": {
+        "label": "Kontaktieren Sie uns"
+      }
+    },
+    "social": {
+      "twitter": "Folgen Sie uns auf Twitter",
+      "facebook": "Folgen Sie uns auf Facebook",
+      "instagram": "Folgen Sie uns auf Instagram"
+    }
+  },
+  "mainNav": {
+    "links": {
+      "home": {
+        "label": "Startseite"
+      },
+      "about": {
+        "label": "Über eath"
+      },
+      "features": {
+        "label": "Funktionen"
+      },
+      "team": {
+        "label": "Team"
+      },
+      "contact": {
+        "label": "Kontaktieren Sie uns"
+      }
+    },
+    "logo": {
+      "alt": "Eath-Logo"
+    }
+  },
+  "aboutPage": {
+    "title": "Über",
+    "description": {
+      "part1": "eath ist ein Startup, das eine ausgeklügelte mobile Anwendung entwickelt hat, die die Lebensmittelsicherheit für Verbraucher weltweit gewährleistet.",
+      "part2": "Tatsächlich verändern wir die Welt durch diese Innovation, die eine technische Lösung für technische Probleme der Lebensmittelsicherheit und der öffentlichen Gesundheit durch die folgenden Funktionen darstellt."
+    },
+    "cards": {
+      "mission": {
+        "title": "Mission",
+        "text": "Weltweit die Lebensmittelsicherheit revolutionieren!"
+      },
+      "vision": {
+        "title": "Vision",
+        "text": "Inspirieren Sie die nächste Generation, Herausforderungen durch Innovation und soziales Unternehmertum zu bewältigen."
+      },
+      "values": {
+        "title": "Werte",
+        "text": "Reduzieren Sie die Lebensmittelverbrauchsrisiken um bis zu 1,03%, bieten Sie Verbrauchern ein präzises, zuverlässiges Lebensmittelanalysetool. Garantieren Sie einen sicheren Lebensmittelkonsum für die Öffentlichkeit."
+      },
+      "origin": {
+        "title": "Ursprung",
+        "text": "Die Idee für diese Anwendung entstand aus wachsenden Bedenken hinsichtlich der Lebensmittelsicherheit und den in aktuellen Erkennungstools beobachteten Lücken. Initiiert durch ein Team, das sich leidenschaftlich für Technologie und Lebensmittelsicherheit einsetzt, wurde die Anwendung entwickelt, um der wachsenden Nachfrage nach zugänglichen und effektiven Lösungen zur Überprüfung der Lebensmittelkonformität und -sicherheit mit Standardnormen gerecht zu werden."
+      },
+      "technology": {
+        "title": "Technologie",
+        "text": "Unsere Anwendung basiert auf einer Kombination modernster Technologien, einschließlich künstlicher Intelligenz und Computer Vision. Diese Technologien ermöglichen die schnelle Analyse gescannter Lebensmittel zur Erkennung schädlicher Substanzen. Wir nutzen moderne Plattformen wie React für das Frontend und Cloud-Lösungen für die Datenverarbeitung, um optimale Leistung und verbesserte Sicherheit zu gewährleisten."
+      },
+      "ingredients": {
+        "title": "Präzise Inhaltsstoffanalyse",
+        "text": "Nutzt künstliche Intelligenz zur Erkennung aller Mahlzeitenbestandteile. Lebensmittelgruppen (Getränke, Getreide, Fleisch etc.) werden präzise klassifiziert."
+      },
+      "halal": {
+        "title": "Halal-Konformität",
+        "text": "Spezielle Algorithmen* überprüfen die Einhaltung von Halal-Standards. Erfüllt die Kriterien religiöser Gemeinschaften, die Halal-Optionen benötigen."
+      },
+      "allergens": {
+        "title": "Allergenerkennung",
+        "text": "Unsere App identifiziert potenzielle Allergene, um allergische Reaktionen zu verhindern. Verbraucher können ihre Lebensmittel sicher bestellen."
+      },
+      "harmful": {
+        "title": "Schädliche Substanzen und Ernährung",
+        "text": "Ein zuverlässiges System erkennt Drogen, Gifte und Toxine, um Vergiftungsrisiken zu verhindern. Es analysiert Nährwertinformationen und warnt Nutzer bei verdächtigen Elementen."
+      },
+      "nutrition": {
+        "title": "Nährwertaufnahme",
+        "text": "Eine Nährwertberechnungsfunktion hilft Nutzern, die gesundheitlichen Auswirkungen ihrer Mahlzeiten zu verstehen - besonders nützlich für Diabetiker, Diätende und Vegetarier."
+      },
+      "social": {
+        "title": "Soziale Inklusion",
+        "text": "Durch Sprachassistenten macht unsere App Lebensmittelsicherheit auch für Sehbehinderte zugänglich."
+      },
+      "targets": {
+        "title": "Unsere Zielgruppen",
+        "text": "Weltbevölkerung, Fast-Food-Ketten, Hotels, Tourismussektor, Universitätsrestaurants, Schulkantinen sowie Sportler und Sportgemeinschaften."
+      }
+    },
+    "whyUs": {
+      "title": "Warum",
+      "name": "eath",
+      "question": " wählen?",
+      "description": "Laut WHO erkranken jährlich 600 Millionen Menschen durch verunreinigte Lebensmittel, was zu 420.000 Todesfällen führt. 40% der lebensmittelbedingten Krankheiten betreffen Kinder unter 5 Jahren. Unsere Eath-App hilft, Leben zu retten und Lebensmittelsicherheit zu gewährleisten.",
+      "features": {
+        "security": {
+          "title": "Lebensmittelsicherheit",
+          "description": "Dank präziser Analysen können Sie Mahlzeiten sicher genießen."
+        },
+        "compliance": {
+          "title": "Konformität",
+          "description": "Erfüllung spezifischer Ernährungsanforderungen wie Halal-Standards."
+        },
+        "prevention": {
+          "title": "Allergieprävention",
+          "description": "Vermeidung allergischer Reaktionen durch Allergenerkennung."
+        },
+        "health": {
+          "title": "Gesundheit",
+          "description": "Verstehen Sie Nährwerte und treffen Sie gesündere Entscheidungen."
+        }
+      }
+    }
+  },
+  "functioningPage": {
+    "title": "Funktionsweise",
+    "services": {
+      "mainTitle": "In einer Welt mit wachsenden Lebensmittelsicherheitsbedenken",
+      "subtitle": "wird eine Lebensmittelsicherheits-App essentiell zum Schutz der Verbrauchergesundheit.",
+      "list": {
+        "ingredients": {
+          "title": "Präzise Inhaltsstoffanalyse",
+          "description": "Nutzt KI zur Identifikation aller Mahlzeitenbestandteile und präzisen Klassifizierung von Lebensmittelgruppen."
+        },
+        "allergens": {
+          "title": "Allergenerkennung",
+          "description": "Erkennt potenzielle Allergene, damit Verbraucher sicher essen können."
+        },
+        "halal": {
+          "title": "Halal-Konformität",
+          "description": "Spezialalgorithmen gewährleisten die Einhaltung religiöser Speisevorschriften."
+        },
+        "nutrition": {
+          "title": "Nährwertanalyse",
+          "description": "Bietet detaillierte Nährwertinformationen für bewusste Ernährungsentscheidungen."
+        }
+      }
+    },
+    "otherServices": {
+      "title": "Weitere Services",
+      "subtitle": "Diese revolutionäre App nutzt Technologie für sichere Lebensmittel",
+      "list": {
+        "history": {
+          "title": "Scan-Verlauf",
+          "description": "Behält alle gescannten Lebensmittel mit Details für spätere Referenz."
+        },
+        "harmful": {
+          "title": "Schadstofferkennung",
+          "description": "Erkennt und warnt vor gefährlichen Substanzen in Lebensmitteln."
+        },
+        "social": {
+          "title": "Barrierefreiheit",
+          "description": "Sprachsteuerung macht die App für Sehbehinderte nutzbar."
+        }
+      }
+    }
+  },
+  "teamPage": {
+    "title": "Unser",
+    "subtitle": "Team",
+    "sections": {
+      "management": {
+        "title": "Eath-Management",
+        "description": "Führungsteam der mobilen Anwendung"
+      },
+      "design": {
+        "title": "Design-Abteilung",
+        "description": "UI/UX-Designer unserer App"
+      },
+      "development": {
+        "title": "Entwicklung",
+        "description": "Entwicklerteam für mobile und Web-Plattformen"
+      },
+      "database": {
+        "title": "Datenbankteam",
+        "description": "Verantwortlich für Datenspeicherung und -verwaltung"
+      },
+      "ai": {
+        "title": "KI-Abteilung",
+        "description": "Experten für künstliche Intelligenz und Algorithmen"
+      }
+    },
+    "ambitions": {
+      "origins": {
+        "title": "Unsere Wurzeln",
+        "description": "Unser Team kommt aus akademischen Hintergründen und ist leidenschaftlich darin, Herausforderungen anzunehmen."
+      },
+      "motivation": {
+        "title": "Unsere Motivation",
+        "description": "Inspiriert durch aktuelle Krisen wie COVID-19 und Umweltprobleme übernehmen wir soziale Verantwortung."
+      },
+      "ambition": {
+        "title": "Unsere Ambition",
+        "description": "Als vielversprechendes Startup wollen wir mit unserer App mehrere Branchen revolutionieren."
+      },
+      "expertise": {
+        "title": "Unser Fachwissen",
+        "description": "Wir haben tiefgehendes Verständnis für globale Lebensmittelsicherheitsprobleme."
+      },
+      "business": {
+        "title": "Unser Modell",
+        "description": "Als soziales Unternehmen zielen wir auf Lebensmittelsicherheit und öffentliche Gesundheit ab."
+      },
+      "impact": {
+        "title": "Unsere Wirkung",
+        "description": "Eath wird langfristig positive Auswirkungen auf Umwelt und Gesellschaft haben."
+      }
+    }
+  },
+  "contactPage": {
+    "title": "Kontakt",
+    "subtitle": "aufnehmen",
+    "discussion": {
+      "title": "Lassen Sie uns reden",
+      "description": "Stellen Sie Ihre Fragen unten oder rufen Sie unser Vertriebsteam an."
+    },
+    "contactInfo": {
+      "title": "Kontaktdaten",
+      "email": {
+        "label": "E-Mail",
+        "value": "eath@eathstartup.com"
+      },
+      "phone": {
+        "label": "Telefon",
+        "value": "+221 77 842 49 05"
+      },
+      "address": {
+        "label": "Adresse",
+        "value": "VDN 3, Corniche Rue 53 Camb"
+      }
+    },
+    "messageForm": {
+      "title": "Nachricht senden",
+      "email": {
+        "label": "E-Mail",
+        "placeholder": "Ihre E-Mail-Adresse"
+      },
+      "message": {
+        "label": "Nachricht",
+        "placeholder": "Ihre Nachricht"
+      },
+      "submit": "Absenden",
+      "notifications": {
+        "unavailable": {
+          "title": "❌ Nicht verfügbar",
+          "description": "Diese Funktion ist noch nicht verfügbar. Bitte kontaktieren Sie uns telefonisch."
+        },
+        "success": {
+          "title": "Erfolg",
+          "description": "E-Mail erfolgreich versendet"
+        },
+        "error": {
+          "title": "Fehler",
+          "description": "Fehler beim Senden der E-Mail"
+        }
+      }
+    }
+  }
+}

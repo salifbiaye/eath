@@ -1,11 +1,12 @@
 
-import React, {useEffect, useRef} from 'react';
-import { BentoGrid } from './magicui/bento-grid';
-import OrbitingCirclesDemo from "@/app/_integrations/page";
-import Globe from "@/components/magicui/globe";
-import createGlobe from "cobe";
+import React, { useEffect, useRef } from 'react'
+import { useTranslations } from 'next-intl'
+import OrbitingCirclesDemo from "@/app/_integrations/page"
+import createGlobe from "cobe"
 
 function BentoObjectif() {
+  const t = useTranslations('HomePage.objectives.globe')
+  
   return (
     <div className={"min-h-screen w-screen"}>
       <OrbitingCirclesDemo />
@@ -14,6 +15,7 @@ function BentoObjectif() {
 }
 
 export default BentoObjectif;
+
 export const GlobeDark = ({ className }: { className?: string }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -61,6 +63,7 @@ export const GlobeDark = ({ className }: { className?: string }) => {
     />
   );
 };
+
 export const GlobeWhite = ({ className }: { className?: string }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 

@@ -1,38 +1,37 @@
 
 
+import { useTranslations } from 'next-intl';
 import { motion } from "framer-motion";
-import {HelpCircleIcon, History, LucideIcon, SyringeIcon} from "lucide-react";
-import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card";
+import { HelpCircleIcon, History, LucideIcon, SyringeIcon } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+
 interface Service {
   icon: LucideIcon;
   title: string;
   description: string;
-
 }
-const serviceList:Service[] = [
-  {
-    icon: History,
-    title: "Historique des scans",
-    description:
-      "Un historique des aliments scannés avec des détails sur chaque scan, permettant aux utilisateurs de revoir les informations sur les produits qu'ils ont scannés auparavant.",
-  },
-  {
-    icon: SyringeIcon,
-    title: "Substances Nocives et Nutrition",
-    description:
-      "Un système fiable intégré de détection des drogues, poisons et venins préviendra tout risque, d'intoxication,  contamination accidentelle ou d'empoisonnement dans les repas. Le système intercepte l'information  nutritionnelle à analyser puis cherche des traces de substances nocives dans le repas.  Au moindre soupçon détecté de traces de ces substances nocives, l'information est envoyée sur l'interface du téléphone pour avertir la personne. À cet effet ces technologies aident les consommateurs à s'assurer de manger sûrement et sainement  leurs repas. ",
-  },
-  {
-    icon:HelpCircleIcon,
-    title: "Inclusion sociale",
-    description:
-      "nous utilisons les technologies avancées pour faciliter la réalisation de cette application mobile avec l’intégration d'un assistant vocal qui assure une accessibilité accrue  en garantissant la sécurité alimentaire des personnes malvoyantes et en promouvant l'équité sociale.",
-  },
-];
-
-
 
 export default function ServiceList() {
+  const t = useTranslations('functioningPage.otherServices');
+
+  const serviceList: Service[] = [
+    {
+      icon: History,
+      title: t('list.history.title'),
+      description: t('list.history.description'),
+    },
+    {
+      icon: SyringeIcon,
+      title: t('list.harmful.title'),
+      description: t('list.harmful.description'),
+    },
+    {
+      icon: HelpCircleIcon,
+      title: t('list.social.title'),
+      description: t('list.social.description'),
+    },
+  ];
+
   return (
     <section className="relative w-full overflow-hidden dark:bg-primary bg-secondary py-24">
       {[...Array(15)].map((_, i) => (
@@ -52,11 +51,11 @@ export default function ServiceList() {
 
       <div className="container relative px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <h2 className="text-3xl font-bold tracking-tighter text-white sm:text-5xl">Nos autres services</h2>
+          <h2 className="text-3xl font-bold tracking-tighter text-white sm:text-5xl">
+            {t('title')}
+          </h2>
           <p className="mx-auto max-w-[900px] text-white/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Cette application révolutionnaire utilise la technologie pour garantir que les aliments que nous consommons
-            sont
-            sûrs et exempts de risques
+            {t('subtitle')}
           </p>
         </div>
 

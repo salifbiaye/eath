@@ -1,0 +1,487 @@
+{
+  "HomePage": {
+    "title": "Hello world!",
+    "about": "Go to the about page",
+    "hero": {
+      "revolutionizing": "revolutionizing food security worldwide.",
+      "videoAltDark": "Application interface dark mode",
+      "videoAltLight": "Application interface light mode",
+      "videoUnsupported": "Your browser does not support the video tag."
+    },
+    "problems": {
+      "title": "Problems",
+      "description": "In the current context, ensuring food security has become a crucial priority to protect consumer health. Food safety management applications must address several major challenges to ensure safe and healthy food. Here are the main problems our application aims to solve",
+      "badge": "Problems"
+    },
+    "objectives": {
+      "title": "Objectives",
+      "description": "The main objective of our food safety application is to ensure the safety and quality of the food you consume, by providing powerful tools to detect potential risks and provide crucial information in real-time.",
+      "globe": {
+        "darkMode": "Globe dark mode",
+        "lightMode": "Globe light mode"
+      }
+    },
+    "features": {
+      "allergens": {
+        "title": "Allergen Management",
+        "description": "Effectively identify and manage allergens in your products, ensuring full compliance with food safety standards.",
+        "searchPlaceholder": "Type a command or search...",
+        "noResults": "No results found.",
+        "suggestionsHeading": "Allergen Suggestions"
+      },
+      "poisoning": {
+        "title": "Poisoning Risks",
+        "description": "Poison is a deadly substance that can be used to kill people.",
+        "pathogens": {
+          "salmonella": {
+            "name": "Salmonella",
+            "body": "Salmonella is a group of bacteria that can cause food poisoning."
+          },
+          "ecoli": {
+            "name": "E. coli",
+            "body": "Escherichia coli (E. coli) is a bacteria commonly found in the intestines of humans and animals."
+          },
+          "listeria": {
+            "name": "Listeria",
+            "body": "Listeria monocytogenes is a bacteria that can cause listeriosis, a serious infection usually caused by eating contaminated food."
+          },
+          "botulism": {
+            "name": "Botulism",
+            "body": "Botulism is a rare but potentially deadly illness caused by a toxin produced by the bacterium Clostridium botulinum."
+          },
+          "aflatoxins": {
+            "name": "Aflatoxins",
+            "body": "Aflatoxins are toxic compounds produced by certain molds, particularly Aspergillus flavus and Aspergillus parasiticus."
+          }
+        }
+      },
+      "halal": {
+        "title": "Halal Food Certification",
+        "description": "Ensures that foods comply with halal standards, ensuring complete traceability and compliance."
+      },
+      "cta": "Learn more"
+      
+    },
+    "solutions": {
+        "title": "Here are the solutions",
+        "services": {
+          "mobileApp": {
+            "title": "Mobile Application",
+            "description": "Discover our innovative mobile application for food safety management. Track and manage inventory, monitor product quality, and receive real-time alerts about potential risks. Ensure that food meets the strictest safety standards while maintaining an overview of operations."
+          },
+          "ai": {
+            "title": "Artificial Intelligence",
+            "description": "Our advanced AI solution analyzes food components to ensure their safety. Through cutting-edge algorithms, we can detect contaminants, evaluate nutritional values, and ensure compliance with food safety standards. Protect consumers and maintain product quality with our innovative technology."
+          },
+          "web": {
+            "title": "Web Interface",
+            "description": "Through our web platform, you will have all the information about our application. Our intuitive interface allows you to make informed decisions quickly and efficiently."
+          },
+          "buttons": {
+            "showMore": "Learn more",
+            "showLess": "Show less"
+          }
+        }
+      },
+      "ai-section": {
+      "title": "Artificial Intelligence",
+      "features": {
+        "contaminants": {
+          "title": "Contaminants and Foreign Bodies Detection",
+          "description": "AI can analyze food scan data to identify the presence of contaminants such as pesticides, heavy metals, or pathogens. Through advanced algorithms, it can detect traces that might escape traditional analysis methods."
+        },
+        "nutrition": {
+          "title": "Nutritional Values Assessment",
+          "description": "AI can provide accurate assessments of food nutritional values by analyzing their composition. This not only allows verification of products' nutritional quality but also helps advise consumers on healthier food choices based on their specific needs."
+        },
+        "compliance": {
+          "title": "Food Safety Standards Compliance",
+          "description": "Using machine learning models, AI can compare food test results with current safety standards. This helps ensure products meet regulations and quality standards, thus reducing the risk of non-compliance."
+        },
+        "prediction": {
+          "title": "Prediction and Prevention",
+          "description": "AI can analyze trends and historical data to predict potential food safety issues before they occur. For example, it can identify recurring patterns of contamination or deviation from standards, allowing early and proactive intervention to prevent potential crises."
+        }
+      },
+      "buttons": {
+        "showMore": "Learn more",
+        "showLess": "Show less"
+      }
+    },
+    "multiplatform": {
+      "title": "With eath,",
+      "description": "enjoy an exceptional cross-platform experience on Android, iPhone, and more.",
+      "imageAlt": "iPhone-12"
+    },
+    "auth": {
+      "title": "Access your personal space",
+      "subtitle": "with enhanced security.",
+      "videoUnsupported": "Your browser does not support the video tag.",
+      "altDark": "Authentication interface dark mode",
+      "altLight": "Authentication interface light mode"
+    },
+    "content": {
+      "title": "Explore our content",
+      "subtitle": "through these fascinating pages.",
+      "videoUnsupported": "Your browser does not support the video tag.",
+      "altDark": "Content interface dark mode",
+      "altLight": "Content interface light mode"
+    },
+    "testimonials": {
+      "title": "Food Tragedies",
+      "subtitle": "Fatal Incidents Due to Allergens and Poisons.",
+      "cases": [
+        {
+          "name": "Cyril M. Smith",
+          "username": "@cyrilsmith",
+          "body": "Cyril M. Smith died after consuming a dish containing undeclared allergens. His severe allergic reaction led to fatal complications."
+        },
+        {
+          "name": "Sophie Grégoire Trudeau",
+          "username": "@sophiegr",
+          "body": "Sophie Grégoire Trudeau suffered a severe allergic reaction due to food cross-contamination. Although she survived, the complications had a lasting impact on her health."
+        },
+        {
+          "name": "Vladimir Putin",
+          "username": "@vputin",
+          "body": "Vladimir Putin was the victim of an attempted poisoning with polonium-210. Although not directly food-related, this incident highlights the dangers of toxic substances."
+        },
+        {
+          "name": "Mahatma Gandhi",
+          "username": "@gandhi",
+          "body": "Mahatma Gandhi suffered numerous health problems related to his diet during his fasting periods. Although the main cause of his death was a bullet, his dietary habits contributed to his health problems."
+        },
+        {
+          "name": "Jimi Hendrix",
+          "username": "@jimi",
+          "body": "Jimi Hendrix died from a drug overdose, exacerbated by his digestive and dietary health problems. His eating habits played a role in his health issues."
+        },
+        {
+          "name": "Marlon Brando",
+          "username": "@brando",
+          "body": "Marlon Brando died from health complications related to inadequate nutrition and excess weight, contributing to his serious medical problems."
+        },
+        {
+          "name": "Karen Carpenter",
+          "username": "@kcarpenter",
+          "body": "Karen Carpenter died from severe anorexia, a disorder related to inadequate nutrition and food health problems."
+        },
+        {
+          "name": "Anton Pavlovich Chekhov",
+          "username": "@chekhov",
+          "body": "Anton Pavlovich Chekhov died of tuberculosis, but he suffered from health problems related to inadequate nutrition and infectious diseases."
+        },
+        {
+          "name": "Alexander Litvinenko",
+          "username": "@Litvinenko",
+          "body": "Former Russian secret service agent Alexander Litvinenko was poisoned with polonium-210 in 2006. The poisoning largely took place during a meeting at a London restaurant. His case is well documented and had a wide media impact."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Food security?",
+      "subtitle": "together we guarantee it."
+    },
+    "linkApp": {
+      "title": "Available on all platforms",
+      "description": "Our food safety mobile application is now accessible on the App Store and Google Play Store. Whether you're an iOS or Android user, you can take advantage of our advanced technology to scan and verify food safety wherever you are. Download it today for safer and more conscious eating!",
+      "appStore": "App Store",
+      "playStore": "Google Play Store",
+      "imageAlt": {
+        "android": "Android download button",
+        "apple": "Apple download button"
+      }
+    }
+
+  },
+  "header": {
+    "links": {
+      "about": {
+        "label": "About Eath"
+      },
+      "functioning": {
+        "label": "How it works"
+      },
+      "team": {
+        "label": "Team"
+      },
+      "contact": {
+        "label": "Contact us"
+      }
+    },
+    "sheet": {
+      "title": "Menu",
+      "description": "Explore the different sections of our site."
+    }
+  },
+  "footer": {
+    "links": {
+      "about": {
+        "label": "About Eath"
+      },
+      "functioning": {
+        "label": "How it works"
+      },
+      "team": {
+        "label": "Team"
+      },
+      "contact": {
+        "label": "Contact us"
+      }
+    },
+    "social": {
+      "twitter": "Follow us on Twitter",
+      "facebook": "Follow us on Facebook",
+      "instagram": "Follow us on Instagram"
+    }
+  },
+  "mainNav": {
+    "links": {
+      "home": {
+        "label": "Home"
+      },
+      "about": {
+        "label": "About eath"
+      },
+      "features": {
+        "label": "Features"
+      },
+      "team": {
+        "label": "Team"
+      },
+      "contact": {
+        "label": "Contact us"
+      }
+    },
+    "logo": {
+      "alt": "Eath Logo"
+    }
+  },
+  "aboutPage": {
+    "title": "About",
+    "description": {
+      "part1": "eath is a startup that has developed a sophisticated mobile application that ensures food security for consumers worldwide.",
+      "part2": "Indeed, we are changing the world through this innovation, which is a technical solution that addresses technical problems of food security and public health through the following features."
+    },
+    "cards": {
+      "mission": {
+        "title": "Mission",
+        "text": "Revolutionizing food security worldwide!"
+      },
+      "vision": {
+        "title": "Vision",
+        "text": "Inspire the next generation to tackle challenges through innovation and social entrepreneurship."
+      },
+      "values": {
+        "title": "Values",
+        "text": "Reduce food consumption risks by up to 1.03%, provide consumers with a precise, reliable food analysis tool. Guarantee safe food consumption for the public."
+      },
+      "origin": {
+        "title": "Origin",
+        "text": "The idea for this application arose from growing concerns about food security and gaps observed in current detection tools. Initiated by a team passionate about technology and food security, the application was designed to meet a growing demand for accessible and effective solutions to verify food compliance and safety with standard norms."
+      },
+      "technology": {
+        "title": "Technology",
+        "text": "Our application relies on a combination of cutting-edge technologies, including artificial intelligence algorithms and computer vision techniques. These technologies enable rapid analysis of scanned foods to detect the presence of harmful substances. We use modern platforms for development, such as React for the frontend and cloud solutions for data processing, ensuring optimal performance and enhanced security."
+      },
+      "ingredients": {
+        "title": "Precise Ingredient Analysis",
+        "text": "Uses artificial intelligence to scan and identify all meal components. Food groups (beverages, cereals, meats, etc.) are precisely classified."
+      },
+      "halal": {
+        "title": "Halal Compliance",
+        "text": "Specific algorithms* verify meal compliance with Halal standards. To meet the criteria of religious communities requiring Halal options."
+      },
+      "allergens": {
+        "title": "Allergen Detection",
+        "text": "Our application identifies potential allergens to prevent allergic reactions. Consumers can order their food with confidence, knowing their safety will be taken into account."
+      },
+      "harmful": {
+        "title": "Harmful Substances and Nutrition",
+        "text": "A reliable integrated system for drugs, poisons, and toxins will prevent any risk of intoxication, accidental contamination, or poisoning in meals. The system intercepts nutritional information, analyzes it, and looks for traces of suspicious elements in foods. If applicable, when the result is positive, the information will be sent to the smartphone interface to alert the user."
+      },
+      "nutrition": {
+        "title": "Nutritional Intake",
+        "text": "Furthermore, a meal nutritional calculation feature will be included in our application to allow everyone to understand the beneficial nutritional intake that consumed meals generate for our health and well-being. It's also a tool for diabetic subjects, dieters, obese people, and vegetarians to balance or calibrate their daily dietary regimens by making choices that would meet their body's real needs."
+      },
+      "social": {
+        "title": "Social Inclusion",
+        "text": "We use advanced technologies to facilitate the development of this mobile application with the integration of voice assistant, which also promotes the use of this digital tool by visually impaired people."
+      },
+      "targets": {
+        "title": "Our Targets",
+        "text": "Global population, fast-food chains, hotel chains, tourism sector, university restaurants, school cafeterias, boarding schools, as well as athletes and sports communities."
+      }
+    },
+  
+  "whyUs": {
+    "title": "Why choose",
+    "name": "eath",
+    "question": "?",
+    "description": "It is estimated that 600 million people fall ill after eating contaminated food each year worldwide according to WHO, resulting in 420,000 deaths, children under 5 years of age bear 40% of the burden of foodborne diseases and 125,000 die each year with a loss of 33 million years of healthy life. It is for this purpose that our Eath mobile application helps save lives and ensures that what we eat poses no danger.",
+    "features": {
+      "security": {
+        "title": "Food Security",
+        "description": "Thanks to our precise analysis, you can consume your meals safely."
+      },
+      "compliance": {
+        "title": "Compliance and Respect",
+        "description": "Meet specific dietary requirements such as Halal standards."
+      },
+      "prevention": {
+        "title": "Allergy Prevention",
+        "description": "Avoid allergic reactions through allergen detection."
+      },
+      "health": {
+        "title": "Health and Wellness",
+        "description": "Understand the nutritional content of your meals and make healthy food choices."
+      }
+    }
+  }
+},
+  "functioningPage": {
+    "title": "How it works",
+    "services": {
+      "mainTitle": "In a world where food security is a growing concern",
+      "subtitle": "a food safety management application becomes essential to protect consumer health.",
+      "list": {
+        "ingredients": {
+          "title": "Precise Ingredient Analysis",
+          "description": "uses artificial intelligence to scan and identify all meal components. Food groups (beverages, cereals, meats, etc.) are precisely classified."
+        },
+        "allergens": {
+          "title": "Allergen Detection",
+          "description": "Our application identifies potential allergens to prevent allergic reactions. Consumers can order their food with confidence, knowing their safety will be taken into account."
+        },
+        "halal": {
+          "title": "Halal Compliance",
+          "description": "Specific algorithms* verify meal compliance with Halal standards. To meet the criteria of religious communities requiring Halal options."
+        },
+        "nutrition": {
+          "title": "Nutritional Intake",
+          "description": "Furthermore, a meal nutritional calculation feature will be included in our application."
+        }
+      }
+    },
+    "otherServices": {
+      "title": "Our other services",
+      "subtitle": "This revolutionary application uses technology to ensure that the food we consume is safe and risk-free",
+      "list": {
+        "history": {
+          "title": "Scan History",
+          "description": "A history of scanned foods with details on each scan, allowing users to review information about products they have previously scanned."
+        },
+        "harmful": {
+          "title": "Harmful Substances and Nutrition",
+          "description": "A reliable integrated system for detecting drugs, poisons, and toxins will prevent any risk of intoxication, accidental contamination, or poisoning in meals. The system intercepts nutritional information for analysis and then looks for traces of harmful substances in the meal. At the slightest suspicion of traces of these harmful substances, the information is sent to the phone interface to warn the person. As a result, these technologies help consumers ensure they eat their meals safely and healthily."
+        },
+        "social": {
+          "title": "Social Inclusion",
+          "description": "we use advanced technologies to facilitate the development of this mobile application with the integration of a voice assistant that ensures increased accessibility by guaranteeing food safety for visually impaired people and promoting social equity."
+        }
+      }
+    }
+  },
+  "teamPage": {
+    "title": "Meet",
+    "subtitle": "our team",
+    "sections": {
+      "management": {
+        "title": "The eath management committee",
+        "description": "mobile application management team"
+      },
+      "design": {
+        "title": "Design Division",
+        "description": "mobile application design team"
+      },
+      "development": {
+        "title": "Development Division",
+        "description": "mobile application and web platform development team"
+      },
+      "database": {
+        "title": "Database Division",
+        "description": "mobile application database team"
+      },
+      "ai": {
+        "title": "Artificial Intelligence Division",
+        "description": "mobile application artificial intelligence team"
+      }
+    },
+    "ambitions": {
+      "origins": {
+        "title": "Our Origins",
+        "description": "The members of our startup team come from academic backgrounds, passionate about their work, we take on challenges by transforming what is excellent into something perfect."
+      },
+      "motivation": {
+        "title": "Our Motivation",
+        "description": "Having been inspired by recent crisis episodes: COVID 19, wars, poverty, famine, environmental degradation, youth unemployment, we have risen to embrace the social responsibility of our communities."
+      },
+      "ambition": {
+        "title": "Our Ambition",
+        "description": "This is what makes us a high-potential startup. Our mobile application could disrupt many sectors, as any innovation involves changes."
+      },
+      "expertise": {
+        "title": "Our Expertise",
+        "description": "In addressing the global food security problem, we have a deep understanding of the problem and the target."
+      },
+      "business": {
+        "title": "Our Business Model",
+        "description": "Our social enterprise model aims to meet social requirements in terms of food security and public health."
+      },
+      "impact": {
+        "title": "Our Impact",
+        "description": "Ultimately, our Eath startup will have a significant positive impact on the environment and populations for years to come."
+      }
+    }
+  },
+  "contactPage": {
+    "title": "Contact",
+    "subtitle": "us",
+    "discussion": {
+      "title": "Let's discuss together",
+      "description": "Feel free to leave your questions below or call us to speak with our dedicated sales team."
+    },
+    "contactInfo": {
+      "title": "Contact Information",
+      "email": {
+        "label": "Email",
+        "value": "eath@eathstartup.com"
+      },
+      "phone": {
+        "label": "Phone",
+        "value": "+221 77 842 49 05"
+      },
+      "address": {
+        "label": "Address",
+        "value": "VDN 3, Corniche Rue 53 Camb"
+      }
+    },
+    "messageForm": {
+      "title": "Leave a message",
+      "email": {
+        "label": "email",
+        "placeholder": "Enter your email"
+      },
+      "message": {
+        "label": "message",
+        "placeholder": "Write your message"
+      },
+      "submit": "Send message",
+      "notifications": {
+        "unavailable": {
+          "title": "❌ Oops",
+          "description": "Sorry for the inconvenience, but this feature is not yet available. Please contact us directly via phone number"
+        },
+        "success": {
+          "title": "Success",
+          "description": "Email sent successfully"
+        },
+        "error": {
+          "title": "Error",
+          "description": "Error sending email"
+        }
+      }
+    }
+  }
+
+}

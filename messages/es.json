@@ -1,0 +1,483 @@
+{
+  "HomePage": {
+    "title": "¡Hola mundo!",
+    "about": "Ir a la página acerca de",
+    "hero": {
+      "revolutionizing": "revolucionando la seguridad alimentaria mundial.",
+      "videoAltDark": "Interfaz de la aplicación en modo oscuro",
+      "videoAltLight": "Interfaz de la aplicación en modo claro",
+      "videoUnsupported": "Su navegador no soporta la etiqueta de video."
+    },
+    "problems": {
+      "title": "Problemas",
+      "description": "En el contexto actual, garantizar la seguridad alimentaria se ha convertido en una prioridad crucial para proteger la salud de los consumidores. Las aplicaciones de gestión de seguridad alimentaria deben abordar varios desafíos importantes para garantizar alimentos seguros y saludables. Estos son los principales problemas que nuestra aplicación pretende resolver",
+      "badge": "Problemas"
+    },
+    "objectives": {
+      "title": "Objetivos",
+      "description": "El objetivo principal de nuestra aplicación de seguridad alimentaria es garantizar la seguridad y calidad de los alimentos que consume, proporcionando herramientas poderosas para detectar riesgos potenciales y ofrecer información crucial en tiempo real.",
+      "globe": {
+        "darkMode": "Globo en modo oscuro",
+        "lightMode": "Globo en modo claro"
+      }
+    },
+    "features": {
+      "allergens": {
+        "title": "Gestión de alérgenos",
+        "description": "Identifique y gestione eficazmente los alérgenos en sus productos, garantizando el cumplimiento total de los estándares de seguridad alimentaria.",
+        "searchPlaceholder": "Escriba un comando o busque...",
+        "noResults": "No se encontraron resultados.",
+        "suggestionsHeading": "Sugerencias de alérgenos"
+      },
+      "poisoning": {
+        "title": "Riesgos de envenenamiento",
+        "description": "El veneno es una sustancia mortal que puede usarse para matar personas.",
+        "pathogens": {
+          "salmonella": {
+            "name": "Salmonella",
+            "body": "La Salmonella es un grupo de bacterias que puede causar intoxicación alimentaria."
+          },
+          "ecoli": {
+            "name": "E. coli",
+            "body": "Escherichia coli (E. coli) es una bacteria comúnmente encontrada en los intestinos de humanos y animales."
+          },
+          "listeria": {
+            "name": "Listeria",
+            "body": "Listeria monocytogenes es una bacteria que puede causar listeriosis, una infección grave generalmente causada por comer alimentos contaminados."
+          },
+          "botulism": {
+            "name": "Botulismo",
+            "body": "El botulismo es una enfermedad rara pero potencialmente mortal causada por una toxina producida por la bacteria Clostridium botulinum."
+          },
+          "aflatoxins": {
+            "name": "Aflatoxinas",
+            "body": "Las aflatoxinas son compuestos tóxicos producidos por ciertos mohos, particularmente Aspergillus flavus y Aspergillus parasiticus."
+          }
+        }
+      },
+      "halal": {
+        "title": "Certificación Halal",
+        "description": "Garantiza que los alimentos cumplan con los estándares Halal, asegurando trazabilidad y cumplimiento completos."
+      },
+      "cta": "Saber más"
+    },
+    "solutions": {
+      "title": "Aquí están las soluciones",
+      "services": {
+        "mobileApp": {
+          "title": "Aplicación móvil",
+          "description": "Descubra nuestra innovadora aplicación móvil para la gestión de seguridad alimentaria. Rastree y gestione inventario, monitoree la calidad de los productos y reciba alertas en tiempo real sobre riesgos potenciales. Asegúrese de que los alimentos cumplan con los estándares de seguridad más estrictos mientras mantiene una visión general de las operaciones."
+        },
+        "ai": {
+          "title": "Inteligencia Artificial",
+          "description": "Nuestra solución avanzada de IA analiza los componentes de los alimentos para garantizar su seguridad. A través de algoritmos de vanguardia, podemos detectar contaminantes, evaluar valores nutricionales y garantizar el cumplimiento de los estándares de seguridad alimentaria. Proteja a los consumidores y mantenga la calidad del producto con nuestra tecnología innovadora."
+        },
+        "web": {
+          "title": "Interfaz web",
+          "description": "A través de nuestra plataforma web, tendrá toda la información sobre nuestra aplicación. Nuestra interfaz intuitiva le permite tomar decisiones informadas de manera rápida y eficiente."
+        },
+        "buttons": {
+          "showMore": "Saber más",
+          "showLess": "Mostrar menos"
+        }
+      }
+    },
+    "ai-section": {
+      "title": "Inteligencia Artificial",
+      "features": {
+        "contaminants": {
+          "title": "Detección de contaminantes y cuerpos extraños",
+          "description": "La IA puede analizar datos de escaneo de alimentos para identificar la presencia de contaminantes como pesticidas, metales pesados o patógenos. A través de algoritmos avanzados, puede detectar rastros que podrían escapar a los métodos de análisis tradicionales."
+        },
+        "nutrition": {
+          "title": "Evaluación de valores nutricionales",
+          "description": "La IA puede proporcionar evaluaciones precisas de los valores nutricionales de los alimentos analizando su composición. Esto no solo permite verificar la calidad nutricional de los productos, sino que también ayuda a asesorar a los consumidores sobre elecciones alimentarias más saludables según sus necesidades específicas."
+        },
+        "compliance": {
+          "title": "Cumplimiento de estándares de seguridad alimentaria",
+          "description": "Utilizando modelos de aprendizaje automático, la IA puede comparar los resultados de las pruebas de alimentos con los estándares de seguridad actuales. Esto ayuda a garantizar que los productos cumplan con las regulaciones y estándares de calidad, reduciendo así el riesgo de incumplimiento."
+        },
+        "prediction": {
+          "title": "Predicción y prevención",
+          "description": "La IA puede analizar tendencias y datos históricos para predecir posibles problemas de seguridad alimentaria antes de que ocurran. Por ejemplo, puede identificar patrones recurrentes de contaminación o desviación de los estándares, permitiendo una intervención temprana y proactiva para prevenir posibles crisis."
+        }
+      },
+      "buttons": {
+        "showMore": "Saber más",
+        "showLess": "Mostrar menos"
+      }
+    },
+    "multiplatform": {
+      "title": "Con eath,",
+      "description": "disfrute de una experiencia multiplataforma excepcional en Android, iPhone y más.",
+      "imageAlt": "iPhone-12"
+    },
+    "auth": {
+      "title": "Acceda a su espacio personal",
+      "subtitle": "con seguridad mejorada.",
+      "videoUnsupported": "Su navegador no soporta la etiqueta de video.",
+      "altDark": "Interfaz de autenticación en modo oscuro",
+      "altLight": "Interfaz de autenticación en modo claro"
+    },
+    "content": {
+      "title": "Explore nuestro contenido",
+      "subtitle": "a través de estas fascinantes páginas.",
+      "videoUnsupported": "Su navegador no soporta la etiqueta de video.",
+      "altDark": "Interfaz de contenido en modo oscuro",
+      "altLight": "Interfaz de contenido en modo claro"
+    },
+    "testimonials": {
+      "title": "Tragedias alimentarias",
+      "subtitle": "Incidentes fatales debido a alérgenos y venenos.",
+      "cases": [
+        {
+          "name": "Cyril M. Smith",
+          "username": "@cyrilsmith",
+          "body": "Cyril M. Smith murió después de consumir un plato que contenía alérgenos no declarados. Su reacción alérgica severa llevó a complicaciones fatales."
+        },
+        {
+          "name": "Sophie Grégoire Trudeau",
+          "username": "@sophiegr",
+          "body": "Sophie Grégoire Trudeau sufrió una reacción alérgica severa debido a la contaminación cruzada de alimentos. Aunque sobrevivió, las complicaciones tuvieron un impacto duradero en su salud."
+        },
+        {
+          "name": "Vladimir Putin",
+          "username": "@vputin",
+          "body": "Vladimir Putin fue víctima de un intento de envenenamiento con polonio-210. Aunque no está directamente relacionado con alimentos, este incidente resalta los peligros de las sustancias tóxicas."
+        },
+        {
+          "name": "Mahatma Gandhi",
+          "username": "@gandhi",
+          "body": "Mahatma Gandhi sufrió numerosos problemas de salud relacionados con su dieta durante sus períodos de ayuno. Aunque la causa principal de su muerte fue una bala, sus hábitos alimenticios contribuyeron a sus problemas de salud."
+        },
+        {
+          "name": "Jimi Hendrix",
+          "username": "@jimi",
+          "body": "Jimi Hendrix murió por una sobredosis de drogas, exacerbada por sus problemas digestivos y de salud alimentaria. Sus hábitos alimenticios jugaron un papel en sus problemas de salud."
+        },
+        {
+          "name": "Marlon Brando",
+          "username": "@brando",
+          "body": "Marlon Brando murió por complicaciones de salud relacionadas con una nutrición inadecuada y exceso de peso, contribuyendo a sus graves problemas médicos."
+        },
+        {
+          "name": "Karen Carpenter",
+          "username": "@kcarpenter",
+          "body": "Karen Carpenter murió por anorexia severa, un trastorno relacionado con una nutrición inadecuada y problemas de salud alimentaria."
+        },
+        {
+          "name": "Anton Pavlovich Chekhov",
+          "username": "@chekhov",
+          "body": "Anton Pavlovich Chekhov murió de tuberculosis, pero sufrió problemas de salud relacionados con una nutrición inadecuada y enfermedades infecciosas."
+        },
+        {
+          "name": "Alexander Litvinenko",
+          "username": "@Litvinenko",
+          "body": "El ex agente de los servicios secretos rusos Alexander Litvinenko fue envenenado con polonio-210 en 2006. El envenenamiento ocurrió en gran parte durante una reunión en un restaurante de Londres. Su caso está bien documentado y tuvo un gran impacto mediático."
+        }
+      ]
+    },
+    "cta": {
+      "title": "¿Seguridad alimentaria?",
+      "subtitle": "juntos la garantizamos."
+    },
+    "linkApp": {
+      "title": "Disponible en todas las plataformas",
+      "description": "Nuestra aplicación móvil de seguridad alimentaria ahora está accesible en App Store y Google Play Store. Ya sea que sea usuario de iOS o Android, puede aprovechar nuestra tecnología avanzada para escanear y verificar la seguridad alimentaria dondequiera que esté. ¡Descárguela hoy para una alimentación más segura y consciente!",
+      "appStore": "App Store",
+      "playStore": "Google Play Store",
+      "imageAlt": {
+        "android": "Botón de descarga de Android",
+        "apple": "Botón de descarga de Apple"
+      }
+    }
+  },
+  "header": {
+    "links": {
+      "about": {
+        "label": "Acerca de Eath"
+      },
+      "functioning": {
+        "label": "Cómo funciona"
+      },
+      "team": {
+        "label": "Equipo"
+      },
+      "contact": {
+        "label": "Contáctenos"
+      }
+    },
+    "sheet": {
+      "title": "Menú",
+      "description": "Explore las diferentes secciones de nuestro sitio."
+    }
+  },
+  "footer": {
+    "links": {
+      "about": {
+        "label": "Acerca de Eath"
+      },
+      "functioning": {
+        "label": "Cómo funciona"
+      },
+      "team": {
+        "label": "Equipo"
+      },
+      "contact": {
+        "label": "Contáctenos"
+      }
+    },
+    "social": {
+      "twitter": "Síganos en Twitter",
+      "facebook": "Síganos en Facebook",
+      "instagram": "Síganos en Instagram"
+    }
+  },
+  "mainNav": {
+    "links": {
+      "home": {
+        "label": "Inicio"
+      },
+      "about": {
+        "label": "Acerca de eath"
+      },
+      "features": {
+        "label": "Características"
+      },
+      "team": {
+        "label": "Equipo"
+      },
+      "contact": {
+        "label": "Contáctenos"
+      }
+    },
+    "logo": {
+      "alt": "Logo de Eath"
+    }
+  },
+  "aboutPage": {
+    "title": "Acerca de",
+    "description": {
+      "part1": "eath es una startup que ha desarrollado una aplicación móvil sofisticada que garantiza la seguridad alimentaria para los consumidores en todo el mundo.",
+      "part2": "De hecho, estamos cambiando el mundo a través de esta innovación, que es una solución técnica que aborda problemas técnicos de seguridad alimentaria y salud pública a través de las siguientes características."
+    },
+    "cards": {
+      "mission": {
+        "title": "Misión",
+        "text": "¡Revolucionando la seguridad alimentaria mundial!"
+      },
+      "vision": {
+        "title": "Visión",
+        "text": "Inspirar a la próxima generación para abordar desafíos a través de la innovación y el emprendimiento social."
+      },
+      "values": {
+        "title": "Valores",
+        "text": "Reducir los riesgos de consumo de alimentos hasta en un 1.03%, proporcionar a los consumidores una herramienta de análisis de alimentos precisa y confiable. Garantizar el consumo seguro de alimentos para el público."
+      },
+      "origin": {
+        "title": "Origen",
+        "text": "La idea de esta aplicación surgió de las crecientes preocupaciones sobre la seguridad alimentaria y las brechas observadas en las herramientas de detección actuales. Iniciada por un equipo apasionado por la tecnología y la seguridad alimentaria, la aplicación fue diseñada para satisfacer una demanda creciente de soluciones accesibles y efectivas para verificar el cumplimiento y la seguridad de los alimentos con las normas estándar."
+      },
+      "technology": {
+        "title": "Tecnología",
+        "text": "Nuestra aplicación se basa en una combinación de tecnologías de vanguardia, incluidos algoritmos de inteligencia artificial y técnicas de visión por computadora. Estas tecnologías permiten un análisis rápido de los alimentos escaneados para detectar la presencia de sustancias nocivas. Utilizamos plataformas modernas para el desarrollo, como React para el frontend y soluciones en la nube para el procesamiento de datos, garantizando un rendimiento óptimo y una seguridad mejorada."
+      },
+      "ingredients": {
+        "title": "Análisis preciso de ingredientes",
+        "text": "Utiliza inteligencia artificial para escanear e identificar todos los componentes de la comida. Los grupos de alimentos (bebidas, cereales, carnes, etc.) se clasifican con precisión."
+      },
+      "halal": {
+        "title": "Cumplimiento Halal",
+        "text": "Algoritmos específicos* verifican el cumplimiento de la comida con los estándares Halal. Para satisfacer los criterios de las comunidades religiosas que requieren opciones Halal."
+      },
+      "allergens": {
+        "title": "Detección de alérgenos",
+        "text": "Nuestra aplicación identifica alérgenos potenciales para prevenir reacciones alérgicas. Los consumidores pueden ordenar su comida con confianza, sabiendo que su seguridad será tomada en cuenta."
+      },
+      "harmful": {
+        "title": "Sustancias nocivas y nutrición",
+        "text": "Un sistema integrado confiable para drogas, venenos y toxinas evitará cualquier riesgo de intoxicación, contaminación accidental o envenenamiento en las comidas. El sistema intercepta la información nutricional, la analiza y busca rastros de elementos sospechosos en los alimentos. Si es aplicable, cuando el resultado es positivo, la información se enviará a la interfaz del smartphone para alertar al usuario."
+      },
+      "nutrition": {
+        "title": "Ingesta nutricional",
+        "text": "Además, una función de cálculo nutricional de las comidas se incluirá en nuestra aplicación para permitir que todos comprendan el beneficio nutricional que las comidas consumidas generan para nuestra salud y bienestar. También es una herramienta para sujetos diabéticos, personas a dieta, obesos y vegetarianos para equilibrar o calibrar sus regímenes dietéticos diarios haciendo elecciones que satisfagan las necesidades reales de su cuerpo."
+      },
+      "social": {
+        "title": "Inclusión social",
+        "text": "Utilizamos tecnologías avanzadas para facilitar el desarrollo de esta aplicación móvil con la integración de asistente de voz, que también promueve el uso de esta herramienta digital por personas con discapacidad visual."
+      },
+      "targets": {
+        "title": "Nuestros objetivos",
+        "text": "Población global, cadenas de comida rápida, cadenas hoteleras, sector turístico, restaurantes universitarios, cafeterías escolares, internados, así como atletas y comunidades deportivas."
+      }
+    },
+    "whyUs": {
+      "title": "¿Por qué elegir",
+      "name": "eath",
+      "question": "?",
+      "description": "Se estima que 600 millones de personas enferman después de comer alimentos contaminados cada año en todo el mundo según la OMS, resultando en 420,000 muertes, niños menores de 5 años soportan el 40% de la carga de enfermedades transmitidas por alimentos y 125,000 mueren cada año con una pérdida de 33 millones de años de vida saludable. Es por este propósito que nuestra aplicación móvil Eath ayuda a salvar vidas y garantiza que lo que comemos no represente ningún peligro.",
+      "features": {
+        "security": {
+          "title": "Seguridad alimentaria",
+          "description": "Gracias a nuestro análisis preciso, puede consumir sus comidas de manera segura."
+        },
+        "compliance": {
+          "title": "Cumplimiento y respeto",
+          "description": "Satisfaga requisitos dietéticos específicos como los estándares Halal."
+        },
+        "prevention": {
+          "title": "Prevención de alergias",
+          "description": "Evite reacciones alérgicas mediante la detección de alérgenos."
+        },
+        "health": {
+          "title": "Salud y bienestar",
+          "description": "Comprenda el contenido nutricional de sus comidas y tome decisiones alimentarias saludables."
+        }
+      }
+    }
+  },
+  "functioningPage": {
+    "title": "Cómo funciona",
+    "services": {
+      "mainTitle": "En un mundo donde la seguridad alimentaria es una preocupación creciente",
+      "subtitle": "una aplicación de gestión de seguridad alimentaria se vuelve esencial para proteger la salud de los consumidores.",
+      "list": {
+        "ingredients": {
+          "title": "Análisis preciso de ingredientes",
+          "description": "utiliza inteligencia artificial para escanear e identificar todos los componentes de la comida. Los grupos de alimentos (bebidas, cereales, carnes, etc.) se clasifican con precisión."
+        },
+        "allergens": {
+          "title": "Detección de alérgenos",
+          "description": "Nuestra aplicación identifica alérgenos potenciales para prevenir reacciones alérgicas. Los consumidores pueden ordenar su comida con confianza, sabiendo que su seguridad será tomada en cuenta."
+        },
+        "halal": {
+          "title": "Cumplimiento Halal",
+          "description": "Algoritmos específicos* verifican el cumplimiento de la comida con los estándares Halal. Para satisfacer los criterios de las comunidades religiosas que requieren opciones Halal."
+        },
+        "nutrition": {
+          "title": "Ingesta nutricional",
+          "description": "Además, una función de cálculo nutricional de las comidas se incluirá en nuestra aplicación."
+        }
+      }
+    },
+    "otherServices": {
+      "title": "Nuestros otros servicios",
+      "subtitle": "Esta aplicación revolucionaria utiliza tecnología para garantizar que los alimentos que consumimos sean seguros y sin riesgos",
+      "list": {
+        "history": {
+          "title": "Historial de escaneos",
+          "description": "Un historial de alimentos escaneados con detalles sobre cada escaneo, permitiendo a los usuarios revisar información sobre productos que han escaneado previamente."
+        },
+        "harmful": {
+          "title": "Sustancias nocivas y nutrición",
+          "description": "Un sistema integrado confiable para detectar drogas, venenos y toxinas evitará cualquier riesgo de intoxicación, contaminación accidental o envenenamiento en las comidas. El sistema intercepta la información nutricional para su análisis y luego busca rastros de sustancias nocivas en la comida. Al menor indicio de rastros de estas sustancias nocivas, la información se envía a la interfaz del teléfono para advertir a la persona. Como resultado, estas tecnologías ayudan a los consumidores a asegurarse de que comen sus comidas de manera segura y saludable."
+        },
+        "social": {
+          "title": "Inclusión social",
+          "description": "utilizamos tecnologías avanzadas para facilitar el desarrollo de esta aplicación móvil con la integración de un asistente de voz que garantiza una mayor accesibilidad al garantizar la seguridad alimentaria para personas con discapacidad visual y promover la equidad social."
+        }
+      }
+    }
+  },
+  "teamPage": {
+    "title": "Conozca",
+    "subtitle": "nuestro equipo",
+    "sections": {
+      "management": {
+        "title": "El comité de gestión de eath",
+        "description": "equipo de gestión de la aplicación móvil"
+      },
+      "design": {
+        "title": "División de diseño",
+        "description": "equipo de diseño de la aplicación móvil"
+      },
+      "development": {
+        "title": "División de desarrollo",
+        "description": "equipo de desarrollo de la aplicación móvil y plataforma web"
+      },
+      "database": {
+        "title": "División de base de datos",
+        "description": "equipo de base de datos de la aplicación móvil"
+      },
+      "ai": {
+        "title": "División de Inteligencia Artificial",
+        "description": "equipo de inteligencia artificial de la aplicación móvil"
+      }
+    },
+    "ambitions": {
+      "origins": {
+        "title": "Nuestros orígenes",
+        "description": "Los miembros de nuestro equipo de startup provienen de antecedentes académicos, apasionados por su trabajo, asumimos desafíos transformando lo que es excelente en algo perfecto."
+      },
+      "motivation": {
+        "title": "Nuestra motivación",
+        "description": "Habiéndonos inspirado en episodios recientes de crisis: COVID 19, guerras, pobreza, hambruna, degradación ambiental, desempleo juvenil, nos hemos levantado para abrazar la responsabilidad social de nuestras comunidades."
+      },
+      "ambition": {
+        "title": "Nuestra ambición",
+        "description": "Esto es lo que nos convierte en una startup de alto potencial. Nuestra aplicación móvil podría disruptir muchos sectores, ya que cualquier innovación implica cambios."
+      },
+      "expertise": {
+        "title": "Nuestra experiencia",
+        "description": "Al abordar el problema global de la seguridad alimentaria, tenemos un profundo entendimiento del problema y del objetivo."
+      },
+      "business": {
+        "title": "Nuestro modelo de negocio",
+        "description": "Nuestro modelo de empresa social tiene como objetivo satisfacer los requisitos sociales en términos de seguridad alimentaria y salud pública."
+      },
+      "impact": {
+        "title": "Nuestro impacto",
+        "description": "En última instancia, nuestra startup Eath tendrá un impacto positivo significativo en el medio ambiente y las poblaciones en los años venideros."
+      }
+    }
+  },
+  "contactPage": {
+    "title": "Contáctenos",
+    "subtitle": "",
+    "discussion": {
+      "title": "Hablemos juntos",
+      "description": "No dude en dejar sus preguntas a continuación o llamarnos para hablar con nuestro equipo de ventas dedicado."
+    },
+    "contactInfo": {
+      "title": "Información de contacto",
+      "email": {
+        "label": "Correo electrónico",
+        "value": "eath@eathstartup.com"
+      },
+      "phone": {
+        "label": "Teléfono",
+        "value": "+221 77 842 49 05"
+      },
+      "address": {
+        "label": "Dirección",
+        "value": "VDN 3, Corniche Rue 53 Camb"
+      }
+    },
+    "messageForm": {
+      "title": "Deje un mensaje",
+      "email": {
+        "label": "correo electrónico",
+        "placeholder": "Ingrese su correo electrónico"
+      },
+      "message": {
+        "label": "mensaje",
+        "placeholder": "Escriba su mensaje"
+      },
+      "submit": "Enviar mensaje",
+      "notifications": {
+        "unavailable": {
+          "title": "❌ Oops",
+          "description": "Lo sentimos por el inconveniente, pero esta función aún no está disponible. Por favor contáctenos directamente vía número de teléfono"
+        },
+        "success": {
+          "title": "Éxito",
+          "description": "Correo electrónico enviado con éxito"
+        },
+        "error": {
+          "title": "Error",
+          "description": "Error al enviar el correo electrónico"
+        }
+      }
+    }
+  }
+}

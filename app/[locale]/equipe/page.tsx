@@ -4,6 +4,7 @@ import React from "react";
 import { Building2, Flag, Globe, Lightbulb, Target, Users } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion } from "framer-motion";
+import { useTranslations } from 'next-intl';
 
 type SocialLink = {
   icon: any;
@@ -30,218 +31,7 @@ type Teamambition = {
   gradient: string;
 };
 
-const teamSections: Section[] = [
-  {
-    title: "Le comité de management de eath",
-    description: "equipe de direction de l'application mobile",
-    members: [
-      {
-        img: "/images/KhalidYahouza.jpeg",
-        name: "Khalid Yahouza ALMOU",
-        designation: "co-fondateur de eath",
-        socialLinks: [
-          { icon: "twitter", href: "#!" },
-          { icon: "facebook", href: "#!" },
-          { icon: "vimeo", href: "#!" },
-        ],
-      },
-      {
-        img: "/images/CheikhounaThioune.jpeg",
-        name: "Cheikhouna THIOUNE",
-        designation: "PDG et co-fondateur de eath, ancien Campus Director HULT PRIZE à l'université Cheikh Anta Diop",
-        socialLinks: [
-          { icon: "twitter", href: "#!" },
-          { icon: "facebook", href: "#!" },
-          { icon: "vimeo", href: "#!" },
-        ],
-      },
-      {
-        img: "/images/EspoirMbongo.jpg",
-        name: "Espoir MBONGO",
-        designation: "co-fondateur de eath",
-        socialLinks: [
-          { icon: "twitter", href: "#!" },
-          { icon: "facebook", href: "#!" },
-          { icon: "vimeo", href: "#!" },
-        ],
-      },
-      {
-        img: "/images/AntonPROKHOROV.jpg",
-        name: "Ahtoh Anton PROKHOROV",
-        designation: "co-fondateur de eath",
-        socialLinks: [
-          { icon: "twitter", href: "#!" },
-          { icon: "facebook", href: "#!" },
-          { icon: "vimeo", href: "#!" },
-        ],
-      },
-    ]
-  },
-  {
-    title: "Pole Design",
-    description: "equipe de design de l'application mobile",
-    members: [
-      {
-        img: "/images/LouisDieme.jpeg",
-        name: "Louis DIEME",
-        designation: "UI design",
-        socialLinks: [
-          { icon: "twitter", href: "#!" },
-          { icon: "facebook", href: "#!" },
-          { icon: "vimeo", href: "#!" },
-        ],
-      },
-      {
-        img: "/images/CheikhBoye.jpg",
-        name: "Cheikh BOYE",
-        designation: "UI design",
-        socialLinks: [
-          { icon: "twitter", href: "#!" },
-          { icon: "facebook", href: "#!" },
-          { icon: "vimeo", href: "#!" },
-        ],
-      },
-      {
-        img: "/images/JeanMarie.jpeg",
-        name: "Jean MARIE",
-        designation: "UI design",
-        socialLinks: [
-          { icon: "twitter", href: "#!" },
-          { icon: "facebook", href: "#!" },
-          { icon: "vimeo", href: "#!" },
-        ],
-      },
-    ],
-  },
-  {
-    title: "Pole Développement",
-    description: "equipe de developpement de l'application mobile et de la plateforme web",
-    members: [
-      {
-        img: "/images/MarietaSow.jpeg",
-        name: "Marieta SOW",
-        designation: "Developpement backend",
-        socialLinks: [
-          { icon: "twitter", href: "#!" },
-          { icon: "facebook", href: "#!" },
-          { icon: "vimeo", href: "#!" },
-        ],
-      },
-      {
-        img: "/images/SalifBiaye.jpg",
-        name: "Salif BIAYE",
-        designation: "Developpement web",
-        socialLinks: [
-          { icon: "twitter", href: "#!" },
-          { icon: "facebook", href: "#!" },
-          { icon: "vimeo", href: "#!" },
-        ],
-      },
-      {
-        img: "images/Rosalex.jpeg",
-        name: "Ahan ROSALEX",
-        designation: "Developpement backend",
-        socialLinks: [
-          { icon: "twitter", href: "#!" },
-          { icon: "facebook", href: "#!" },
-          { icon: "vimeo", href: "#!" },
-        ],
-      },
-      {
-        img: "/images/YoussouphNiang.jpeg",
-        name: "Youssouph NIANG",
-        designation: "Developpement mobile",
-        socialLinks: [
-          { icon: "twitter", href: "#!" },
-          { icon: "facebook", href: "#!" },
-          { icon: "vimeo", href: "#!" },
-        ],
-      },
-    ],
-  },
-  {
-    title: "Pole Base de données",
-    description: "equipe de base de données de l'application mobile",
-    members: [
-      {
-        img: "/images/ElhadjAbdouBoye.jpeg",
-        name: "El hadj Abdou BOYE",
-        designation: "Base de données",
-        socialLinks: [
-          { icon: "twitter", href: "#!" },
-          { icon: "facebook", href: "#!" },
-          { icon: "vimeo", href: "#!" },
-        ],
-      },
-      {
-        img: "/images/MariamaDiallo.jpeg",
-        name: "Mariame DIALLO",
-        designation: "Base de données",
-        socialLinks: [
-          { icon: "twitter", href: "#!" },
-          { icon: "facebook", href: "#!" },
-          { icon: "vimeo", href: "#!" },
-        ],
-      },
-      {
-        img: "/images/DialikaThiaw.jpeg",
-        name: "Dialika THIAW",
-        designation: "Base de données",
-        socialLinks: [
-          { icon: "twitter", href: "#!" },
-          { icon: "facebook", href: "#!" },
-          { icon: "vimeo", href: "#!" },
-        ],
-      },
-    ],
-  },
-  {
-    title: "Pole Intelligence artificielle",
-    description: "equipe de l'intelligence artificielle de l'application mobile",
-    members: [
-      {
-        img: "/images/WillianeJaures.jpeg",
-        name: "Willane Jaurès SABOUBANGA",
-        designation: "Intelligence artificielle",
-        socialLinks: [
-          { icon: "twitter", href: "#!" },
-          { icon: "facebook", href: "#!" },
-          { icon: "vimeo", href: "#!" },
-        ],
-      },
-      {
-        img: "images/LaurianeMbagdje.jpeg",
-        name: "Lauriane Mbagdje DORENAN",
-        designation: "Intelligence artificielle",
-        socialLinks: [
-          { icon: "twitter", href: "#!" },
-          { icon: "facebook", href: "#!" },
-          { icon: "vimeo", href: "#!" },
-        ],
-      },
-      {
-        img: "images/AbdouNdiaye.jpg",
-        name: "Abdou NDIAYE",
-        designation: "Intelligence artificielle",
-        socialLinks: [
-          { icon: "twitter", href: "#!" },
-          { icon: "facebook", href: "#!" },
-          { icon: "vimeo", href: "#!" },
-        ],
-      },
-      {
-        img: "images/MamadouDiallo.jpeg",
-        name: "Mamadou Saidou DIALLO",
-        designation: "Intelligence artificielle",
-        socialLinks: [
-          { icon: "twitter", href: "#!" },
-          { icon: "facebook", href: "#!" },
-          { icon: "vimeo", href: "#!" },
-        ],
-      },
-    ],
-  },
-];
+
 
 const teamambitions: Teamambition[] = [
   {
@@ -336,7 +126,301 @@ const TeamAmbitionsSection = () => {
   );
 };
 
-export default function TeamMember() {
+const TeamMember = () => {
+  const t = useTranslations('teamPage');
+
+  const teamSections: Section[] = [
+    {
+      title: t('sections.management.title'),
+      description: t('sections.management.description'),
+      members: [
+        {
+          img: "/images/KhalidYahouza.jpeg",
+          name: "Khalid Yahouza ALMOU",
+          designation: "co-fondateur de eath",
+          socialLinks: [
+            { icon: "twitter", href: "#!" },
+            { icon: "facebook", href: "#!" },
+            { icon: "vimeo", href: "#!" },
+          ],
+        },
+        {
+          img: "/images/CheikhounaThioune.jpeg",
+          name: "Cheikhouna THIOUNE",
+          designation: "PDG et co-fondateur de eath, ancien Campus Director HULT PRIZE à l'université Cheikh Anta Diop",
+          socialLinks: [
+            { icon: "twitter", href: "#!" },
+            { icon: "facebook", href: "#!" },
+            { icon: "vimeo", href: "#!" },
+          ],
+        },
+        {
+          img: "/images/EspoirMbongo.jpg",
+          name: "Espoir MBONGO",
+          designation: "co-fondateur de eath",
+          socialLinks: [
+            { icon: "twitter", href: "#!" },
+            { icon: "facebook", href: "#!" },
+            { icon: "vimeo", href: "#!" },
+          ],
+        },
+        {
+          img: "/images/AntonPROKHOROV.jpg",
+          name: "Ahtoh Anton PROKHOROV",
+          designation: "co-fondateur de eath",
+          socialLinks: [
+            { icon: "twitter", href: "#!" },
+            { icon: "facebook", href: "#!" },
+            { icon: "vimeo", href: "#!" },
+          ],
+        },
+        {
+          img: "/images/MouhammadFHadi.JPG",
+          name: "Muhammad F HADI",
+          designation: "Chief Marketing Advisor",
+          socialLinks: [
+            { icon: "twitter", href: "#!" },
+            { icon: "facebook", href: "#!" },
+            { icon: "vimeo", href: "#!" },
+          ],
+        },
+      ]
+    },
+    {
+      title: t('sections.design.title'),
+      description: t('sections.design.description'),
+      members: [
+        {
+          img: "/images/LouisDieme.jpeg",
+          name: "Louis DIEME",
+          designation: "UI design & Marketing Strategy Manager",
+          socialLinks: [
+            { icon: "twitter", href: "#!" },
+            { icon: "facebook", href: "#!" },
+            { icon: "vimeo", href: "#!" },
+          ],
+        },
+        {
+          img: "/images/CheikhBoye.jpg",
+          name: "Cheikh BOYE",
+          designation: "UI design",
+          socialLinks: [
+            { icon: "twitter", href: "#!" },
+            { icon: "facebook", href: "#!" },
+            { icon: "vimeo", href: "#!" },
+          ],
+        },
+        {
+          img: "/images/JeanMarie.jpeg",
+          name: "Jean MARIE",
+          designation: "UI design",
+          socialLinks: [
+            { icon: "twitter", href: "#!" },
+            { icon: "facebook", href: "#!" },
+            { icon: "vimeo", href: "#!" },
+          ],
+        },
+      ],
+    },
+    {
+      title: t('sections.development.title'),
+      description: t('sections.development.description'),
+      members: [
+        {
+          img: "/images/MarietaSow.jpeg",
+          name: "Marieta SOW",
+          designation: "Developpement backend",
+          socialLinks: [
+            { icon: "twitter", href: "#!" },
+            { icon: "facebook", href: "#!" },
+            { icon: "vimeo", href: "#!" },
+          ],
+        },
+        {
+          img: "/images/SalifBiaye.jpg",
+          name: "Salif BIAYE",
+          designation: "Developpement web",
+          socialLinks: [
+            { icon: "twitter", href: "#!" },
+            { icon: "facebook", href: "#!" },
+            { icon: "vimeo", href: "#!" },
+          ],
+        },
+        {
+          img: "/images/Rosalex.jpeg",
+          name: "Ahan ROSALEX",
+          designation: "Developpement backend",
+          socialLinks: [
+            { icon: "twitter", href: "#!" },
+            { icon: "facebook", href: "#!" },
+            { icon: "vimeo", href: "#!" },
+          ],
+        },
+        {
+          img: "/images/YoussouphNiang.jpeg",
+          name: "Youssouph NIANG",
+          designation: "Developpement mobile",
+          socialLinks: [
+            { icon: "twitter", href: "#!" },
+            { icon: "facebook", href: "#!" },
+            { icon: "vimeo", href: "#!" },
+          ],
+        },
+        {
+          img: "/images/CheikhouOBa.jpeg",
+          name: "Cheikhou Omar Ba",
+          designation: "Developpement mobile",
+          socialLinks: [
+            { icon: "twitter", href: "#!" },
+            { icon: "facebook", href: "#!" },
+            { icon: "vimeo", href: "#!" },
+          ],
+        },
+        {
+          img: "/images/MouhamedMangane.JPG",
+          name: "Mouhamed Mangane",
+          designation: "Developpement mobile",
+          socialLinks: [
+            { icon: "twitter", href: "#!" },
+            { icon: "facebook", href: "#!" },
+            { icon: "vimeo", href: "#!" },
+          ],
+        },
+      ],
+    },
+    {
+      title: t('sections.database.title'),
+      description: t('sections.database.description'),
+      members: [
+        {
+          img: "/images/ElhadjAbdouBoye.jpeg",
+          name: "El hadj Abdou BOYE",
+          designation: "Base de données",
+          socialLinks: [
+            { icon: "twitter", href: "#!" },
+            { icon: "facebook", href: "#!" },
+            { icon: "vimeo", href: "#!" },
+          ],
+        },
+        {
+          img: "/images/MariamaDiallo.jpeg",
+          name: "Mariame DIALLO",
+          designation: "Base de données",
+          socialLinks: [
+            { icon: "twitter", href: "#!" },
+            { icon: "facebook", href: "#!" },
+            { icon: "vimeo", href: "#!" },
+          ],
+        },
+        {
+          img: "/images/DialikaThiaw.jpeg",
+          name: "Dialika THIAW",
+          designation: "Base de données",
+          socialLinks: [
+            { icon: "twitter", href: "#!" },
+            { icon: "facebook", href: "#!" },
+            { icon: "vimeo", href: "#!" },
+          ],
+        },
+      ],
+    },
+    {
+      title: t('sections.ai.title'),
+      description: t('sections.ai.description'),
+      members: [
+        {
+          img: "/images/AmadouTDiallo.JPG",
+          name: "Amadou T Diallo",
+          designation: "AI specialist",
+          socialLinks: [
+            { icon: "twitter", href: "#!" },
+            { icon: "facebook", href: "#!" },
+            { icon: "vimeo", href: "#!" },
+          ],
+        },
+        {
+          img: "/images/WillianeJaures.jpeg",
+          name: "Willane Jaurès SABOUBANGA",
+          designation: "Intelligence artificielle",
+          socialLinks: [
+            { icon: "twitter", href: "#!" },
+            { icon: "facebook", href: "#!" },
+            { icon: "vimeo", href: "#!" },
+          ],
+        },
+        {
+          img: "/images/LaurianeMbagdje.jpeg",
+          name: "Lauriane Mbagdje DORENAN",
+          designation: "Intelligence artificielle",
+          socialLinks: [
+            { icon: "twitter", href: "#!" },
+            { icon: "facebook", href: "#!" },
+            { icon: "vimeo", href: "#!" },
+          ],
+        },
+        {
+          img: "/images/AbdouNdiaye.jpg",
+          name: "Abdou NDIAYE",
+          designation: "Intelligence artificielle",
+          socialLinks: [
+            { icon: "twitter", href: "#!" },
+            { icon: "facebook", href: "#!" },
+            { icon: "vimeo", href: "#!" },
+          ],
+        },
+        {
+          img: "/images/MamadouDiallo.jpeg",
+          name: "Mamadou Saidou DIALLO",
+          designation: "Intelligence artificielle",
+          socialLinks: [
+            { icon: "twitter", href: "#!" },
+            { icon: "facebook", href: "#!" },
+            { icon: "vimeo", href: "#!" },
+          ],
+        },
+      ],
+    }
+  ];
+
+  const teamambitions: Teamambition[] = [
+    {
+      title: t('ambitions.origins.title'),
+      icon: Users,
+      description: t('ambitions.origins.description'),
+      gradient: 'from-purple-500 to-blue-500'
+    },
+    {
+      title: t('ambitions.motivation.title'),
+      icon: Flag,
+      description: t('ambitions.motivation.description'),
+      gradient: 'from-pink-500 to-rose-500'
+    },
+    {
+      title: t('ambitions.ambition.title'),
+      icon: Target,
+      description: t('ambitions.ambition.description'),
+      gradient: 'from-orange-500 to-amber-500'
+    },
+    {
+      title: t('ambitions.expertise.title'),
+      icon: Lightbulb,
+      description: t('ambitions.expertise.description'),
+      gradient: 'from-green-500 to-emerald-500'
+    },
+    {
+      title: t('ambitions.business.title'),
+      icon: Building2,
+      description: t('ambitions.business.description'),
+      gradient: 'from-cyan-500 to-blue-500'
+    },
+    {
+      title: t('ambitions.impact.title'),
+      icon: Globe,
+      description: t('ambitions.impact.description'),
+      gradient: 'from-violet-500 to-purple-500'
+    }
+  ];
+
   return (
     <motion.div
       initial={{opacity: 0, y: 50}}
@@ -344,8 +428,49 @@ export default function TeamMember() {
       transition={{type: "spring", stiffness: 100, damping: 25, delay: 0.2}}
       className="bg-background"
     >
-      <TeamAmbitionsSection />
-
+      <div className="bg-background py-14 md:py-24 w-full">
+        <div className="px-4 mx-auto max-w-6xl">
+          <div className="flex">
+            <div className="w-full text-center">
+              <h1 className="text-4xl md:text-[3.5rem] font-bold text-center text-secondary mb-10 mt-4">
+                {t('title')} <br/>
+                <span className="text-5xl md:text-[6rem] font-bold text-center mt-1 text-primary leading-none">
+                  {t('subtitle')}
+                </span>
+              </h1>
+              <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {teamambitions.map((section, index) => (
+                  <motion.div
+                    key={section.title}
+                    initial={{opacity: 0, y: 20}}
+                    animate={{opacity: 1, y: 0}}
+                    transition={{duration: 0.3, delay: index * 0.1}}
+                  >
+                    <Card className="group relative rounded-[5px] border-muted dark:bg-muted h-full overflow-hidden hover:shadow-lg transition-all duration-300">
+                      <div
+                        className={`absolute inset-0 opacity-0 bg-gradient-to-br ${section.gradient} transition-opacity duration-300 group-hover:opacity-10`}
+                      />
+                      <CardHeader>
+                        <div className="flex items-center gap-4">
+                          <div
+                            className={`rounded-[5px] p-2 bg-gradient-to-br ${section.gradient}`}
+                          >
+                            <section.icon className="h-6 w-6 text-white"/>
+                          </div>
+                          <CardTitle className="text-xl font-bold">{section.title}</CardTitle>
+                        </div>
+                      </CardHeader>
+                      <CardContent>
+                        <p className="text-gray-900 dark:text-muted-foreground">{section.description}</p>
+                      </CardContent>
+                    </Card>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       {teamSections.map((section, sectionIndex) => (
         <section
           key={sectionIndex}
@@ -397,4 +522,6 @@ export default function TeamMember() {
       ))}
     </motion.div>
   );
-}
+};
+
+export default TeamMember;

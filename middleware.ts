@@ -1,13 +1,13 @@
 import createMiddleware from 'next-intl/middleware';
-import { routing } from './i18n/routing';
+import { routing } from './src/i18n/routing';
 
-const defaultLocale = 'fr';
+const defaultLocale = 'en';
 
-export default function middleware(req: Request) {
+export default function middleware(req) {
   const { pathname } = new URL(req.url);
 
   // Vérifie si l'URL commence par une locale supportée
-  const localeMatch = pathname.match(/^\/(fr|en)(\/|$)/);
+  const localeMatch = pathname.match(/^\/(fr|en|ar|ja|es|de)(\/|$)/);
 
   if (!localeMatch) {
     // Redirige vers la version avec la locale par défaut
@@ -18,5 +18,8 @@ export default function middleware(req: Request) {
 }
 
 export const config = {
-  matcher: '/((?!api|trpc|_next|_vercel|.*\\..*).*)',
+  matcher: [
+    // Appliquer le middleware uniquement aux chemins qui ne sont pas des fichiers statiques, API ou vidéos
+    '/((?!api|_next|_vercel|trpc|favicon.ico|.*\\.(?:jpg|jpeg|JPG|png|gif|svg|ico|webp|mp4|webm|ogg|mov)).*)',
+  ],
 };

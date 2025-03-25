@@ -1,49 +1,50 @@
 'use client'
-
-import { motion, useScroll, useTransform } from 'framer-motion'
-import { HeartPulse, Lock, ScrollIcon, Shield } from 'lucide-react'
-import { useRef } from 'react'
+import { motion, useScroll, useTransform } from 'framer-motion';
+import { HeartPulse, Lock, ScrollIcon, Shield } from 'lucide-react';
+import { useRef } from 'react';
+import { useTranslations } from 'next-intl';
 
 export default function Pourquoinous() {
-  const containerRef = useRef<HTMLDivElement>(null)
+  const t = useTranslations('aboutPage.whyUs');
+  const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ['start end', 'end start'],
-  })
+  });
 
   const features = [
     {
       number: '1',
-      title: 'Sécurité Alimentaire',
-      description: 'Grâce à notre analyse précise, vous pouvez consommer vos repas en toute sécurité.',
+      title: t('features.security.title'),
+      description: t('features.security.description'),
       icon: Shield,
       delay: 0.2,
     },
     {
       number: '2',
-      title: 'Conformité et Respect',
-      description: 'Répondre aux exigences alimentaires spécifiques telles que les normes Halal.',
+      title: t('features.compliance.title'),
+      description: t('features.compliance.description'),
       icon: ScrollIcon,
       delay: 0.4,
     },
     {
       number: '3',
-      title: 'Prévention des Allergies',
-      description: 'Évitez les réactions allergiques grâce à la détection des allergènes.',
+      title: t('features.prevention.title'),
+      description: t('features.prevention.description'),
       icon: Lock,
       delay: 0.6,
     },
     {
       number: '4',
-      title: 'Santé et Bien-être',
-      description: 'Comprenez les apports nutritionnels de vos repas et faites des choix alimentaires sains.',
+      title: t('features.health.title'),
+      description: t('features.health.description'),
       icon: HeartPulse,
       delay: 0.8,
     },
-  ]
+  ];
 
-  const y = useTransform(scrollYProgress, [0, 1], ['0%', '50%'])
-  const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [1, 1, 0])
+  const y = useTransform(scrollYProgress, [0, 1], ['0%', '50%']);
+  const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [1, 1, 0]);
 
   return (
     <section className="relative min-h-screen overflow-hidden bg-primary dark:bg-secondary" ref={containerRef}>
@@ -76,9 +77,9 @@ export default function Pourquoinous() {
           style={{ y, opacity }}
         >
           <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            Pourquoi choisir
+            {t('title')}
             <span className="relative ml-4 inline-block">
-              eath
+              {t('name')}
               <motion.span
                 className="absolute -bottom-2 left-0 h-1 w-full bg-white"
                 initial={{ scaleX: 0 }}
@@ -86,14 +87,10 @@ export default function Pourquoinous() {
                 transition={{ duration: 0.8, delay: 0.2 }}
               />
             </span>
-            ?
+            {t('question')}
           </h2>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-white/90">
-            On estime que 600 millions de personnes tombent malades après avoir mangé des aliments contaminés chaque année
-            dans le monde selon l&apos;OMS, entraînant 420 000 décès, les enfants de moins de 5 ans supportent 40 % de la
-            charge de morbidité imputable aux maladies d&apos;origine alimentaire et 125 000 en meurent chaque année avec
-            une perte de 33 millions d&apos;années de vie en bonne santé. C&apos;est à cet effet que notre application
-            mobile Eath permet de sauver des vies et garantit que ce que nous mangeons ne présente aucun danger.
+            {t('description')}
           </p>
         </motion.div>
 
@@ -122,5 +119,5 @@ export default function Pourquoinous() {
         </div>
       </div>
     </section>
-  )
+  );
 }
