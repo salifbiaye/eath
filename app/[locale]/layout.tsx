@@ -6,10 +6,10 @@ import Head from "next/head"
 import { siteConfig } from "@/config/site"
 import { fontSans } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
-import { SiteHeader } from "@/components/site-header"
-import { TailwindIndicator } from "@/components/tailwind-indicator"
-import { ThemeProvider } from "@/components/theme-provider"
-import { SiteFooter } from "@/components/site-footer"
+import { SiteHeader } from "@/components/special/site-header"
+import { TailwindIndicator } from "@/components/special/tailwind-indicator"
+import { ThemeProvider } from "@/components/special/theme-provider"
+import { SiteFooter } from "@/components/special/site-footer"
 import { MantineProvider } from '@mantine/core';
 
 import {Separator} from "@/components/ui/separator";

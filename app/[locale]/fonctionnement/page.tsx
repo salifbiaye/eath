@@ -1,7 +1,7 @@
 'use client'
 import { motion } from 'framer-motion';
-import Service from "@/components/Service";
-import ServiceList from "@/components/ServiceList";
+import Service from "@/components/special/Service";
+import ServiceList from "@/components/special/ServiceList";
 
 
 

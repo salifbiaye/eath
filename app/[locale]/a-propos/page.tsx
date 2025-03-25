@@ -1,8 +1,8 @@
 'use client'
 import { motion } from "framer-motion";
 
-import Pourquoinous from "@/components/Pourquoinous";
-import { CardWithReadMore} from "@/components/Cardgradient";
+import Pourquoinous from "@/components/special/Pourquoinous";
+import { CardWithReadMore} from "@/components/special/Cardgradient";
 import {Beaker, Book, Eye, Flag, Heart, Leaf, ShieldCheck, Target, Users, Utensils, VolumeX,History} from "lucide-react";
 
 
