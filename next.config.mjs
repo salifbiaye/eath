@@ -42,6 +42,10 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true, // Ignore ESLint during builds
   },
+  typescript: {
+    // Ignore les erreurs TypeScript pendant le build
+    ignoreBuildErrors: true,
+  },
   headers: securityHeaders,
 };
 

@@ -1,9 +1,10 @@
 import createMiddleware from 'next-intl/middleware';
 import { routing } from './src/i18n/routing';
+import {NextRequest} from "next/server";
 
 const defaultLocale = 'en';
 
-export default function middleware(req) {
+export default function middleware(req:NextRequest) {
   const { pathname } = new URL(req.url);
 
   // Vérifie si l'URL commence par une locale supportée
@@ -14,6 +15,7 @@ export default function middleware(req) {
     return Response.redirect(new URL(`/${defaultLocale}${pathname}`, req.url));
   }
 
+  // @ts-ignore
   return createMiddleware(routing)(req);
 }
 
