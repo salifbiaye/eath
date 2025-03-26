@@ -137,7 +137,7 @@ const TeamMember = () => {
         {
           img: "/images/KhalidYahouza.jpeg",
           name: "Khalid Yahouza ALMOU",
-          designation: "co-fondateur de eath",
+          designation: "Co-founder of eath",
           socialLinks: [
             { icon: "twitter", href: "#!" },
             { icon: "facebook", href: "#!" },
@@ -147,7 +147,7 @@ const TeamMember = () => {
         {
           img: "/images/CheikhounaThioune.jpeg",
           name: "Cheikhouna THIOUNE",
-          designation: "PDG et co-fondateur de eath, ancien Campus Director HULT PRIZE à l'université Cheikh Anta Diop",
+          designation: "CEO and Co-founder of eath, former Campus Director HULT PRIZE at Cheikh Anta Diop University",
           socialLinks: [
             { icon: "twitter", href: "#!" },
             { icon: "facebook", href: "#!" },
@@ -157,7 +157,7 @@ const TeamMember = () => {
         {
           img: "/images/EspoirMbongo.jpg",
           name: "Espoir MBONGO",
-          designation: "co-fondateur de eath",
+          designation: "Co-founder of eath",
           socialLinks: [
             { icon: "twitter", href: "#!" },
             { icon: "facebook", href: "#!" },
@@ -167,7 +167,7 @@ const TeamMember = () => {
         {
           img: "/images/AntonPROKHOROV.jpg",
           name: "Ahtoh Anton PROKHOROV",
-          designation: "co-fondateur de eath",
+          designation: "Co-founder of eath",
           socialLinks: [
             { icon: "twitter", href: "#!" },
             { icon: "facebook", href: "#!" },
@@ -193,7 +193,7 @@ const TeamMember = () => {
         {
           img: "/images/LouisDieme.jpeg",
           name: "Louis DIEME",
-          designation: "UI design & Marketing Strategy Manager",
+          designation: "UI Design & Marketing Strategy Manager",
           socialLinks: [
             { icon: "twitter", href: "#!" },
             { icon: "facebook", href: "#!" },
@@ -203,7 +203,7 @@ const TeamMember = () => {
         {
           img: "/images/CheikhBoye.jpg",
           name: "Cheikh BOYE",
-          designation: "UI design",
+          designation: "UI Design",
           socialLinks: [
             { icon: "twitter", href: "#!" },
             { icon: "facebook", href: "#!" },
@@ -213,7 +213,7 @@ const TeamMember = () => {
         {
           img: "/images/JeanMarie.jpeg",
           name: "Jean MARIE",
-          designation: "UI design",
+          designation: "UI Design",
           socialLinks: [
             { icon: "twitter", href: "#!" },
             { icon: "facebook", href: "#!" },
@@ -229,7 +229,7 @@ const TeamMember = () => {
         {
           img: "/images/MarietaSow.jpeg",
           name: "Marieta SOW",
-          designation: "Developpement backend",
+          designation: "Backend Development",
           socialLinks: [
             { icon: "twitter", href: "#!" },
             { icon: "facebook", href: "#!" },
@@ -239,7 +239,7 @@ const TeamMember = () => {
         {
           img: "/images/SalifBiaye.jpg",
           name: "Salif BIAYE",
-          designation: "Developpement web",
+          designation: "Web Development",
           socialLinks: [
             { icon: "twitter", href: "#!" },
             { icon: "facebook", href: "#!" },
@@ -249,7 +249,7 @@ const TeamMember = () => {
         {
           img: "/images/Rosalex.jpeg",
           name: "Ahan ROSALEX",
-          designation: "Developpement backend",
+          designation: "Backend Development",
           socialLinks: [
             { icon: "twitter", href: "#!" },
             { icon: "facebook", href: "#!" },
@@ -259,7 +259,7 @@ const TeamMember = () => {
         {
           img: "/images/YoussouphNiang.jpeg",
           name: "Youssouph NIANG",
-          designation: "Developpement mobile",
+          designation: "Mobile Development",
           socialLinks: [
             { icon: "twitter", href: "#!" },
             { icon: "facebook", href: "#!" },
@@ -268,8 +268,8 @@ const TeamMember = () => {
         },
         {
           img: "/images/CheikhouOBa.jpeg",
-          name: "Cheikhou Omar Ba",
-          designation: "Developpement mobile",
+          name: "Cheikhou Oumar Ba",
+          designation: "Backend Development",
           socialLinks: [
             { icon: "twitter", href: "#!" },
             { icon: "facebook", href: "#!" },
@@ -279,7 +279,7 @@ const TeamMember = () => {
         {
           img: "/images/MouhamedMangane.JPG",
           name: "Mouhamed Mangane",
-          designation: "Developpement mobile",
+          designation: "Mobile Development",
           socialLinks: [
             { icon: "twitter", href: "#!" },
             { icon: "facebook", href: "#!" },
@@ -295,7 +295,7 @@ const TeamMember = () => {
         {
           img: "/images/ElhadjAbdouBoye.jpeg",
           name: "El hadj Abdou BOYE",
-          designation: "Base de données",
+          designation: "Database",
           socialLinks: [
             { icon: "twitter", href: "#!" },
             { icon: "facebook", href: "#!" },
@@ -305,7 +305,7 @@ const TeamMember = () => {
         {
           img: "/images/MariamaDiallo.jpeg",
           name: "Mariame DIALLO",
-          designation: "Base de données",
+          designation: "Database",
           socialLinks: [
             { icon: "twitter", href: "#!" },
             { icon: "facebook", href: "#!" },
@@ -315,7 +315,7 @@ const TeamMember = () => {
         {
           img: "/images/DialikaThiaw.jpeg",
           name: "Dialika THIAW",
-          designation: "Base de données",
+          designation: "Database",
           socialLinks: [
             { icon: "twitter", href: "#!" },
             { icon: "facebook", href: "#!" },
@@ -331,7 +331,7 @@ const TeamMember = () => {
         {
           img: "/images/AmadouTDiallo.JPG",
           name: "Amadou T Diallo",
-          designation: "AI specialist",
+          designation: "AI Specialist",
           socialLinks: [
             { icon: "twitter", href: "#!" },
             { icon: "facebook", href: "#!" },
@@ -341,7 +341,7 @@ const TeamMember = () => {
         {
           img: "/images/WillianeJaures.jpeg",
           name: "Willane Jaurès SABOUBANGA",
-          designation: "Intelligence artificielle",
+          designation: "Artificial Intelligence",
           socialLinks: [
             { icon: "twitter", href: "#!" },
             { icon: "facebook", href: "#!" },
@@ -351,7 +351,7 @@ const TeamMember = () => {
         {
           img: "/images/LaurianeMbagdje.jpeg",
           name: "Lauriane Mbagdje DORENAN",
-          designation: "Intelligence artificielle",
+          designation: "Artificial Intelligence",
           socialLinks: [
             { icon: "twitter", href: "#!" },
             { icon: "facebook", href: "#!" },
@@ -361,7 +361,7 @@ const TeamMember = () => {
         {
           img: "/images/AbdouNdiaye.jpg",
           name: "Abdou NDIAYE",
-          designation: "Intelligence artificielle",
+          designation: "Artificial Intelligence",
           socialLinks: [
             { icon: "twitter", href: "#!" },
             { icon: "facebook", href: "#!" },
@@ -371,7 +371,7 @@ const TeamMember = () => {
         {
           img: "/images/MamadouDiallo.jpeg",
           name: "Mamadou Saidou DIALLO",
-          designation: "Intelligence artificielle",
+          designation: "Artificial Intelligence",
           socialLinks: [
             { icon: "twitter", href: "#!" },
             { icon: "facebook", href: "#!" },
