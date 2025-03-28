@@ -99,7 +99,7 @@
         },
         "prediction": {
           "title": "Predicción y prevención",
-          "description": "La IA puede analizar tendencias y datos históricos para predecir posibles problemas de seguridad alimentaria antes de que ocurran. Por ejemplo, puede identificar patrones recurrentes de contaminación o desviación de los estándares, permitiendo una intervención temprana y proactiva para prevenir posibles crisis."
+          "description": "La IA puede analizar tendencias y datos históricos para predecir posibles problemas de seguridad alimentaria antes de que ocurran. Por ejemplo, puede identificar patrones recurrentes de contaminación o desviación de los estándares, permitiendo una intervención temprana y proactiva para prevenir posibles Crisis."
         }
       },
       "buttons": {
@@ -258,7 +258,7 @@
   "aboutPage": {
     "title": "Acerca de",
     "description": {
-      "part1": "eath es una startup que ha desarrollado una aplicación móvil sofisticada que garantiza la seguridad alimentaria para los consumidores en todo el mundo.",
+      "part1": "eath es una startup que ha desarrollado una aplicación móvil sofisticada que garantiza la seguridad alimentaria para los consumidores en todo el mundo. La startup está registrada en la Organización Africana de la Propiedad Intelectual (OAPI).",
       "part2": "De hecho, estamos cambiando el mundo a través de esta innovación, que es una solución técnica que aborda problemas técnicos de seguridad alimentaria y salud pública a través de las siguientes características."
     },
     "cards": {
@@ -411,7 +411,7 @@
       },
       "motivation": {
         "title": "Nuestra motivación",
-        "description": "Habiéndonos inspirado en episodios recientes de crisis: COVID 19, guerras, pobreza, hambruna, degradación ambiental, desempleo juvenil, nos hemos levantado para abrazar la responsabilidad social de nuestras comunidades."
+        "description": "Habiéndonos inspirado en episodios recientes de Crisis: COVID 19, guerras, pobreza, hambruna, degradación ambiental, desempleo juvenil, nos hemos levantado para abrazar la responsabilidad social de nuestras comunidades."
       },
       "ambition": {
         "title": "Nuestra ambición",

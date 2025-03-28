@@ -256,10 +256,10 @@
     }
   },
   "aboutPage": {
-    "title": "Über",
+    "title": "Über uns",
     "description": {
-      "part1": "eath ist ein Startup, das eine ausgeklügelte mobile Anwendung entwickelt hat, die die Lebensmittelsicherheit für Verbraucher weltweit gewährleistet.",
-      "part2": "Tatsächlich verändern wir die Welt durch diese Innovation, die eine technische Lösung für technische Probleme der Lebensmittelsicherheit und der öffentlichen Gesundheit durch die folgenden Funktionen darstellt."
+      "part1": "eath ist ein Startup, das eine hochentwickelte mobile Anwendung entwickelt hat, die die Lebensmittelsicherheit für Verbraucher weltweit gewährleistet. Das Startup ist bei der Afrikanischen Organisation für geistiges Eigentum (OAPI) registriert.",
+      "part2": "In der Tat verändern wir die Welt durch diese Innovation, die eine technische Lösung darstellt, die technische Probleme der Lebensmittelsicherheit und der öffentlichen Gesundheit durch die folgenden Funktionen adressiert."
     },
     "cards": {
       "mission": {

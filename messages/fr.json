@@ -256,10 +256,10 @@
     }
   },
   "aboutPage": {
-    "title": "A propos de",
+    "title": "À propos",
     "description": {
-      "part1": "eath est une startup qui a mis au point une application mobile sophistiquée qui garantit la sécurité alimentaire des consommateurs à l'échelle mondiale.",
-      "part2": "En effet nous changeons le monde à travers cette innovation qui est une solution technique qui règle des problèmes techniques de sécurité alimentaire et de santé publique grâce aux fonctionnalités suivantes."
+      "part1": "eath est une startup qui a développé une application mobile sophistiquée qui assure la sécurité alimentaire des consommateurs dans le monde entier. La start-up est enregistrée auprès de l'Organisation Africaine de la Propriété Intellectuelle (OAPI).",
+      "part2": "En effet, nous changeons le monde grâce à cette innovation, qui est une solution technique qui répond aux problèmes techniques de sécurité alimentaire et de santé publique à travers les fonctionnalités suivantes."
     },
     "cards": {
       "mission": {
