@@ -3,7 +3,7 @@
     "title": "¡Hola mundo!",
     "about": "Ir a la página acerca de",
     "hero": {
-      "revolutionizing": "revolucionando la seguridad alimentaria mundial.",
+      "revolutionizing": "Revolucionando la seguridad alimentaria mundial.",
       "videoAltDark": "Interfaz de la aplicación en modo oscuro",
       "videoAltLight": "Interfaz de la aplicación en modo claro",
       "videoUnsupported": "Su navegador no soporta la etiqueta de video."
@@ -258,7 +258,7 @@
   "aboutPage": {
     "title": "Acerca de",
     "description": {
-      "part1": "eath es una startup que ha desarrollado una aplicación móvil sofisticada que garantiza la seguridad alimentaria para los consumidores en todo el mundo. La startup está registrada en la Organización Africana de la Propiedad Intelectual (OAPI).",
+      "part1": "eath es una start-up que ha desarrollado una aplicación móvil sofisticada que garantiza la seguridad alimentaria para los consumidores en todo el mundo. La startup está registrada en la Organización Africana de la Propiedad Intelectual (OAPI).",
       "part2": "De hecho, estamos cambiando el mundo a través de esta innovación, que es una solución técnica que aborda problemas técnicos de seguridad alimentaria y salud pública a través de las siguientes características."
     },
     "cards": {

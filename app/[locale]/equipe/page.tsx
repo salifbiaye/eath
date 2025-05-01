@@ -38,7 +38,7 @@ const teamambitions: Teamambition[] = [
     title: 'Nos Origines',
     icon: Users,
     description:
-      'Les membres de l\'équipe de notre startup sont issus du milieu universitaire, passionnés dans le travail, nous relevons les défis en transformant ce qui est excellent en quelque chose de parfait.',
+      'Les membres de l\'équipe de notre start-up sont issus du milieu universitaire, passionnés dans le travail, nous relevons les défis en transformant ce qui est excellent en quelque chose de parfait.',
     gradient: 'from-purple-500 to-blue-500'
   },
   {
@@ -178,6 +178,16 @@ const TeamMember = () => {
           img: "/images/MouhammadFHadi.JPG",
           name: "Muhammad F HADI",
           designation: "Chief Marketing Advisor",
+          socialLinks: [
+            { icon: "twitter", href: "#!" },
+            { icon: "facebook", href: "#!" },
+            { icon: "vimeo", href: "#!" },
+          ],
+        },
+        {
+          img: "/images/OUMOUNIANE.jpg",
+          name: "Oumou NIANE",
+          designation: "Chief Financial Officer of eath",
           socialLinks: [
             { icon: "twitter", href: "#!" },
             { icon: "facebook", href: "#!" },

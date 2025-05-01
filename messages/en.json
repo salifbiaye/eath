@@ -3,7 +3,7 @@
     "title": "Hello world!",
     "about": "Go to the about page",
     "hero": {
-      "revolutionizing": "revolutionizing food security worldwide.",
+      "revolutionizing": "Revolutionizing food security worldwide.",
       "videoAltDark": "Application interface dark mode",
       "videoAltLight": "Application interface light mode",
       "videoUnsupported": "Your browser does not support the video tag."
@@ -60,7 +60,7 @@
         "description": "Ensures that foods comply with halal standards, ensuring complete traceability and compliance."
       },
       "cta": "Learn more"
-      
+
     },
     "solutions": {
         "title": "Here are the solutions",
@@ -260,7 +260,7 @@
   "aboutPage": {
     "title": "About",
     "description": {
-      "part1": "eath is a startup that has developed a sophisticated mobile application that ensures food security for consumers worldwide. The start-up is registered with the African Intellectual Property Organization (OAPI).",
+      "part1": "eath is a start-up that has developed a sophisticated mobile application that ensures food security for consumers worldwide. The start-up is registered with the African Intellectual Property Organization (OAPI).",
       "part2": "Indeed, we are changing the world through this innovation, which is a technical solution that addresses technical problems of food security and public health through the following features."
     },
     "cards": {
@@ -313,7 +313,7 @@
         "text": "Global population, fast-food chains, hotel chains, tourism sector, university restaurants, school cafeterias, boarding schools, as well as athletes and sports communities."
       }
     },
-  
+
   "whyUs": {
     "title": "Why choose",
     "name": "eath",
