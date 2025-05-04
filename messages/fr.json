@@ -258,7 +258,7 @@
   "aboutPage": {
     "title": "À propos",
     "description": {
-      "part1": "eath est une startup qui a développé une application mobile sophistiquée qui assure la sécurité alimentaire des consommateurs dans le monde entier. La start-up est enregistrée auprès de l'Organisation Africaine de la Propriété Intellectuelle (OAPI).",
+      "part1": "eath est une start-up qui a développé une application mobile sophistiquée qui assure la sécurité alimentaire des consommateurs dans le monde entier. La start-up est enregistrée auprès de l'Organisation Africaine de la Propriété Intellectuelle (OAPI).",
       "part2": "En effet, nous changeons le monde grâce à cette innovation, qui est une solution technique qui répond aux problèmes techniques de sécurité alimentaire et de santé publique à travers les fonctionnalités suivantes."
     },
     "cards": {
@@ -407,7 +407,7 @@
     "ambitions": {
       "origins": {
         "title": "Nos Origines",
-        "description": "Les membres de l'équipe de notre startup sont issus du milieu universitaire, passionnés dans le travail, nous relevons les défis en transformant ce qui est excellent en quelque chose de parfait."
+        "description": "Les membres de l'équipe de notre start-up sont issus du milieu universitaire, passionnés dans le travail, nous relevons les défis en transformant ce qui est excellent en quelque chose de parfait."
       },
       "motivation": {
         "title": "Notre Motivation",
@@ -415,7 +415,7 @@
       },
       "ambition": {
         "title": "Notre Ambition",
-        "description": "C'est ce qui fait que nous sommes une startup à haut potentiel. Notre application mobile pourrait perturber beaucoup de secteurs, car toute innovation implique des changements."
+        "description": "C'est ce qui fait que nous sommes une start-up à haut potentiel. Notre application mobile pourrait perturber beaucoup de secteurs, car toute innovation implique des changements."
       },
       "expertise": {
         "title": "Notre Expertise",
@@ -427,7 +427,7 @@
       },
       "impact": {
         "title": "Notre Impact",
-        "description": "En définitive, notre startup Eath aura un impact positif significatif sur l'environnement et les populations pour les années à venir."
+        "description": "En définitive, notre start-up Eath aura un impact positif significatif sur l'environnement et les populations pour les années à venir."
       }
     }
   },

@@ -410,7 +410,7 @@
     "ambitions": {
       "origins": {
         "title": "Our Origins",
-        "description": "The members of our startup team come from academic backgrounds, passionate about their work, we take on challenges by transforming what is excellent into something perfect."
+        "description": "The members of our start-up team come from academic backgrounds, passionate about their work, we take on challenges by transforming what is excellent into something perfect."
       },
       "motivation": {
         "title": "Our Motivation",
@@ -418,7 +418,7 @@
       },
       "ambition": {
         "title": "Our Ambition",
-        "description": "This is what makes us a high-potential startup. Our mobile application could disrupt many sectors, as any innovation involves changes."
+        "description": "This is what makes us a high-potential start-up. Our mobile application could disrupt many sectors, as any innovation involves changes."
       },
       "expertise": {
         "title": "Our Expertise",
@@ -430,7 +430,7 @@
       },
       "impact": {
         "title": "Our Impact",
-        "description": "Ultimately, our Eath startup will have a significant positive impact on the environment and populations for years to come."
+        "description": "Ultimately, our Eath start-up will have a significant positive impact on the environment and populations for years to come."
       }
     }
   },

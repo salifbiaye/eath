@@ -18,12 +18,12 @@ const LanguageSwitcher = ({className }: { className?: string }) => {
 
   // Langues disponibles avec leurs drapeaux et noms
   const locales = [
-    { code: 'fr', flag: <FrFlag />, name: 'Français' },
+    { code: 'fr', flag: <FrFlag />, name: 'French' },
     { code: 'en', flag: <UsFlag />, name: 'English' },
     {code:  'es', flag: <EsFlag/>, name: 'Spanish'},
-    {code:  'ar', flag: <ArFlag/>, name: 'Arabe'},
-    {code:  'ja', flag: <JaFlag/>, name: 'Japon'},
-    {code:  'de', flag: <DeFlag/>, name: 'deutsh'}
+    {code:  'ar', flag: <ArFlag/>, name: 'Arabic'},
+    {code:  'ja', flag: <JaFlag/>, name: 'Japanese'},
+    {code:  'de', flag: <DeFlag/>, name: 'german'}
   ];
 
   // Détermine la langue actuelle à partir de l'URL

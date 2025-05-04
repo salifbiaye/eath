@@ -52,7 +52,7 @@ const teamambitions: Teamambition[] = [
     title: 'Notre Ambition',
     icon: Target,
     description:
-      'C\'est ce qui fait que nous sommes une startup à haut potentiel. Notre application mobile pourrait perturber beaucoup de secteurs, car toute innovation implique des changements.',
+      'C\'est ce qui fait que nous sommes une start-up à haut potentiel. Notre application mobile pourrait perturber beaucoup de secteurs, car toute innovation implique des changements.',
     gradient: 'from-orange-500 to-amber-500'
   },
   {
