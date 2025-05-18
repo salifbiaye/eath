@@ -1,7 +1,7 @@
 'use client';
 import { Link } from "@/src/i18n/navigation";
 import { Icons } from '@/components/special/icons';
-import {faTwitter, faInstagram, faFacebook, faLinkedin, faYoutube} from "@fortawesome/free-brands-svg-icons";
+import {faTwitter, faInstagram, faFacebook, faLinkedin, faYoutube, faTiktok} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { cn } from "@/lib/utils";
 import { siteConfig } from "@/config/site";
@@ -59,6 +59,10 @@ export function SiteFooter() {
         <a href="https://www.instagram.com/eath__official/" target="_blank" rel="noreferrer" aria-label={t('social.instagram')}>
           <FontAwesomeIcon icon={faInstagram}/>
         </a>
+        <a href="https://www.tiktok.com/@eathstartup?is_from_webapp=1&sender_device=pc" target="_blank" rel="noreferrer" aria-label={t('social.tiktok')}>
+        <FontAwesomeIcon icon={faTiktok}/>
+        </a>
+
       </div>
     </footer>
   );

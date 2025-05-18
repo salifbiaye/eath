@@ -230,7 +230,8 @@
     "social": {
       "twitter": "Síganos en Twitter",
       "facebook": "Síganos en Facebook",
-      "instagram": "Síganos en Instagram"
+      "instagram": "Síganos en Instagram",
+      "tiktok":"Síganos en TikTok"
     }
   },
   "mainNav": {
@@ -272,7 +273,7 @@
       },
       "values": {
         "title": "Valores",
-        "text": "Reducir los riesgos de consumo de alimentos hasta en un 1.03%, proporcionar a los consumidores una herramienta de análisis de alimentos precisa y confiable. Garantizar el consumo seguro de alimentos para el público."
+        "text": "Reducir los riesgos de consumo de alimentos hasta en un 0.03%, proporcionar a los consumidores una herramienta de análisis de alimentos precisa y confiable. Garantizar el consumo seguro de alimentos para el público."
       },
       "origin": {
         "title": "Origen",
@@ -414,8 +415,8 @@
         "description": "Habiéndonos inspirado en episodios recientes de Crisis: COVID 19, guerras, pobreza, hambruna, degradación ambiental, desempleo juvenil, nos hemos levantado para abrazar la responsabilidad social de nuestras comunidades."
       },
       "ambition": {
-        "title": "Nuestra ambición",
-        "description": "Esto es lo que nos convierte en una startup de alto potencial. Nuestra aplicación móvil podría disruptir muchos sectores, ya que cualquier innovación implica cambios."
+        "title": "Nuestra Ambición",
+        "description": "Nuestra ambición a largo plazo es convertirnos en una referencia mundial en seguridad alimentaria digital y certificación. Esto es lo que nos convierte en una startup de alto potencial. Nuestra aplicación móvil podría revolucionar muchos sectores, ya que toda innovación implica cambios."
       },
       "expertise": {
         "title": "Nuestra experiencia",

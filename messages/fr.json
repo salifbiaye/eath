@@ -230,7 +230,8 @@
     "social": {
       "twitter": "Suivez-nous sur Twitter",
       "facebook": "Suivez-nous sur Facebook",
-      "instagram": "Suivez-nous sur Instagram"
+      "instagram": "Suivez-nous sur Instagram",
+      "tiktok":"Suivez-nous sur TikTok"
     }
   },
   "mainNav": {
@@ -272,7 +273,7 @@
       },
       "values": {
         "title": "Valeurs",
-        "text": "Réduire jusqu'à 1,03% les risques dans la consommation quotidienne des aliments, mettre à la disposition du public consommateur un outil d'analyse précise, fiable des aliments. Garantir au public une consommation saine des aliments."
+        "text": "Réduire jusqu'à 0,03% les risques dans la consommation quotidienne des aliments, mettre à la disposition du public consommateur un outil d'analyse précise, fiable des aliments. Garantir au public une consommation saine des aliments."
       },
       "origin": {
         "title": "Origine",
@@ -415,7 +416,7 @@
       },
       "ambition": {
         "title": "Notre Ambition",
-        "description": "C'est ce qui fait que nous sommes une start-up à haut potentiel. Notre application mobile pourrait perturber beaucoup de secteurs, car toute innovation implique des changements."
+        "description": "Notre ambition à long terme est de devenir une référence mondiale en matière de sécurité alimentaire numérique et de certification. C'est ce qui fait de nous une start-up à haut potentiel. Notre application mobile pourrait perturber de nombreux secteurs, car toute innovation implique des changements."
       },
       "expertise": {
         "title": "Notre Expertise",

@@ -230,7 +230,8 @@
     "social": {
       "twitter": "Folgen Sie uns auf Twitter",
       "facebook": "Folgen Sie uns auf Facebook",
-      "instagram": "Folgen Sie uns auf Instagram"
+      "instagram": "Folgen Sie uns auf Instagram",
+      "tiktok":"Folgen Sie uns auf TikTok"
     }
   },
   "mainNav": {
@@ -272,7 +273,7 @@
       },
       "values": {
         "title": "Werte",
-        "text": "Reduzieren Sie die Lebensmittelverbrauchsrisiken um bis zu 1,03%, bieten Sie Verbrauchern ein präzises, zuverlässiges Lebensmittelanalysetool. Garantieren Sie einen sicheren Lebensmittelkonsum für die Öffentlichkeit."
+        "text": "Reduzieren Sie die Lebensmittelverbrauchsrisiken um bis zu 0,03%, bieten Sie Verbrauchern ein präzises, zuverlässiges Lebensmittelanalysetool. Garantieren Sie einen sicheren Lebensmittelkonsum für die Öffentlichkeit."
       },
       "origin": {
         "title": "Ursprung",
@@ -300,7 +301,7 @@
       },
       "nutrition": {
         "title": "Nährwertaufnahme",
-        "text": "Eine Nährwertberechnungsfunktion hilft Nutzern, die gesundheitlichen Auswirkungen ihrer Mahlzeiten zu verstehen - besonders nützlich für Diabetiker, Diätende und Vegetarier."
+        "text": "Eine Nährwertberechnungsfunktion hilft Nutzern, die gesundheitlichen Auswirkungen ihrer Mahlzeiten zu verstehen - besonders nützlich für Diabetiker, Diänende und Vegetarier."
       },
       "social": {
         "title": "Soziale Inklusion",

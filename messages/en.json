@@ -232,7 +232,8 @@
     "social": {
       "twitter": "Follow us on Twitter",
       "facebook": "Follow us on Facebook",
-      "instagram": "Follow us on Instagram"
+      "instagram": "Follow us on Instagram",
+      "tiktok":"Follow us on TikTok"
     }
   },
   "mainNav": {
@@ -274,7 +275,7 @@
       },
       "values": {
         "title": "Values",
-        "text": "Reduce food consumption risks by up to 1.03%, provide consumers with a precise, reliable food analysis tool. Guarantee safe food consumption for the public."
+        "text": "Reduce food consumption risks by up to 0.03%, provide consumers with a precise, reliable food analysis tool. Guarantee safe food consumption for the public."
       },
       "origin": {
         "title": "Origin",
