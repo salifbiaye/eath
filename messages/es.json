@@ -190,6 +190,14 @@
         "android": "Botón de descarga de Android",
         "apple": "Botón de descarga de Apple"
       }
+    },
+    "downloadApp": {
+      "title": "Descargue nuestra aplicación Android",
+      "description": "Obtenga acceso directo a nuestra aplicación Android descargando el archivo APK. Instálelo en su dispositivo para disfrutar de todas las funcionalidades de nuestra solución de seguridad alimentaria.",
+      "downloadButton": "Descargar APK",
+      "imageAlt": {
+        "preview": "Vista previa de la aplicación"
+      }
     }
   },
   "header": {

@@ -183,12 +183,20 @@
     },
     "linkApp": {
       "title": "Disponible sur toutes les plateformes",
-      "description": "Notre application mobile de sécurité alimentaire est maintenant accessible sur l'App Store et le Google Play Store. Que vous soyez utilisateur d'iOS ou d'Android, vous pouvez profiter de notre technologie avancée pour scanner et vérifier la sécurité des aliments, où que vous soyez. Téléchargez-la dès aujourd'hui pour une alimentation plus sûre et plus consciente !",
+      "description": "Notre application mobile de sécurité alimentaire est désormais accessible sur l'App Store et le Google Play Store. Que vous soyez utilisateur iOS ou Android, vous pouvez profiter de notre technologie avancée pour scanner et vérifier la sécurité alimentaire où que vous soyez. Téléchargez-la dès aujourd'hui pour une alimentation plus sûre et plus consciente !",
       "appStore": "l'App Store",
       "playStore": "le Google Play Store",
       "imageAlt": {
         "android": "Bouton de téléchargement Android",
         "apple": "Bouton de téléchargement Apple"
+      }
+    },
+    "downloadApp": {
+      "title": "Téléchargez notre application Android",
+      "description": "Accédez directement à notre application Android en téléchargeant le fichier APK. Installez-le sur votre appareil pour profiter de toutes les fonctionnalités de notre solution de sécurité alimentaire.",
+      "downloadButton": "Télécharger l'APK",
+      "imageAlt": {
+        "preview": "Aperçu de l'application"
       }
     }
   },

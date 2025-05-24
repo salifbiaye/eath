@@ -183,12 +183,20 @@
     },
     "linkApp": {
       "title": "Auf allen Plattformen verfügbar",
-      "description": "Unsere mobile Anwendung zur Lebensmittelsicherheit ist jetzt im App Store und Google Play Store erhältlich. Egal, ob Sie iOS- oder Android-Nutzer sind, Sie können unsere fortschrittliche Technologie nutzen, um die Lebensmittelsicherheit überall zu scannen und zu überprüfen. Laden Sie sie noch heute herunter, um sicherer und bewusster zu essen!",
+      "description": "Unsere mobile Lebensmittelsicherheitsanwendung ist jetzt im App Store und Google Play Store verfügbar. Egal, ob Sie iOS- oder Android-Benutzer sind, Sie können unsere fortschrittliche Technologie nutzen, um die Lebensmittelsicherheit zu scannen und zu überprüfen, wo immer Sie sind. Laden Sie sie noch heute herunter, um sicherer und bewusster zu essen!",
       "appStore": "App Store",
       "playStore": "Google Play Store",
       "imageAlt": {
         "android": "Android-Download-Button",
         "apple": "Apple-Download-Button"
+      }
+    },
+    "downloadApp": {
+      "title": "Laden Sie unsere Android-App herunter",
+      "description": "Erhalten Sie direkten Zugriff auf unsere Android-Anwendung, indem Sie die APK-Datei herunterladen. Installieren Sie sie auf Ihrem Gerät, um alle Funktionen unserer Lebensmittelsicherheitslösung zu nutzen.",
+      "downloadButton": "APK herunterladen",
+      "imageAlt": {
+        "preview": "Vorschau der Anwendung"
       }
     }
   },

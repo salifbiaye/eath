@@ -184,12 +184,21 @@
     },
     "linkApp": {
       "title": "Available on all platforms",
-      "description": "Our food safety mobile application is now accessible on the App Store and Google Play Store. Whether you're an iOS or Android user, you can take advantage of our advanced technology to scan and verify food safety wherever you are. Download it today for safer and more conscious eating!",
+      "description": "Our application is available on the app stores of the major platforms. You can download it from the",
       "appStore": "App Store",
       "playStore": "Google Play Store",
       "imageAlt": {
         "android": "Android download button",
-        "apple": "Apple download button"
+        "apple": "Apple download button",
+        "preview": "Preview of the application"
+      }
+    },
+    "downloadApp": {
+      "title": "Download our Android app",
+      "description": "Get direct access to our Android application by downloading the APK file. Install it on your device to enjoy all the features of our food security solution.",
+      "downloadButton": "Download APK",
+      "imageAlt": {
+        "preview": "Preview of the application"
       }
     }
 

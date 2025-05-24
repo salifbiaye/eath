@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { LinkPreview } from "@/components/ui/link-preview";
 import { useTranslations } from 'next-intl';
+import { DownloadApp } from "./DownloadApp";
 
 const Spline = lazy(() => import("@splinetool/react-spline"));
 const call = "/assets/eath-call.png";
@@ -14,7 +15,7 @@ export const LinkApp = () => {
       <div className="relative w-screen">
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 text-center">
-            <h2 className="text-3xl leading-none md:text-[70px] font-bold mb-6">
+            {/* <h2 className="text-3xl leading-none md:text-[70px] font-bold mb-6">
               {t('title')}
             </h2>
             <div className="text-[22px] leading-normal lg:px-24 xl:px-64">
@@ -26,7 +27,8 @@ export const LinkApp = () => {
               <LinkPreview url="https://play.google.com/store/apps?hl=fr" className="font-bold text-primary">
                 {t('playStore')}
               </LinkPreview>
-            </div>
+            </div> */}
+            <DownloadApp/>  
 
             <div className="flex items-center justify-center mt-12">
               <a href="#!" className="shadow m-1">

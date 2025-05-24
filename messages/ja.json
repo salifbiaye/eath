@@ -183,12 +183,20 @@
     },
     "linkApp": {
       "title": "すべてのプラットフォームで利用可能",
-      "description": "私たちの食品安全モバイルアプリケーションは、App StoreとGoogle Play Storeで利用可能になりました。iOSまたはAndroidユーザーであれば、どこにいても食品の安全性をスキャンおよび確認するための先進的なテクノロジーを活用できます。より安全で意識的な食事のために今日ダウンロードしてください！",
+      "description": "私たちの食品安全モバイルアプリケーションは、App StoreとGoogle Play Storeで利用可能になりました。iOSユーザーでもAndroidユーザーでも、どこにいても食品安全性をスキャンして確認するための先進技術を活用できます。より安全で意識の高い食事のために、今すぐダウンロードしてください！",
       "appStore": "App Store",
       "playStore": "Google Play Store",
       "imageAlt": {
         "android": "Androidダウンロードボタン",
         "apple": "Appleダウンロードボタン"
+      }
+    },
+    "downloadApp": {
+      "title": "Androidアプリをダウンロード",
+      "description": "APKファイルをダウンロードして、Androidアプリケーションに直接アクセスできます。デバイスにインストールして、食品安全ソリューションのすべての機能をお楽しみください。",
+      "downloadButton": "APKをダウンロード",
+      "imageAlt": {
+        "preview": "アプリケーションのプレビュー"
       }
     }
   },
