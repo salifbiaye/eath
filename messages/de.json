@@ -15,10 +15,10 @@
     },
     "objectives": {
       "title": "Ziele",
-      "description": "Das Hauptziel unserer Lebensmittelsicherheitsanwendung ist es, die Sicherheit und Qualität der von Ihnen verzehrten Lebensmittel zu gewährleisten, indem wir leistungsstarke Tools zur Erkennung potenzieller Risiken und zur Bereitstellung wichtiger Informationen in Echtzeit bereitstellen.",
+      "description": "Das Hauptziel unserer Lebensmittelsicherheits-App ist es, die Sicherheit und Qualität der von Ihnen konsumierten Lebensmittel zu gewährleisten, indem wir leistungsstarke Werkzeuge zur Erkennung potenzieller Risiken bereitstellen und wichtige Informationen in Echtzeit liefern, während wir gleichzeitig einen bedeutenden Beitrag zu den Zielen für nachhaltige Entwicklung, 3 - 9 - 12, leisten.",
       "globe": {
-        "darkMode": "Globus Dunkelmodus",
-        "lightMode": "Globus Hellmodus"
+        "darkMode": "Globus im dunklen Modus",
+        "lightMode": "Globus im hellen Modus"
       }
     },
     "features": {
