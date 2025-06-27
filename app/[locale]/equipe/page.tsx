@@ -276,20 +276,11 @@ const TeamMember = () => {
             { icon: "vimeo", href: "#!" },
           ],
         },
-        {
-          img: "/images/CheikhouOBa.jpeg",
-          name: "Cheikhou Oumar Ba",
-          designation: "Backend Development",
-          socialLinks: [
-            { icon: "twitter", href: "#!" },
-            { icon: "facebook", href: "#!" },
-            { icon: "vimeo", href: "#!" },
-          ],
-        },
+
         {
           img: "/images/MouhamedMangane.JPG",
           name: "Mouhamed Mangane",
-          designation: "Mobile Development",
+          designation: "Mobile Development & CTO",
           socialLinks: [
             { icon: "twitter", href: "#!" },
             { icon: "facebook", href: "#!" },
@@ -378,16 +369,7 @@ const TeamMember = () => {
             { icon: "vimeo", href: "#!" },
           ],
         },
-        {
-          img: "/images/MamadouDiallo.jpeg",
-          name: "Mamadou Saidou DIALLO",
-          designation: "Artificial Intelligence",
-          socialLinks: [
-            { icon: "twitter", href: "#!" },
-            { icon: "facebook", href: "#!" },
-            { icon: "vimeo", href: "#!" },
-          ],
-        },
+      
       ],
     }
   ];
